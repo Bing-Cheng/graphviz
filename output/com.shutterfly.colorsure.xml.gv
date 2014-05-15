@@ -1,0 +1,10 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.colorsure.xml.XMLOp"; 
+"com.shutterfly.colorsure.xml.XMLOp"->"com.shutterfly.colorsure.colormath.LabCoord";
+"com.shutterfly.colorsure.xml.XMLOp"->"com.shutterfly.colorsure.colormath.CMYKCoord";
+"com.shutterfly.colorsure.xml.XMLOp"->"com.shutterfly.colorsure.client.ColorException";
+splines="ortho";
+}

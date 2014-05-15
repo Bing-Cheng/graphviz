@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1" [fontcolor="red"];
+"com.shutterfly.labels.Label" [ fontcolor="blue" ];
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1"->"com.shutterfly.labels.Label";
+"com.shutterfly.apps.AutomatedShipStation$PrintShipLabel" [ fontcolor="blue" ];
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1"->"com.shutterfly.apps.AutomatedShipStation$PrintShipLabel";
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1"->"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1";
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$2" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$2"->"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1";
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$3" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$3"->"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1";
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo"->"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1" [dir=both];
+"com.shutterfly.apps.AutomatedShipStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.AutomatedShipStation"->"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1" [dir=both];
+}

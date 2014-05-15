@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BatchVerifyStation$3" [fontcolor="red"];
+"com.shutterfly.apps.BatchVerify" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerifyStation$3"->"com.shutterfly.apps.BatchVerify";
+"com.shutterfly.apps.ScanStationUi" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerifyStation$3"->"com.shutterfly.apps.ScanStationUi";
+"com.shutterfly.apps.BatchVerifyStation$3" [ fontcolor="green" ];
+"com.shutterfly.apps.BatchVerifyStation$3"->"com.shutterfly.apps.BatchVerifyStation$3";
+"com.shutterfly.apps.BatchVerifyStation$4" [ fontcolor="green" ];
+"com.shutterfly.apps.BatchVerifyStation$4"->"com.shutterfly.apps.BatchVerifyStation$3";
+"com.shutterfly.apps.BatchVerifyStation$5" [ fontcolor="green" ];
+"com.shutterfly.apps.BatchVerifyStation$5"->"com.shutterfly.apps.BatchVerifyStation$3";
+"com.shutterfly.apps.BatchVerifyStation$BatchVerifyShutdownHook" [ fontcolor="green" ];
+"com.shutterfly.apps.BatchVerifyStation$BatchVerifyShutdownHook"->"com.shutterfly.apps.BatchVerifyStation$3";
+"com.shutterfly.apps.BatchVerifyStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.BatchVerifyStation"->"com.shutterfly.apps.BatchVerifyStation$3" [dir=both];
+}

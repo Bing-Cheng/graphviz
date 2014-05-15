@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmHeaderArray" [fontcolor="red"];
+"com.shutterfly.commercial.model.CmHeader" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmHeaderArray"->"com.shutterfly.commercial.model.CmHeader";
+"com.shutterfly.commercial.impl.ParserHelper" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmHeaderArray"->"com.shutterfly.commercial.impl.ParserHelper";
+"com.shutterfly.commercial.impl.FileTypeDetector" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmHeaderArray"->"com.shutterfly.commercial.impl.FileTypeDetector";
+}

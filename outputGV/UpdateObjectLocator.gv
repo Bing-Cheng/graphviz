@@ -1,0 +1,33 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.UpdateObjectLocator" [fontcolor="red"];
+"org.apache.axis.client.Service" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.UpdateObjectLocator"->"org.apache.axis.client.Service";
+"com.pace2020.epace.sdk.UpdateObject" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.UpdateObjectLocator"->"com.pace2020.epace.sdk.UpdateObject";
+"org.apache.axis.EngineConfiguration" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.UpdateObjectLocator"->"org.apache.axis.EngineConfiguration";
+"com.pace2020.epace.sdk.UpdateObjectPortType" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.UpdateObjectLocator"->"com.pace2020.epace.sdk.UpdateObjectPortType";
+"com.pace2020.epace.sdk.UpdateObjectHttpBindingStub" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.UpdateObjectLocator"->"com.pace2020.epace.sdk.UpdateObjectHttpBindingStub";
+"org.apache.axis.AxisFault" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.UpdateObjectLocator"->"org.apache.axis.AxisFault";
+"org.apache.axis.client.Stub" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.UpdateObjectLocator"->"org.apache.axis.client.Stub";
+"com.shutterfly.commercial.efi.EFIJobBuilder" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder"->"com.pace2020.epace.sdk.UpdateObjectLocator";
+"com.shutterfly.commercial.efi.EFIJobBuilder$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.pace2020.epace.sdk.UpdateObjectLocator";
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIInitializer" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIInitializer"->"com.pace2020.epace.sdk.UpdateObjectLocator";
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIJobCreator" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIJobCreator"->"com.pace2020.epace.sdk.UpdateObjectLocator";
+"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData"->"com.pace2020.epace.sdk.UpdateObjectLocator";
+"com.shutterfly.servlets.commercial.controller.OrderAction" [ fontcolor="green" ];
+"com.shutterfly.servlets.commercial.controller.OrderAction"->"com.pace2020.epace.sdk.UpdateObjectLocator";
+}

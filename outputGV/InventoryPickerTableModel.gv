@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.inventory.InventoryPickerTableModel" [fontcolor="red"];
+"com.shutterfly.apps.inventory.InventoryPickerTableModel$DataNode" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.InventoryPickerTableModel"->"com.shutterfly.apps.inventory.InventoryPickerTableModel$DataNode";
+"com.shutterfly.apps.inventory.InventoryPicker" [ fontcolor="green" ];
+"com.shutterfly.apps.inventory.InventoryPicker"->"com.shutterfly.apps.inventory.InventoryPickerTableModel";
+"com.shutterfly.apps.inventory.Tote" [ fontcolor="green" ];
+"com.shutterfly.apps.inventory.Tote"->"com.shutterfly.apps.inventory.InventoryPickerTableModel";
+"com.shutterfly.apps.inventory.PickListPrinter$PickListPage" [ fontcolor="green" ];
+"com.shutterfly.apps.inventory.PickListPrinter$PickListPage"->"com.shutterfly.apps.inventory.InventoryPickerTableModel";
+"com.shutterfly.apps.inventory.PickListPrinter" [ fontcolor="green" ];
+"com.shutterfly.apps.inventory.PickListPrinter"->"com.shutterfly.apps.inventory.InventoryPickerTableModel";
+"com.shutterfly.apps.inventory.WelcomeKitListPrinter$PickListPage" [ fontcolor="green" ];
+"com.shutterfly.apps.inventory.WelcomeKitListPrinter$PickListPage"->"com.shutterfly.apps.inventory.InventoryPickerTableModel";
+"com.shutterfly.apps.inventory.WelcomeKitListPrinter" [ fontcolor="green" ];
+"com.shutterfly.apps.inventory.WelcomeKitListPrinter"->"com.shutterfly.apps.inventory.InventoryPickerTableModel";
+"com.shutterfly.apps.inventory.PickListPrinter$1" [ fontcolor="green" ];
+"com.shutterfly.apps.inventory.PickListPrinter$1"->"com.shutterfly.apps.inventory.InventoryPickerTableModel";
+"com.shutterfly.apps.inventory.WelcomeKitListPrinter$1" [ fontcolor="green" ];
+"com.shutterfly.apps.inventory.WelcomeKitListPrinter$1"->"com.shutterfly.apps.inventory.InventoryPickerTableModel";
+}

@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.miam.jack.RIPStation"; 
+"com.shutterfly.servlets.miam.jack.RIPStation"->"com.shutterfly.miam.jack.ItemStation";
+"com.shutterfly.servlets.miam.jack.RIPStation"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.miam.jack.RIPStation"->"com.shutterfly.util.Version";
+"com.shutterfly.servlets.miam.jack.RIPStation"->"com.shutterfly.properties.LabDBHostname";
+splines="ortho";
+}

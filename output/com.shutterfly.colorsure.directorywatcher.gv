@@ -1,0 +1,24 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.colorsure.directorywatcher.AbstractResourceWatcher"; 
+"com.shutterfly.colorsure.directorywatcher.AbstractResourceWatcher"->"com.shutterfly.colorsure.directorywatcher.IntervalThread";
+"com.shutterfly.colorsure.directorywatcher.AbstractResourceWatcher"->"com.shutterfly.colorsure.directorywatcher.IResourceWatcher";
+"com.shutterfly.colorsure.directorywatcher.AbstractResourceWatcher"->"com.shutterfly.colorsure.directorywatcher.IResourceListener";
+"com.shutterfly.colorsure.directorywatcher.BaseListener"; 
+"com.shutterfly.colorsure.directorywatcher.DirectoryWatcher"; 
+"com.shutterfly.colorsure.directorywatcher.DirectoryWatcher"->"com.shutterfly.colorsure.directorywatcher.AbstractResourceWatcher";
+"com.shutterfly.colorsure.directorywatcher.DirectoryWatcher"->"com.shutterfly.colorsure.directorywatcher.FileListener";
+"com.shutterfly.colorsure.directorywatcher.DirectoryWatcher"->"com.shutterfly.colorsure.directorywatcher.IResourceListener";
+"com.shutterfly.colorsure.directorywatcher.FileListener"; 
+"com.shutterfly.colorsure.directorywatcher.FileListener"->"com.shutterfly.colorsure.directorywatcher.BaseListener";
+"com.shutterfly.colorsure.directorywatcher.FileListener"->"com.shutterfly.colorsure.directorywatcher.IFileListener";
+"com.shutterfly.colorsure.directorywatcher.IFileListener"; 
+"com.shutterfly.colorsure.directorywatcher.IFileListener"->"com.shutterfly.colorsure.directorywatcher.IResourceListener";
+"com.shutterfly.colorsure.directorywatcher.IResourceListener"; 
+"com.shutterfly.colorsure.directorywatcher.IResourceWatcher"; 
+"com.shutterfly.colorsure.directorywatcher.IResourceWatcher"->"com.shutterfly.colorsure.directorywatcher.IResourceListener";
+"com.shutterfly.colorsure.directorywatcher.IntervalThread"; 
+splines="ortho";
+}

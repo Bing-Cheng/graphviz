@@ -1,0 +1,29 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao" [fontcolor="red"];
+"com.shutterfly.db.hibernate.dao.AbstractDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao"->"com.shutterfly.db.hibernate.dao.AbstractDao";
+"com.shutterfly.commercial.model.CmOrderstate" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao"->"com.shutterfly.commercial.model.CmOrderstate";
+"org.apache.struts.util.LabelValueBean" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao"->"org.apache.struts.util.LabelValueBean";
+"com.shutterfly.commercial.model.CmOrderstate$CmOrderStates" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao"->"com.shutterfly.commercial.model.CmOrderstate$CmOrderStates";
+"org.hibernate.Transaction" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao"->"org.hibernate.Transaction";
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"org.hibernate.criterion.Criterion" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao"->"org.hibernate.criterion.Criterion";
+"org.hibernate.criterion.Expression" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao"->"org.hibernate.criterion.Expression";
+"org.hibernate.criterion.SimpleExpression" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao"->"org.hibernate.criterion.SimpleExpression";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao"->"com.shutterfly.properties.LabDBHostname";
+"org.hibernate.Session" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderStateDao"->"org.hibernate.Session";
+}

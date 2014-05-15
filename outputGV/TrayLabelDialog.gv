@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.TrayLabelDialog" [fontcolor="red"];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmTrayDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayLabelDialog"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmTrayDao";
+"com.shutterfly.labels.LabelPrinter" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayLabelDialog"->"com.shutterfly.labels.LabelPrinter";
+"com.shutterfly.commercial.model.CmTray" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayLabelDialog"->"com.shutterfly.commercial.model.CmTray";
+"com.shutterfly.commercial.data.IMBCode" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayLabelDialog"->"com.shutterfly.commercial.data.IMBCode";
+"com.shutterfly.commercial.apps.TrayLabelDialog$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayLabelDialog"->"com.shutterfly.commercial.apps.TrayLabelDialog$1";
+"com.shutterfly.commercial.apps.TrayLabelDialog$2" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayLabelDialog"->"com.shutterfly.commercial.apps.TrayLabelDialog$2";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayLabelDialog"->"com.shutterfly.util.Debug";
+"com.shutterfly.commercial.apps.TrayStation$4" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.TrayStation$4"->"com.shutterfly.commercial.apps.TrayLabelDialog";
+"com.shutterfly.commercial.apps.TrayStation" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.TrayStation"->"com.shutterfly.commercial.apps.TrayLabelDialog";
+"com.shutterfly.commercial.apps.TrayStation$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.TrayStation$1"->"com.shutterfly.commercial.apps.TrayLabelDialog";
+"com.shutterfly.commercial.apps.TrayStation$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.TrayStation$2"->"com.shutterfly.commercial.apps.TrayLabelDialog";
+"com.shutterfly.commercial.apps.TrayStation$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.TrayStation$3"->"com.shutterfly.commercial.apps.TrayLabelDialog";
+}

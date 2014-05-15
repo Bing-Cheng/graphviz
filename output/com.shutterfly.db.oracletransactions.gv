@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.db.oracletransactions.GetOracleSystemInfo"; 
+"com.shutterfly.db.oracletransactions.GetOracleSystemInfo"->"com.shutterfly.db.transaction.SingleQueryTransaction";
+"com.shutterfly.db.oracletransactions.GetOracleSystemInfo"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.db.oracletransactions.GetOracleSystemInfo"->"com.shutterfly.db.LabDB";
+"com.shutterfly.db.oracletransactions.GetOracleSystemInfo"->"com.shutterfly.db.transaction.TransactionUtils";
+"com.shutterfly.db.oracletransactions.GetOracleSystemInfo"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.db.oracletransactions.UpdateOracleSubbatchTest"; 
+"com.shutterfly.db.oracletransactions.UpdateOracleSubbatchTest"->"com.shutterfly.db.transaction.SingleUpdateTransaction";
+"com.shutterfly.db.oracletransactions.UpdateOracleSubbatchTest"->"com.shutterfly.db.DBInfo";
+splines="ortho";
+}

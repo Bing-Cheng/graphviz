@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.DataSetupPanel$1" [fontcolor="red"];
+"com.shutterfly.commercial.apps.CommercialData" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.apps.DataSetupPanel$1";
+"com.shutterfly.commercial.apps.DataSetupPanel$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSetupPanel$1"->"com.shutterfly.commercial.apps.DataSetupPanel$1";
+"com.shutterfly.commercial.apps.DataSetupPanel$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSetupPanel$2"->"com.shutterfly.commercial.apps.DataSetupPanel$1";
+"com.shutterfly.commercial.apps.DataSetupPanel$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSetupPanel$3"->"com.shutterfly.commercial.apps.DataSetupPanel$1";
+"com.shutterfly.commercial.apps.DataSetupPanel$4" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSetupPanel$4"->"com.shutterfly.commercial.apps.DataSetupPanel$1";
+"com.shutterfly.commercial.apps.DataSetupPanel$DirectoryFilter" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSetupPanel$DirectoryFilter"->"com.shutterfly.commercial.apps.DataSetupPanel$1";
+"com.shutterfly.commercial.apps.DataSetupPanel" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.apps.DataSetupPanel$1" [dir=both];
+}

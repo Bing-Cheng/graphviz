@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.logo.UploadLogo$StreamGobbler"; 
+"com.shutterfly.logo.UploadLogo$StreamGobbler"->"com.shutterfly.logo.UploadLogo";
+"com.shutterfly.logo.UploadLogo"; 
+"com.shutterfly.logo.UploadLogo"->"com.shutterfly.db.LabDB";
+"com.shutterfly.logo.UploadLogo"->"com.shutterfly.order.Partner";
+"com.shutterfly.logo.UploadLogo"->"com.shutterfly.logo.UploadLogo$StreamGobbler";
+"com.shutterfly.logo.UploadLogo"->"com.shutterfly.order.PackageType";
+"com.shutterfly.logo.UploadLogo"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.logo.UploadLogo"->"com.shutterfly.util.Debug";
+"com.shutterfly.logo.UploadLogo"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.logo.UploadLogo"->"com.shutterfly.db.LabDBFactory";
+splines="ortho";
+}

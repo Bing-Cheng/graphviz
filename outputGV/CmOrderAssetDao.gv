@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderAssetDao" [fontcolor="red"];
+"com.shutterfly.db.hibernate.dao.AbstractDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderAssetDao"->"com.shutterfly.db.hibernate.dao.AbstractDao";
+"com.shutterfly.commercial.model.CmOrder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderAssetDao"->"com.shutterfly.commercial.model.CmOrder";
+"com.shutterfly.commercial.impl.GroupoJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderAssetDao"->"com.shutterfly.commercial.impl.GroupoJob";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmAssetTypeDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderAssetDao"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmAssetTypeDao";
+"com.shutterfly.commercial.model.CmAssettype" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderAssetDao"->"com.shutterfly.commercial.model.CmAssettype";
+"com.shutterfly.commercial.impl.GroupoAsset" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderAssetDao"->"com.shutterfly.commercial.impl.GroupoAsset";
+"com.shutterfly.commercial.model.CmOrderasset" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderAssetDao"->"com.shutterfly.commercial.model.CmOrderasset";
+"com.shutterfly.servlets.reporting.util.Oracle10gRowSetDynaClass" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderAssetDao"->"com.shutterfly.servlets.reporting.util.Oracle10gRowSetDynaClass";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderAssetDao"->"com.shutterfly.util.Debug";
+"org.hibernate.Session" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderAssetDao"->"org.hibernate.Session";
+}

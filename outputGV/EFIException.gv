@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.efi.model.EFIException" [fontcolor="red"];
+"com.shutterfly.commercial.efi.EFIOrderBuilder" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIOrderBuilder"->"com.shutterfly.commercial.efi.model.EFIException";
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader"->"com.shutterfly.commercial.efi.model.EFIException";
+"com.shutterfly.commercial.apps.BrandMuscleApp" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp"->"com.shutterfly.commercial.efi.model.EFIException";
+}

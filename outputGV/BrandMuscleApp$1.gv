@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.BrandMuscleApp$1" [fontcolor="red"];
+"com.shutterfly.commercial.apps.BrandMuscleApp$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$1"->"com.shutterfly.commercial.apps.BrandMuscleApp$1";
+"com.shutterfly.commercial.apps.BrandMuscleApp$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$2"->"com.shutterfly.commercial.apps.BrandMuscleApp$1";
+"com.shutterfly.commercial.apps.BrandMuscleApp$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$3"->"com.shutterfly.commercial.apps.BrandMuscleApp$1";
+"com.shutterfly.commercial.apps.BrandMuscleApp$Carriers" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$Carriers"->"com.shutterfly.commercial.apps.BrandMuscleApp$1";
+"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer"->"com.shutterfly.commercial.apps.BrandMuscleApp$1";
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader$1"->"com.shutterfly.commercial.apps.BrandMuscleApp$1";
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader"->"com.shutterfly.commercial.apps.BrandMuscleApp$1";
+"com.shutterfly.commercial.apps.BrandMuscleApp$ShipMethod" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$ShipMethod"->"com.shutterfly.commercial.apps.BrandMuscleApp$1";
+"com.shutterfly.commercial.apps.BrandMuscleApp" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp"->"com.shutterfly.commercial.apps.BrandMuscleApp$1" [dir=both];
+}

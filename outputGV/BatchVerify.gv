@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BatchVerify" [fontcolor="red"];
+"com.shutterfly.apps.BaseVerify" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerify"->"com.shutterfly.apps.BaseVerify";
+"com.shutterfly.apps.BaseVerify$ThreadSafeBlinkLabel" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerify"->"com.shutterfly.apps.BaseVerify$ThreadSafeBlinkLabel";
+"com.shutterfly.db.model.LTStationType" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerify"->"com.shutterfly.db.model.LTStationType";
+"com.shutterfly.apps.BatchVerify$ScreenSetting" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerify"->"com.shutterfly.apps.BatchVerify$ScreenSetting";
+"com.shutterfly.apps.BatchVerify$1" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerify"->"com.shutterfly.apps.BatchVerify$1";
+"com.shutterfly.apps.BatchVerify$2" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerify"->"com.shutterfly.apps.BatchVerify$2";
+"com.shutterfly.apps.BatchVerify$3" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerify"->"com.shutterfly.apps.BatchVerify$3";
+"com.shutterfly.apps.BatchVerify$FontSize" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerify"->"com.shutterfly.apps.BatchVerify$FontSize";
+}

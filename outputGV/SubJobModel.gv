@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.SubJobModel" [fontcolor="red"];
+"com.shutterfly.db.hibernate.commercial.CM_SubJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.SubJobModel"->"com.shutterfly.db.hibernate.commercial.CM_SubJob";
+"com.shutterfly.commercial.data.CommercialJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.SubJobModel"->"com.shutterfly.commercial.data.CommercialJob";
+"com.shutterfly.db.hibernate.commercial.CM_Tray" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.SubJobModel"->"com.shutterfly.db.hibernate.commercial.CM_Tray";
+"com.shutterfly.db.hibernate.commercial.CM_SubJob$SubJobStates" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.SubJobModel"->"com.shutterfly.db.hibernate.commercial.CM_SubJob$SubJobStates";
+"com.shutterfly.db.hibernate.commercial.CM_Job" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.SubJobModel"->"com.shutterfly.db.hibernate.commercial.CM_Job";
+"com.shutterfly.util.FileUtil" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.SubJobModel"->"com.shutterfly.util.FileUtil";
+}

@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.Tray$BarcodeID" [fontcolor="red"];
+"com.shutterfly.commercial.data.Tray" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.Tray$BarcodeID"->"com.shutterfly.commercial.data.Tray";
+}

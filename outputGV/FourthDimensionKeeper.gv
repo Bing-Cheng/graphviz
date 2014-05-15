@@ -1,0 +1,37 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.FourthDimensionKeeper" [fontcolor="red"];
+"com.shutterfly.barcode.BarcodeListener" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.barcode.BarcodeListener";
+"com.shutterfly.properties.SflyProperties" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.properties.SflyProperties";
+"com.shutterfly.barcode.BarcodeFocusManager" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.barcode.BarcodeFocusManager";
+"com.shutterfly.labels.BarcodeScanner" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.labels.BarcodeScanner";
+"com.shutterfly.soundbytes.SoundBytes" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.soundbytes.SoundBytes";
+"com.shutterfly.labourtracking.support.LabourTrackingException" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.labourtracking.support.LabourTrackingException";
+"com.shutterfly.labourtracking.support.LTPersonResource" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.labourtracking.support.LTPersonResource";
+"com.shutterfly.apps.AppShutdownThread" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.apps.AppShutdownThread";
+"com.shutterfly.apps.FourthDimensionKeeper$Message" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.apps.FourthDimensionKeeper$Message";
+"com.shutterfly.apps.FourthDimensionKeeper$1" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.apps.FourthDimensionKeeper$1";
+"com.shutterfly.labourtracking.support.LTLabourOverLord" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.labourtracking.support.LTLabourOverLord";
+"com.shutterfly.labourtracking.support.LTStationInfo" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.labourtracking.support.LTStationInfo";
+"com.shutterfly.connectship.utils.SFProperties" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.connectship.utils.SFProperties";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.apps.AppAccessories" [ fontcolor="blue" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.apps.AppAccessories";
+}

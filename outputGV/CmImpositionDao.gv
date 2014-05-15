@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmImpositionDao" [fontcolor="red"];
+"com.shutterfly.db.hibernate.dao.AbstractDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmImpositionDao"->"com.shutterfly.db.hibernate.dao.AbstractDao";
+"com.shutterfly.commercial.model.CmImposition" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmImpositionDao"->"com.shutterfly.commercial.model.CmImposition";
+"com.shutterfly.servlets.reporting.util.Oracle10gRowSetDynaClass" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmImpositionDao"->"com.shutterfly.servlets.reporting.util.Oracle10gRowSetDynaClass";
+"org.hibernate.criterion.Criterion" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmImpositionDao"->"org.hibernate.criterion.Criterion";
+"org.hibernate.Session" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmImpositionDao"->"org.hibernate.Session";
+"org.hibernate.Query" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmImpositionDao"->"org.hibernate.Query";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmImpositionDao"->"com.shutterfly.util.Debug";
+}

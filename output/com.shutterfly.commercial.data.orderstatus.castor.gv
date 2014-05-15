@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.commercial.data.orderstatus.castor.Job"; 
+"com.shutterfly.commercial.data.orderstatus.castor.Job"->"com.shutterfly.commercial.data.orderstatus.castor.Shipments";
+"com.shutterfly.commercial.data.orderstatus.castor.Jobs"; 
+"com.shutterfly.commercial.data.orderstatus.castor.Jobs"->"com.shutterfly.commercial.data.orderstatus.castor.Job";
+"com.shutterfly.commercial.data.orderstatus.castor.OrderState"; 
+"com.shutterfly.commercial.data.orderstatus.castor.OrderState"->"com.shutterfly.commercial.data.orderstatus.castor.Jobs";
+"com.shutterfly.commercial.data.orderstatus.castor.Shipment"; 
+"com.shutterfly.commercial.data.orderstatus.castor.Shipments"; 
+"com.shutterfly.commercial.data.orderstatus.castor.Shipments"->"com.shutterfly.commercial.data.orderstatus.castor.Shipment";
+splines="ortho";
+}

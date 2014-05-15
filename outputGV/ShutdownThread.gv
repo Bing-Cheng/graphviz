@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ShutdownThread" [fontcolor="red"];
+"com.shutterfly.soundbytes.StationSounds" [ fontcolor="blue" ];
+"com.shutterfly.apps.ShutdownThread"->"com.shutterfly.soundbytes.StationSounds";
+"com.shutterfly.apps.BatchVerifyStation" [ fontcolor="green" ];
+"com.shutterfly.apps.BatchVerifyStation"->"com.shutterfly.apps.ShutdownThread";
+"com.shutterfly.apps.LaborTrackingStation" [ fontcolor="green" ];
+"com.shutterfly.apps.LaborTrackingStation"->"com.shutterfly.apps.ShutdownThread";
+}

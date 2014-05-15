@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.CloneObjectLocator" [fontcolor="red"];
+"org.apache.axis.client.Service" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.CloneObjectLocator"->"org.apache.axis.client.Service";
+"com.pace2020.epace.sdk.CloneObject" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.CloneObjectLocator"->"com.pace2020.epace.sdk.CloneObject";
+"org.apache.axis.EngineConfiguration" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.CloneObjectLocator"->"org.apache.axis.EngineConfiguration";
+"com.pace2020.epace.sdk.CloneObjectPortType" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.CloneObjectLocator"->"com.pace2020.epace.sdk.CloneObjectPortType";
+"com.pace2020.epace.sdk.CloneObjectHttpBindingStub" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.CloneObjectLocator"->"com.pace2020.epace.sdk.CloneObjectHttpBindingStub";
+"org.apache.axis.AxisFault" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.CloneObjectLocator"->"org.apache.axis.AxisFault";
+"org.apache.axis.client.Stub" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.CloneObjectLocator"->"org.apache.axis.client.Stub";
+}

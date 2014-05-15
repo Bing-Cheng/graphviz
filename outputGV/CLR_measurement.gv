@@ -1,0 +1,37 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.db.CLR_measurement" [fontcolor="red"];
+"com.shutterfly.colorsure.db.CLR_colorsample" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.CLR_measurement"->"com.shutterfly.colorsure.db.CLR_colorsample";
+"com.shutterfly.colorsure.db.ColorWebUtils" [ fontcolor="green" ];
+"com.shutterfly.colorsure.db.ColorWebUtils"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.colorsure.tools.ColorSureCmdLineTool" [ fontcolor="green" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineTool"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.colorsure.tools.Report" [ fontcolor="green" ];
+"com.shutterfly.colorsure.tools.Report"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.colorsure.db.CLR_measurement" [ fontcolor="green" ];
+"com.shutterfly.colorsure.db.CLR_measurement"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.colorsure.db.CLR_printerclass" [ fontcolor="green" ];
+"com.shutterfly.colorsure.db.CLR_printerclass"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.colorsure.db.CLR_station" [ fontcolor="green" ];
+"com.shutterfly.colorsure.db.CLR_station"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.colorsure.db.ColorInitiateDB" [ fontcolor="green" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.colorsure.db.CLR_referencepatch" [ fontcolor="green" ];
+"com.shutterfly.colorsure.db.CLR_referencepatch"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest" [ fontcolor="green" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.servlets.colorsure.ColorSureServlet" [ fontcolor="green" ];
+"com.shutterfly.servlets.colorsure.ColorSureServlet"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperTest" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperTest"->"com.shutterfly.colorsure.db.CLR_measurement";
+"com.shutterfly.colorsure.db.CLR_printer" [ fontcolor="turquoise" ];
+"com.shutterfly.colorsure.db.CLR_printer"->"com.shutterfly.colorsure.db.CLR_measurement" [dir=both];
+"com.shutterfly.colorsure.db.CLR_papertype" [ fontcolor="turquoise" ];
+"com.shutterfly.colorsure.db.CLR_papertype"->"com.shutterfly.colorsure.db.CLR_measurement" [dir=both];
+}

@@ -1,0 +1,20 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction$DisplayPrinterStatus"; 
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction$DisplayPrinterStatus"->"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction";
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction$DisplayWorktypeSummery"; 
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction$DisplayWorktypeSummery"->"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction";
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction"; 
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction"->"com.shutterfly.lab.presentation.action.LabViewAction";
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction"->"com.shutterfly.lab.presentation.action.LabMapForm";
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction"->"com.shutterfly.reporting.printerstatus.PrinterSummary";
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction"->"com.shutterfly.reporting.printerstatus.PrinterStatusHelper";
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction"->"com.shutterfly.reporting.printerstatus.PrinterStatusReport";
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction"->"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction$DisplayPrinterStatus";
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction"->"com.shutterfly.reporting.printerstatus.WorkTypeSummary";
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction"->"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction$DisplayWorktypeSummery";
+"com.shutterfly.lab.presentation.printerstatus.PrinterStatusAction"->"com.shutterfly.reporting.printerstatus.PrinterSummaryListSorter";
+splines="ortho";
+}

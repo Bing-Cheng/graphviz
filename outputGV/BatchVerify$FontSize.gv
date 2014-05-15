@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BatchVerify$FontSize" [fontcolor="red"];
+"com.shutterfly.apps.BatchVerify" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerify$FontSize"->"com.shutterfly.apps.BatchVerify";
+}

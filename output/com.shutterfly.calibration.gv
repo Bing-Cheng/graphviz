@@ -1,0 +1,33 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.calibration.Calibration"; 
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.WorkType";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.CardItem";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.Item";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.ItemList";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.PrintSize";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.PrintItem";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.PostCardItem";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.Address";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.Partner";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.unittest1.UnitTestResult";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.FlatCardItem";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.StationeryItem";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.CalendarItem";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.PhotoBookItem";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.BoxedCardItem";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.PackageType";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.order.PaperFinish";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.printers.PrinterType";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.util.Util";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.render.RenderfarmInterface";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.util.Debug";
+"com.shutterfly.calibration.Calibration"->"com.shutterfly.barcode.Barcode";
+"com.shutterfly.calibration.IndigoCMYKcalib"; 
+"com.shutterfly.calibration.IndigoCMYKcalib"->"com.shutterfly.util.Debug";
+"com.shutterfly.calibration.IndigoCMYKcalib"->"com.shutterfly.util.FileUtil";
+splines="ortho";
+}

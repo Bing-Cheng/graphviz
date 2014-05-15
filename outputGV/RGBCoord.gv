@@ -1,0 +1,37 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.colormath.RGBCoord" [fontcolor="red"];
+"com.shutterfly.colorsure.client.ColorPatches" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorPatches"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorPatchesTest" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorPatchesTest"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorSure" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorSure"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorSure$6" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorSure$6"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorScan$1" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$1"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorScan$2" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$2"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorScan$3" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$3"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$1" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$1"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$2" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$2"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$3" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$3"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$4" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$4"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorScan" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorSureTest" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorSureTest"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"com.shutterfly.colorsure.client.ColorScan$StreamReader" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamReader"->"com.shutterfly.colorsure.colormath.RGBCoord";
+}

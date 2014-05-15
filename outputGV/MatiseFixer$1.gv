@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.test.MatiseFixer$1" [fontcolor="red"];
+"com.shutterfly.db.transaction.SingleQueryTransaction" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer$1"->"com.shutterfly.db.transaction.SingleQueryTransaction";
+"com.shutterfly.db.DBInfo" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer$1"->"com.shutterfly.db.DBInfo";
+"com.shutterfly.db.transaction.TransactionUtils" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer$1"->"com.shutterfly.db.transaction.TransactionUtils";
+"com.shutterfly.apps.test.MatiseFixer$1" [ fontcolor="green" ];
+"com.shutterfly.apps.test.MatiseFixer$1"->"com.shutterfly.apps.test.MatiseFixer$1";
+"com.shutterfly.apps.test.MatiseFixer" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.test.MatiseFixer"->"com.shutterfly.apps.test.MatiseFixer$1" [dir=both];
+}

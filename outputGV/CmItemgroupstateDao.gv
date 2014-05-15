@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgroupstateDao" [fontcolor="red"];
+"com.shutterfly.db.hibernate.dao.AbstractDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgroupstateDao"->"com.shutterfly.db.hibernate.dao.AbstractDao";
+"com.shutterfly.commercial.model.CmItemgroupstate" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgroupstateDao"->"com.shutterfly.commercial.model.CmItemgroupstate";
+"com.shutterfly.commercial.model.CmItemgroupstate$ItemGroupStates" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgroupstateDao"->"com.shutterfly.commercial.model.CmItemgroupstate$ItemGroupStates";
+"org.hibernate.criterion.Criterion" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgroupstateDao"->"org.hibernate.criterion.Criterion";
+"org.hibernate.criterion.Expression" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgroupstateDao"->"org.hibernate.criterion.Expression";
+"org.hibernate.criterion.SimpleExpression" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgroupstateDao"->"org.hibernate.criterion.SimpleExpression";
+}

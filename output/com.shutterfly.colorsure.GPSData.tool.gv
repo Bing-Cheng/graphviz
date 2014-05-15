@@ -1,0 +1,8 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.colorsure.GPSData.tool.GPSDataTool"; 
+"com.shutterfly.colorsure.GPSData.tool.GPSDataTool"->"com.shutterfly.util.FileUtil";
+splines="ortho";
+}

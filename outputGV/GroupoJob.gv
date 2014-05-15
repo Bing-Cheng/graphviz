@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.GroupoJob" [fontcolor="red"];
+"com.shutterfly.commercial.impl.GroupoSpec" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.GroupoJob"->"com.shutterfly.commercial.impl.GroupoSpec";
+"com.shutterfly.commercial.impl.GroupoAsset" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.GroupoJob"->"com.shutterfly.commercial.impl.GroupoAsset";
+}

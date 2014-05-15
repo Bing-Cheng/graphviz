@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.client.LocalAssetStorage" [fontcolor="red"];
+"com.shutterfly.assetmanager.support.AbstractDigitalAsset" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.LocalAssetStorage"->"com.shutterfly.assetmanager.support.AbstractDigitalAsset";
+"com.shutterfly.assetmanager.support.PerforceAssetInterface" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.LocalAssetStorage"->"com.shutterfly.assetmanager.support.PerforceAssetInterface";
+"com.shutterfly.clientreleasemanager.support.CommandUtil" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.LocalAssetStorage"->"com.shutterfly.clientreleasemanager.support.CommandUtil";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.LocalAssetStorage"->"com.shutterfly.util.Debug";
+"com.shutterfly.assetmanager.client.AssetsLogIO" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.LocalAssetStorage"->"com.shutterfly.assetmanager.client.AssetsLogIO";
+"com.shutterfly.assetmanager.support.AbstractAssetFactory" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.LocalAssetStorage"->"com.shutterfly.assetmanager.support.AbstractAssetFactory";
+"com.shutterfly.util.FileUtil" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.LocalAssetStorage"->"com.shutterfly.util.FileUtil";
+"com.shutterfly.properties.SflyProperties" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.LocalAssetStorage"->"com.shutterfly.properties.SflyProperties";
+}

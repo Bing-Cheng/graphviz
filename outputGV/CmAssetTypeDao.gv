@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmAssetTypeDao" [fontcolor="red"];
+"com.shutterfly.db.hibernate.dao.AbstractDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmAssetTypeDao"->"com.shutterfly.db.hibernate.dao.AbstractDao";
+"com.shutterfly.commercial.model.CmAssettype" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmAssetTypeDao"->"com.shutterfly.commercial.model.CmAssettype";
+"org.hibernate.Session" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmAssetTypeDao"->"org.hibernate.Session";
+"org.hibernate.Query" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmAssetTypeDao"->"org.hibernate.Query";
+}

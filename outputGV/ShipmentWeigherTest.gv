@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.test.ShipmentWeigherTest" [fontcolor="red"];
+"com.shutterfly.apps.ScanStation" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.ShipmentWeigherTest"->"com.shutterfly.apps.ScanStation";
+"com.shutterfly.order.SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.ShipmentWeigherTest"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.ShipmentWeigherTest"->"com.shutterfly.db.LabDB";
+"com.shutterfly.order.ShipmentWeigher" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.ShipmentWeigherTest"->"com.shutterfly.order.ShipmentWeigher";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.ShipmentWeigherTest"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.ShipmentWeigherTest"->"com.shutterfly.util.Debug";
+}

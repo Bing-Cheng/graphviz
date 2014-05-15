@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer" [fontcolor="red"];
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.model.CmItem" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.commercial.model.CmItem";
+"com.shutterfly.commercial.apps.model.ItemGroupStateEvent" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.commercial.apps.model.ItemGroupStateEvent";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemGroupDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemGroupDao";
+"com.shutterfly.commercial.model.CmItemgroup" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.commercial.model.CmItemgroup";
+"com.shutterfly.commercial.imposition.PpmlImposeDocument" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.commercial.imposition.PpmlImposeDocument";
+"com.shutterfly.commercial.apps.model.CommercialEventHandler" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.commercial.apps.model.CommercialEventHandler";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.util.Debug";
+"com.shutterfly.commercial.model.CmJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.commercial.model.CmJob";
+"com.shutterfly.commercial.model.CmOrder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.commercial.model.CmOrder";
+"com.shutterfly.commercial.apps.model.CommercialEventListener" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.commercial.apps.model.CommercialEventListener";
+"com.shutterfly.commercial.apps.model.ItemGroupStateEvent$ItemGroupStateMachine" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialSubBatchRenderer"->"com.shutterfly.commercial.apps.model.ItemGroupStateEvent$ItemGroupStateMachine";
+}

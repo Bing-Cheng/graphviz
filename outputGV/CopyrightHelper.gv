@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.CopyrightHelper" [fontcolor="red"];
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.db.LabDB";
+"com.shutterfly.order.SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.db.LabDBSingletonManager" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.db.LabDBSingletonManager";
+"com.shutterfly.order.OrderManager" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.order.OrderManager";
+"com.shutterfly.order.HoldingTank" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.order.HoldingTank";
+"com.shutterfly.order.OrderManagerException" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.order.OrderManagerException";
+"com.shutterfly.order.SubBatchEvent" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.order.SubBatchEvent";
+"com.shutterfly.db.LabDBException" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.order.SubBatchEvent$Event" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.order.SubBatchEvent$Event";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.db.LabDBFactory" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.CopyrightHelper"->"com.shutterfly.util.Debug";
+}

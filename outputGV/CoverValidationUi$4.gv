@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.CoverValidationUi$4" [fontcolor="red"];
+"com.shutterfly.order.Batch" [ fontcolor="blue" ];
+"com.shutterfly.apps.CoverValidationUi$4"->"com.shutterfly.order.Batch";
+"com.shutterfly.apps.CoverValidationUi$4" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$4"->"com.shutterfly.apps.CoverValidationUi$4";
+"com.shutterfly.apps.CoverValidationUi$5$1" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$5$1"->"com.shutterfly.apps.CoverValidationUi$4";
+"com.shutterfly.apps.CoverValidationUi$5" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$5"->"com.shutterfly.apps.CoverValidationUi$4";
+"com.shutterfly.apps.CoverValidationUi$6" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$6"->"com.shutterfly.apps.CoverValidationUi$4";
+"com.shutterfly.apps.CoverValidationUi$7" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$7"->"com.shutterfly.apps.CoverValidationUi$4";
+"com.shutterfly.apps.CoverValidationUi" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.CoverValidationUi"->"com.shutterfly.apps.CoverValidationUi$4" [dir=both];
+}

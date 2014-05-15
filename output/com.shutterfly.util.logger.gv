@@ -1,0 +1,20 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.util.logger.ILogCategory"; 
+"com.shutterfly.util.logger.ILogContext"; 
+"com.shutterfly.util.logger.Log4JLog"; 
+"com.shutterfly.util.logger.Log4JLogCategory"; 
+"com.shutterfly.util.logger.Log4JLogCategory"->"com.shutterfly.util.logger.ILogCategory";
+"com.shutterfly.util.logger.Log4JLogContext"; 
+"com.shutterfly.util.logger.Log4JLogContext"->"com.shutterfly.util.logger.ILogContext";
+"com.shutterfly.util.logger.PostDataDumperFilter"; 
+"com.shutterfly.util.logger.ServerLog"; 
+"com.shutterfly.util.logger.ServerLog"->"com.shutterfly.util.logger.ILogCategory";
+"com.shutterfly.util.logger.ServerLog"->"com.shutterfly.util.logger.ILogContext";
+"com.shutterfly.util.logger.ServerLog"->"com.shutterfly.util.logger.Log4JLog";
+"com.shutterfly.util.logger.ServerLog"->"com.shutterfly.util.logger.Log4JLogCategory";
+"com.shutterfly.util.logger.ServerLog"->"com.shutterfly.util.logger.Log4JLogContext";
+splines="ortho";
+}

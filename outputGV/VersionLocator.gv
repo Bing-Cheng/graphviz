@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.VersionLocator" [fontcolor="red"];
+"org.apache.axis.client.Service" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.VersionLocator"->"org.apache.axis.client.Service";
+"com.pace2020.epace.sdk.Version" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.VersionLocator"->"com.pace2020.epace.sdk.Version";
+"org.apache.axis.EngineConfiguration" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.VersionLocator"->"org.apache.axis.EngineConfiguration";
+"com.pace2020.epace.sdk.VersionPortType" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.VersionLocator"->"com.pace2020.epace.sdk.VersionPortType";
+"com.pace2020.epace.sdk.VersionHttpBindingStub" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.VersionLocator"->"com.pace2020.epace.sdk.VersionHttpBindingStub";
+"org.apache.axis.AxisFault" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.VersionLocator"->"org.apache.axis.AxisFault";
+"org.apache.axis.client.Stub" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.VersionLocator"->"org.apache.axis.client.Stub";
+}

@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.support.AbstractAssetFactory" [fontcolor="red"];
+"com.shutterfly.assetmanager.support.AbstractDigitalAsset" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.support.AbstractAssetFactory"->"com.shutterfly.assetmanager.support.AbstractDigitalAsset";
+}

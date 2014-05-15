@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.barcode.BarcodeFocusManager" [fontcolor="red"];
+"com.shutterfly.barcode.BarcodeReader" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFocusManager"->"com.shutterfly.barcode.BarcodeReader";
+"com.shutterfly.barcode.BarcodeListener" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFocusManager"->"com.shutterfly.barcode.BarcodeListener";
+"com.shutterfly.barcode.BarcodeKeyListener" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFocusManager"->"com.shutterfly.barcode.BarcodeKeyListener";
+}

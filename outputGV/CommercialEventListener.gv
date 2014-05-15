@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.model.CommercialEventListener" [fontcolor="red"];
+"com.shutterfly.commercial.apps.model.CommercialEvent" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.CommercialEventListener"->"com.shutterfly.commercial.apps.model.CommercialEvent";
+}

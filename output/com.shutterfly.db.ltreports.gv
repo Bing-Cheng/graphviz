@@ -1,0 +1,14 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.db.ltreports.LTReportTransaction"; 
+"com.shutterfly.db.ltreports.LTReportTransaction"->"com.shutterfly.db.transaction.ComplexTransaction";
+"com.shutterfly.db.ltreports.LTReportTransaction"->"com.shutterfly.db.DBInfo";
+"com.shutterfly.db.ltreports.MetricCollector"; 
+"com.shutterfly.db.ltreports.MetricCollector"->"com.shutterfly.db.ltreports.LTReportTransaction";
+"com.shutterfly.db.ltreports.SimpleMetricCollector"; 
+"com.shutterfly.db.ltreports.SimpleMetricCollector"->"com.shutterfly.db.ltreports.MetricCollector";
+"com.shutterfly.db.ltreports.SimpleMetricCollector"->"com.shutterfly.db.DBInfo";
+splines="ortho";
+}

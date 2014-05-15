@@ -1,0 +1,28 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.labels.zpl.ZPLBarcode128"; 
+"com.shutterfly.labels.zpl.ZPLBarcode128"->"com.shutterfly.labels.zpl.ZPLObject";
+"com.shutterfly.labels.zpl.ZPLBarcode128"->"com.shutterfly.labels.zpl.ZPLCoordinate";
+"com.shutterfly.labels.zpl.ZPLBox"; 
+"com.shutterfly.labels.zpl.ZPLBox"->"com.shutterfly.labels.zpl.ZPLObject";
+"com.shutterfly.labels.zpl.ZPLBox"->"com.shutterfly.labels.zpl.ZPLCoordinate";
+"com.shutterfly.labels.zpl.ZPLCoordinate"; 
+"com.shutterfly.labels.zpl.ZPLCoordinate_3x2_200"; 
+"com.shutterfly.labels.zpl.ZPLCoordinate_3x2_200"->"com.shutterfly.labels.zpl.ZPLCoordinate";
+"com.shutterfly.labels.zpl.ZPLCoordinate_4x6_300"; 
+"com.shutterfly.labels.zpl.ZPLCoordinate_4x6_300"->"com.shutterfly.labels.zpl.ZPLCoordinate";
+"com.shutterfly.labels.zpl.ZPLLabel"; 
+"com.shutterfly.labels.zpl.ZPLLabel"->"com.shutterfly.labels.zpl.ZPLObject";
+"com.shutterfly.labels.zpl.ZPLLabel"->"com.shutterfly.labels.zpl.ZPLCoordinate";
+"com.shutterfly.labels.zpl.ZPLLabel"->"com.shutterfly.labels.LabelUtils";
+"com.shutterfly.labels.zpl.ZPLLayoutContainer"; 
+"com.shutterfly.labels.zpl.ZPLLayoutContainer"->"com.shutterfly.labels.zpl.ZPLLabel";
+"com.shutterfly.labels.zpl.ZPLObject"; 
+"com.shutterfly.labels.zpl.ZPLObject"->"com.shutterfly.labels.zpl.ZPLCoordinate";
+"com.shutterfly.labels.zpl.ZPLString"; 
+"com.shutterfly.labels.zpl.ZPLString"->"com.shutterfly.labels.zpl.ZPLObject";
+"com.shutterfly.labels.zpl.ZPLString"->"com.shutterfly.labels.zpl.ZPLCoordinate";
+splines="ortho";
+}

@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.client.AssetServerAccessor" [fontcolor="red"];
+"com.shutterfly.assetmanager.support.PerforceAssetInterface" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.AssetServerAccessor"->"com.shutterfly.assetmanager.support.PerforceAssetInterface";
+"com.shutterfly.assetmanager.support.AbstractDigitalAsset" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.AssetServerAccessor"->"com.shutterfly.assetmanager.support.AbstractDigitalAsset";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.AssetServerAccessor"->"com.shutterfly.util.Debug";
+"com.shutterfly.util.RemoteMessageSender" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.AssetServerAccessor"->"com.shutterfly.util.RemoteMessageSender";
+"com.shutterfly.connectship.utils.SFXMLToHashTable" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.AssetServerAccessor"->"com.shutterfly.connectship.utils.SFXMLToHashTable";
+"com.shutterfly.assetmanager.support.AbstractAssetFactory" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.AssetServerAccessor"->"com.shutterfly.assetmanager.support.AbstractAssetFactory";
+"com.shutterfly.properties.SflyProperties" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.AssetServerAccessor"->"com.shutterfly.properties.SflyProperties";
+}

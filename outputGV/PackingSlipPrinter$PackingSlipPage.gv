@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage" [fontcolor="red"];
+"com.shutterfly.apps.inventory.PackingSlipPrinter" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage"->"com.shutterfly.apps.inventory.PackingSlipPrinter";
+"com.shutterfly.apps.inventory.PackingListLineItem" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage"->"com.shutterfly.apps.inventory.PackingListLineItem";
+"com.shutterfly.order.SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.order.Address" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage"->"com.shutterfly.order.Address";
+"com.shutterfly.order.GiftNoteCardItem" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage"->"com.shutterfly.order.GiftNoteCardItem";
+"com.shutterfly.barcode.Barcode" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage"->"com.shutterfly.barcode.Barcode";
+"com.shutterfly.apps.inventory.PackingSlipPrinter$1" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage"->"com.shutterfly.apps.inventory.PackingSlipPrinter$1";
+"com.shutterfly.order.ShippingLabelFactory" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage"->"com.shutterfly.order.ShippingLabelFactory";
+"com.shutterfly.properties.SflyProperties" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage"->"com.shutterfly.properties.SflyProperties";
+}

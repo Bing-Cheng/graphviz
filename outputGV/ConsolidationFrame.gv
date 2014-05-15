@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.ConsolidationFrame" [fontcolor="red"];
+"com.shutterfly.barcode.BarcodeListener" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.barcode.BarcodeListener";
+"com.shutterfly.commercial.apps.ConsolidationFrame$ConsolSubBatch" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.commercial.apps.ConsolidationFrame$ConsolSubBatch";
+"com.shutterfly.consolidation.SubBatchTableModel" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.consolidation.SubBatchTableModel";
+"com.shutterfly.commercial.apps.CommercialShip" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.commercial.apps.CommercialShip";
+"com.shutterfly.commercial.model.CmItemgroup" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.commercial.model.CmItemgroup";
+"com.shutterfly.commercial.model.CmItem" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.commercial.model.CmItem";
+"com.shutterfly.commercial.apps.ConsolidationFrame$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.commercial.apps.ConsolidationFrame$1";
+"com.shutterfly.commercial.apps.ConsolidationFrame$2" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.commercial.apps.ConsolidationFrame$2";
+"com.shutterfly.commercial.apps.ConsolidationFrame$3" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.commercial.apps.ConsolidationFrame$3";
+"com.shutterfly.commercial.apps.ConsolidationFrame$LeftRenderer" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.commercial.apps.ConsolidationFrame$LeftRenderer";
+"com.shutterfly.commercial.model.CmJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.commercial.model.CmJob";
+"com.shutterfly.commercial.model.CmProduct" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.commercial.model.CmProduct";
+}

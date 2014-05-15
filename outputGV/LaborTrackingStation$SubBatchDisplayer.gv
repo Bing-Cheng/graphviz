@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.LaborTrackingStation$SubBatchDisplayer" [fontcolor="red"];
+"com.shutterfly.apps.LaborTrackingStation$SubBatchDisplayer" [ fontcolor="green" ];
+"com.shutterfly.apps.LaborTrackingStation$SubBatchDisplayer"->"com.shutterfly.apps.LaborTrackingStation$SubBatchDisplayer";
+"com.shutterfly.apps.LaborTrackingStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.LaborTrackingStation"->"com.shutterfly.apps.LaborTrackingStation$SubBatchDisplayer" [dir=both];
+}

@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.clientreleasemanager.support.LabSoftwareUpdater" [fontcolor="red"];
+"com.shutterfly.clientreleasemanager.support.StationConfiguration" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.LabSoftwareUpdater"->"com.shutterfly.clientreleasemanager.support.StationConfiguration";
+"com.shutterfly.clientreleasemanager.support.ServerRequest" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.LabSoftwareUpdater"->"com.shutterfly.clientreleasemanager.support.ServerRequest";
+"com.shutterfly.clientreleasemanager.support.CommandUtil" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.LabSoftwareUpdater"->"com.shutterfly.clientreleasemanager.support.CommandUtil";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.LabSoftwareUpdater"->"com.shutterfly.util.Debug";
+"com.shutterfly.clientreleasemanager.support.ServerStatusReport" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.LabSoftwareUpdater"->"com.shutterfly.clientreleasemanager.support.ServerStatusReport";
+"com.shutterfly.clientreleasemanager.support.ClientProperties" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.LabSoftwareUpdater"->"com.shutterfly.clientreleasemanager.support.ClientProperties";
+"com.shutterfly.clientreleasemanager.support.StationManagerController" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.support.StationManagerController"->"com.shutterfly.clientreleasemanager.support.LabSoftwareUpdater";
+"com.shutterfly.clientreleasemanager.support.StationManagerController$1" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.support.StationManagerController$1"->"com.shutterfly.clientreleasemanager.support.LabSoftwareUpdater";
+"com.shutterfly.clientreleasemanager.support.StationManagerController$2" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.support.StationManagerController$2"->"com.shutterfly.clientreleasemanager.support.LabSoftwareUpdater";
+"com.shutterfly.clientreleasemanager.support.StationManagerController$3" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.support.StationManagerController$3"->"com.shutterfly.clientreleasemanager.support.LabSoftwareUpdater";
+}

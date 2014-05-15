@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgrouphistoryDao" [fontcolor="red"];
+"com.shutterfly.db.hibernate.dao.AbstractDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgrouphistoryDao"->"com.shutterfly.db.hibernate.dao.AbstractDao";
+"org.hibernate.criterion.Criterion" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgrouphistoryDao"->"org.hibernate.criterion.Criterion";
+"com.shutterfly.commercial.model.CmItemgrouphistory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgrouphistoryDao"->"com.shutterfly.commercial.model.CmItemgrouphistory";
+"com.shutterfly.servlets.reporting.util.Oracle10gRowSetDynaClass" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgrouphistoryDao"->"com.shutterfly.servlets.reporting.util.Oracle10gRowSetDynaClass";
+"org.hibernate.Session" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgrouphistoryDao"->"org.hibernate.Session";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgrouphistoryDao"->"com.shutterfly.util.Debug";
+}

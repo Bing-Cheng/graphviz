@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.miam.prepress.control.OrderController"; 
+"com.shutterfly.miam.prepress.control.OrderController"->"com.shutterfly.miam.base.model.StateEventListener";
+"com.shutterfly.miam.prepress.control.OrderController"->"com.shutterfly.miam.prepress.model.OrderModel";
+"com.shutterfly.miam.prepress.control.OrderController"->"com.shutterfly.miam.base.model.ActionModel";
+"com.shutterfly.miam.prepress.control.OrderController"->"com.shutterfly.miam.prepress.model.OrderStateModel";
+"com.shutterfly.miam.prepress.control.OrderController"->"com.shutterfly.miam.base.model.StateTransitEvent";
+"com.shutterfly.miam.prepress.control.OrderController"->"com.shutterfly.db.hibernate.miam.PP_order";
+"com.shutterfly.miam.prepress.control.OrderController"->"com.shutterfly.db.hibernate.miam.PP_orderState";
+"com.shutterfly.miam.prepress.control.OrderController"->"com.shutterfly.miam.base.control.DBController";
+"com.shutterfly.miam.prepress.control.PrepressController"; 
+"com.shutterfly.miam.prepress.control.PrepressController"->"com.shutterfly.miam.prepress.model.OrderModel";
+"com.shutterfly.miam.prepress.control.PrepressController"->"com.shutterfly.db.hibernate.miam.PP_order";
+"com.shutterfly.miam.prepress.control.PrepressController"->"com.shutterfly.db.hibernate.miam.PP_orderState";
+"com.shutterfly.miam.prepress.control.PrepressController"->"com.shutterfly.miam.prepress.model.OrderStateModel";
+"com.shutterfly.miam.prepress.control.PrepressController"->"com.shutterfly.miam.base.control.DBController";
+splines="ortho";
+}

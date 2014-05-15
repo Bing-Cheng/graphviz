@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.CmItemGroupStateList" [fontcolor="red"];
+"com.shutterfly.commercial.model.CmItemgroupstate" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmItemGroupStateList"->"com.shutterfly.commercial.model.CmItemgroupstate";
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmItemGroupStateList"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.model.CmItemgroupstate$ItemGroupStates" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmItemGroupStateList"->"com.shutterfly.commercial.model.CmItemgroupstate$ItemGroupStates";
+"com.shutterfly.commercial.data.CmItemGroupStateList$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmItemGroupStateList"->"com.shutterfly.commercial.data.CmItemGroupStateList$1";
+"com.shutterfly.commercial.data.CmItemGroupStateList$CmItemGroupStateListHolder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmItemGroupStateList"->"com.shutterfly.commercial.data.CmItemGroupStateList$CmItemGroupStateListHolder";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgroupstateDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmItemGroupStateList"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmItemgroupstateDao";
+}

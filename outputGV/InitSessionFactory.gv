@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.InitSessionFactory" [fontcolor="red"];
+"org.hibernate.cfg.Configuration" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.InitSessionFactory"->"org.hibernate.cfg.Configuration";
+"org.hibernate.SessionFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.InitSessionFactory"->"org.hibernate.SessionFactory";
+"org.hibernate.Session" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.InitSessionFactory"->"org.hibernate.Session";
+"org.apache.log4j.Logger" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.InitSessionFactory"->"org.apache.log4j.Logger";
+"org.hibernate.HibernateException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.InitSessionFactory"->"org.hibernate.HibernateException";
+"org.hibernate.classic.Session" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.InitSessionFactory"->"org.hibernate.classic.Session";
+"com.shutterfly.commercial.impl.ItemSortTester" [ fontcolor="green" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"com.shutterfly.commercial.impl.InitSessionFactory";
+}

@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.PalletStation$1" [fontcolor="red"];
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.PalletStation$1"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.apps.PalletStation$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.PalletStation$1"->"com.shutterfly.commercial.apps.PalletStation$1";
+"com.shutterfly.commercial.apps.PalletStation$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.PalletStation$2"->"com.shutterfly.commercial.apps.PalletStation$1";
+"com.shutterfly.commercial.apps.PalletStation$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.PalletStation$3"->"com.shutterfly.commercial.apps.PalletStation$1";
+"com.shutterfly.commercial.apps.PalletStation$JobUpdater" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.PalletStation$JobUpdater"->"com.shutterfly.commercial.apps.PalletStation$1";
+"com.shutterfly.commercial.apps.PalletStation" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.PalletStation"->"com.shutterfly.commercial.apps.PalletStation$1" [dir=both];
+}

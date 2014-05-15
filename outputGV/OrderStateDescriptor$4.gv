@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4" [fontcolor="red"];
+"org.exolab.castor.xml.XMLFieldHandler" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4"->"org.exolab.castor.xml.XMLFieldHandler";
+"com.shutterfly.commercial.data.orderstatus.castor.OrderState" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4"->"com.shutterfly.commercial.data.orderstatus.castor.OrderState";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$5" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$5"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$6" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$6"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$7" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$7"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$8" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$8"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$9" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$9"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.OrderStateDescriptor$4" [dir=both];
+}

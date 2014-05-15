@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.CmJobStateList" [fontcolor="red"];
+"com.shutterfly.commercial.model.CmJobstate" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobStateList"->"com.shutterfly.commercial.model.CmJobstate";
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobStateList"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.model.CmJobstate$JobStates" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobStateList"->"com.shutterfly.commercial.model.CmJobstate$JobStates";
+"com.shutterfly.commercial.data.CmJobStateList$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobStateList"->"com.shutterfly.commercial.data.CmJobStateList$1";
+"com.shutterfly.commercial.data.CmJobStateList$CmJobStateListHolder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobStateList"->"com.shutterfly.commercial.data.CmJobStateList$CmJobStateListHolder";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobStateDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobStateList"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobStateDao";
+}

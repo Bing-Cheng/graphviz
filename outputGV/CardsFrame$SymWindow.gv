@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.cards.CardsFrame$SymWindow" [fontcolor="red"];
+"com.shutterfly.cards.CardsFrame$SymWindow" [ fontcolor="green" ];
+"com.shutterfly.cards.CardsFrame$SymWindow"->"com.shutterfly.cards.CardsFrame$SymWindow";
+"com.shutterfly.cards.CardsFrame" [ fontcolor="turquoise" ];
+"com.shutterfly.cards.CardsFrame"->"com.shutterfly.cards.CardsFrame$SymWindow" [dir=both];
+}

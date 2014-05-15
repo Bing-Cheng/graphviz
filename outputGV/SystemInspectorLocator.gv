@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.SystemInspectorLocator" [fontcolor="red"];
+"org.apache.axis.client.Service" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.SystemInspectorLocator"->"org.apache.axis.client.Service";
+"com.pace2020.epace.sdk.SystemInspector" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.SystemInspectorLocator"->"com.pace2020.epace.sdk.SystemInspector";
+"org.apache.axis.EngineConfiguration" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.SystemInspectorLocator"->"org.apache.axis.EngineConfiguration";
+"com.pace2020.epace.sdk.SystemInspectorPortType" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.SystemInspectorLocator"->"com.pace2020.epace.sdk.SystemInspectorPortType";
+"com.pace2020.epace.sdk.SystemInspectorHttpBindingStub" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.SystemInspectorLocator"->"com.pace2020.epace.sdk.SystemInspectorHttpBindingStub";
+"org.apache.axis.AxisFault" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.SystemInspectorLocator"->"org.apache.axis.AxisFault";
+"org.apache.axis.client.Stub" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.SystemInspectorLocator"->"org.apache.axis.client.Stub";
+}

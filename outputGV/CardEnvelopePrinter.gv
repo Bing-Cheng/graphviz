@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.cards.CardEnvelopePrinter" [fontcolor="red"];
+"com.shutterfly.cards.EnvelopePrintController" [ fontcolor="blue" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.cards.EnvelopePrintController";
+"com.shutterfly.envelopes.EnvelopePrinter" [ fontcolor="blue" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.envelopes.EnvelopePrinter";
+"com.shutterfly.order.SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.envelopes.EnvelopePrinterException" [ fontcolor="blue" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.envelopes.EnvelopePrinterException";
+"com.shutterfly.envelopes.Envelope" [ fontcolor="blue" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.envelopes.Envelope";
+"com.shutterfly.order.CardItem" [ fontcolor="blue" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.order.CardItem";
+"com.shutterfly.cards.EnvelopePrintEvent" [ fontcolor="blue" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.cards.EnvelopePrintEvent";
+"com.shutterfly.order.ItemList" [ fontcolor="blue" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.order.ItemList";
+"com.shutterfly.order.PrintSize" [ fontcolor="blue" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.order.PrintSize";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.util.Debug";
+}

@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.LTPersonManager$ConfiguratorAction" [fontcolor="red"];
+"com.shutterfly.labourtracking.support.LTLoginPanel" [ fontcolor="blue" ];
+"com.shutterfly.apps.LTPersonManager$ConfiguratorAction"->"com.shutterfly.labourtracking.support.LTLoginPanel";
+"com.shutterfly.labourtracking.support.LTStationInfo" [ fontcolor="blue" ];
+"com.shutterfly.apps.LTPersonManager$ConfiguratorAction"->"com.shutterfly.labourtracking.support.LTStationInfo";
+"com.shutterfly.labourtracking.support.LTPersonResource" [ fontcolor="blue" ];
+"com.shutterfly.apps.LTPersonManager$ConfiguratorAction"->"com.shutterfly.labourtracking.support.LTPersonResource";
+"com.shutterfly.apps.LTPersonManager$ConfiguratorAction" [ fontcolor="green" ];
+"com.shutterfly.apps.LTPersonManager$ConfiguratorAction"->"com.shutterfly.apps.LTPersonManager$ConfiguratorAction";
+"com.shutterfly.apps.LTPersonManager" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.LTPersonManager"->"com.shutterfly.apps.LTPersonManager$ConfiguratorAction" [dir=both];
+}

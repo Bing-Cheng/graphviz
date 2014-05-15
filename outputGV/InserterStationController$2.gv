@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.model.InserterStationController$2" [fontcolor="red"];
+"com.shutterfly.commercial.apps.CommercialInserterStation" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.InserterStationController$2"->"com.shutterfly.commercial.apps.CommercialInserterStation";
+"com.shutterfly.commercial.apps.model.InserterStationController$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.InserterStationController$2"->"com.shutterfly.commercial.apps.model.InserterStationController$2";
+"com.shutterfly.commercial.apps.model.InserterStationController$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.InserterStationController$3"->"com.shutterfly.commercial.apps.model.InserterStationController$2";
+"com.shutterfly.commercial.apps.model.InserterStationController$InserterMode" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.InserterStationController$InserterMode"->"com.shutterfly.commercial.apps.model.InserterStationController$2";
+"com.shutterfly.commercial.apps.model.InserterStationController" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.model.InserterStationController"->"com.shutterfly.commercial.apps.model.InserterStationController$2" [dir=both];
+}

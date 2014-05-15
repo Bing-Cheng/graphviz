@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.rendertest.regression.support.BatchRenderResponse"; 
+"com.shutterfly.rendertest.regression.support.BatchRenderResponse"->"com.shutterfly.rendertest.regression.support.ImageRenderResponse";
+"com.shutterfly.rendertest.regression.support.BatchRenderResponse"->"com.shutterfly.connectship.utils.SFXMLToHashTable";
+"com.shutterfly.rendertest.regression.support.BatchRenderResponse"->"com.shutterfly.util.Debug";
+"com.shutterfly.rendertest.regression.support.ImageRenderResponse"; 
+"com.shutterfly.rendertest.regression.support.SFFileChooser$XmlAndDirectoryFilter"; 
+"com.shutterfly.rendertest.regression.support.SFFileChooser$XmlAndDirectoryFilter"->"com.shutterfly.rendertest.regression.support.SFFileChooser";
+"com.shutterfly.rendertest.regression.support.SFFileChooser$XmlFilter"; 
+"com.shutterfly.rendertest.regression.support.SFFileChooser$XmlFilter"->"com.shutterfly.rendertest.regression.support.SFFileChooser";
+"com.shutterfly.rendertest.regression.support.SFFileChooser"; 
+"com.shutterfly.rendertest.regression.support.SFFileChooser"->"com.shutterfly.rendertest.regression.support.SFFileChooser$XmlAndDirectoryFilter";
+"com.shutterfly.rendertest.regression.support.SFFileChooser"->"com.shutterfly.rendertest.regression.support.SFFileChooser$XmlFilter";
+"com.shutterfly.rendertest.regression.support.SFRFHttpRequest"; 
+"com.shutterfly.rendertest.regression.support.SFRFHttpRequest"->"com.shutterfly.util.Debug";
+"com.shutterfly.rendertest.regression.support.SFRFHttpRequest"->"com.shutterfly.util.RemoteMessageSender";
+"com.shutterfly.rendertest.regression.support.XmlIO"; 
+"com.shutterfly.rendertest.regression.support.XmlTreeModel"; 
+splines="ortho";
+}

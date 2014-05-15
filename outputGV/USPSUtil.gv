@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.USPSUtil" [fontcolor="red"];
+"gov.usps.USPS4CB" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.USPSUtil"->"gov.usps.USPS4CB";
+"com.shutterfly.exception.ShutterflyException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.USPSUtil"->"com.shutterfly.exception.ShutterflyException";
+}

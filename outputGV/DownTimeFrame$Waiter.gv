@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.DownTimeFrame$Waiter" [fontcolor="red"];
+"com.shutterfly.apps.DownTimeFrame" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$Waiter"->"com.shutterfly.apps.DownTimeFrame";
+"com.shutterfly.db.LabDBException" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$Waiter"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$Waiter"->"com.shutterfly.db.LabDB";
+"com.shutterfly.db.transaction.FetchOutageState$OutageState" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$Waiter"->"com.shutterfly.db.transaction.FetchOutageState$OutageState";
+"com.shutterfly.consolidation.BadgeScan" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$Waiter"->"com.shutterfly.consolidation.BadgeScan";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$Waiter"->"com.shutterfly.util.Debug";
+"com.shutterfly.labourtracking.support.Incident" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$Waiter"->"com.shutterfly.labourtracking.support.Incident";
+"com.shutterfly.db.transaction.FetchOutageState" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$Waiter"->"com.shutterfly.db.transaction.FetchOutageState";
+}

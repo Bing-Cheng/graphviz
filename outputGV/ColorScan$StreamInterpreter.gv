@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter" [fontcolor="red"];
+"com.shutterfly.colorsure.client.ColorScan$1" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter"->"com.shutterfly.colorsure.client.ColorScan$1";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$1" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter"->"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$1";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$2" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter"->"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$2";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$3" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter"->"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$3";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$4" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter"->"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter$4";
+"com.shutterfly.colorsure.client.ColorSure" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter"->"com.shutterfly.colorsure.client.ColorSure";
+"com.shutterfly.colorsure.client.ColorScan$StreamReader" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamReader"->"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter"->"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter";
+"com.shutterfly.colorsure.client.ColorScan" [ fontcolor="turquoise" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter" [dir=both];
+}

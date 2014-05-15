@@ -1,0 +1,35 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub" [fontcolor="red"];
+"org.apache.axis.client.Stub" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.client.Stub";
+"com.pace2020.epace.sdk.DeleteObjectPortType" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"com.pace2020.epace.sdk.DeleteObjectPortType";
+"org.apache.axis.description.OperationDesc" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.description.OperationDesc";
+"org.apache.axis.description.ParameterDesc" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.description.ParameterDesc";
+"org.apache.axis.client.Call" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.client.Call";
+"org.apache.axis.AxisFault" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.AxisFault";
+"org.apache.axis.client.Service" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.client.Service";
+"org.apache.axis.NoEndPointException" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.NoEndPointException";
+"org.apache.axis.encoding.XMLType" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.encoding.XMLType";
+"org.apache.axis.constants.Style" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.constants.Style";
+"org.apache.axis.constants.Use" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.constants.Use";
+"org.apache.axis.soap.SOAPConstants" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.soap.SOAPConstants";
+"org.apache.axis.soap.SOAP11Constants" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub"->"org.apache.axis.soap.SOAP11Constants";
+"com.pace2020.epace.sdk.DeleteObjectLocator" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.DeleteObjectLocator"->"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub";
+}

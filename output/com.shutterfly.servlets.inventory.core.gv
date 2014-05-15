@@ -1,0 +1,14 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.inventory.core.ICRequestFactory"; 
+"com.shutterfly.servlets.inventory.core.ICRequestFactory"->"com.shutterfly.servlets.inventory.request.InventoryControlRequest";
+"com.shutterfly.servlets.inventory.core.ICRequestFactory"->"com.shutterfly.servlets.inventory.request.SkuInventoryRequest";
+"com.shutterfly.servlets.inventory.core.ICRequestFactory"->"com.shutterfly.connectship.utils.SFXMLToHashTable";
+"com.shutterfly.servlets.inventory.core.InventorySkuData"; 
+"com.shutterfly.servlets.inventory.core.InventorySkuData"->"com.shutterfly.servlets.inventory.core.InventorySkuDataItem";
+"com.shutterfly.servlets.inventory.core.InventorySkuData"->"com.shutterfly.connectship.utils.SFXMLToHashTable";
+"com.shutterfly.servlets.inventory.core.InventorySkuDataItem"; 
+splines="ortho";
+}

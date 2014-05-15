@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.InvokeAction" [fontcolor="red"];
+"com.pace2020.epace.sdk.InvokeActionPortType" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.InvokeAction"->"com.pace2020.epace.sdk.InvokeActionPortType";
+"com.pace2020.epace.sdk.InvokeActionLocator" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.InvokeActionLocator"->"com.pace2020.epace.sdk.InvokeAction";
+}

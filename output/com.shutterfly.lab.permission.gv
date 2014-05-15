@@ -1,0 +1,16 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.lab.permission.LabPermission"; 
+"com.shutterfly.lab.permission.LabPermissionManager"; 
+"com.shutterfly.lab.permission.LabPermissionManager"->"com.shutterfly.db.LabDB";
+"com.shutterfly.lab.permission.LabPermissionManager"->"com.shutterfly.lab.user.LabUserLogin";
+"com.shutterfly.lab.permission.LabPermissionManager"->"com.shutterfly.lab.permission.LabPermission";
+"com.shutterfly.lab.permission.LabPermissionManager"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.lab.permission.LabPermissionManager"->"com.shutterfly.lab.util.StringUtils";
+"com.shutterfly.lab.permission.LabPermissionManager"->"com.shutterfly.util.Debug";
+"com.shutterfly.lab.permission.LabPermissionManager"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.lab.permission.LabPermissionManager"->"com.shutterfly.db.LabDBFactory";
+splines="ortho";
+}

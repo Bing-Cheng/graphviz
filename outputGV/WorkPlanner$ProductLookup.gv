@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.WorkPlanner$ProductLookup" [fontcolor="red"];
+"com.shutterfly.db.transaction.SingleQueryTransaction" [ fontcolor="blue" ];
+"com.shutterfly.apps.WorkPlanner$ProductLookup"->"com.shutterfly.db.transaction.SingleQueryTransaction";
+"com.shutterfly.apps.WorkPlanner$ProductLookup" [ fontcolor="green" ];
+"com.shutterfly.apps.WorkPlanner$ProductLookup"->"com.shutterfly.apps.WorkPlanner$ProductLookup";
+"com.shutterfly.apps.WorkPlanner$StationAssignment" [ fontcolor="green" ];
+"com.shutterfly.apps.WorkPlanner$StationAssignment"->"com.shutterfly.apps.WorkPlanner$ProductLookup";
+"com.shutterfly.apps.WorkPlanner$Task" [ fontcolor="green" ];
+"com.shutterfly.apps.WorkPlanner$Task"->"com.shutterfly.apps.WorkPlanner$ProductLookup";
+"com.shutterfly.apps.WorkPlanner" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.WorkPlanner"->"com.shutterfly.apps.WorkPlanner$ProductLookup" [dir=both];
+}

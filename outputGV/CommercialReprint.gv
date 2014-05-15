@@ -1,0 +1,37 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.CommercialReprint" [fontcolor="red"];
+"com.shutterfly.commercial.apps.CommercialScanBase" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.apps.CommercialScanBase";
+"com.shutterfly.commercial.impl.ReprintManager2" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.impl.ReprintManager2";
+"com.shutterfly.commercial.impl.CommercialReprint$ReprintMode" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.impl.CommercialReprint$ReprintMode";
+"com.shutterfly.commercial.impl.CommercialReprint$IMBCodePair" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.impl.CommercialReprint$IMBCodePair";
+"com.shutterfly.commercial.model.CmTray" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.model.CmTray";
+"com.shutterfly.commercial.data.IMBCode" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.data.IMBCode";
+"com.shutterfly.commercial.impl.CommercialReprint$SymWindow" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.impl.CommercialReprint$SymWindow";
+"com.shutterfly.commercial.impl.CommercialReprint$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.impl.CommercialReprint$1";
+"com.shutterfly.commercial.impl.CommercialReprint$2" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.impl.CommercialReprint$2";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.util.Debug";
+"com.shutterfly.commercial.model.CmItemgroup" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.model.CmItemgroup";
+"com.shutterfly.commercial.model.CmJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.model.CmJob";
+"com.shutterfly.connectship.utils.SFProperties" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.connectship.utils.SFProperties";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.util.Version" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.util.Version";
+}

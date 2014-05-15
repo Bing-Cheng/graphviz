@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.cache.EFIPartnerRegistration" [fontcolor="red"];
+"com.shutterfly.commercial.data.cache.InstanceCollection" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.EFIPartnerRegistration"->"com.shutterfly.commercial.data.cache.InstanceCollection";
+"org.w3c.dom.Element" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.EFIPartnerRegistration"->"org.w3c.dom.Element";
+"org.w3c.dom.NodeList" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.EFIPartnerRegistration"->"org.w3c.dom.NodeList";
+"com.shutterfly.commercial.data.cache.EFIPartnerRegistration$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.EFIPartnerRegistration"->"com.shutterfly.commercial.data.cache.EFIPartnerRegistration$1";
+"com.shutterfly.commercial.data.cache.EFIPartnerRegistration$EFIPartnerRegistrationHolder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.EFIPartnerRegistration"->"com.shutterfly.commercial.data.cache.EFIPartnerRegistration$EFIPartnerRegistrationHolder";
+"com.shutterfly.commercial.data.cache.EFIConfig" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.EFIPartnerRegistration"->"com.shutterfly.commercial.data.cache.EFIConfig";
+"org.w3c.dom.Node" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.EFIPartnerRegistration"->"org.w3c.dom.Node";
+"org.w3c.dom.NamedNodeMap" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.EFIPartnerRegistration"->"org.w3c.dom.NamedNodeMap";
+"com.shutterfly.commercial.efi.EFIOrderBuilder" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIOrderBuilder"->"com.shutterfly.commercial.data.cache.EFIPartnerRegistration";
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader"->"com.shutterfly.commercial.data.cache.EFIPartnerRegistration";
+"com.shutterfly.commercial.efi.EFIOrderBuilder$PSA_EFIProduct" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIOrderBuilder$PSA_EFIProduct"->"com.shutterfly.commercial.data.cache.EFIPartnerRegistration";
+"com.shutterfly.commercial.apps.BrandMuscleApp" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp"->"com.shutterfly.commercial.data.cache.EFIPartnerRegistration";
+}

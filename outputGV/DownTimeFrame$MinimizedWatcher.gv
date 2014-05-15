@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.DownTimeFrame$MinimizedWatcher" [fontcolor="red"];
+"com.shutterfly.apps.DownTimeFrame" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$MinimizedWatcher"->"com.shutterfly.apps.DownTimeFrame";
+}

@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.model.PrintJobStateEvent$PrintJobStateMachine" [fontcolor="red"];
+"com.shutterfly.commercial.model.CmPrintjobstate$PrintJobStates" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.PrintJobStateEvent$PrintJobStateMachine"->"com.shutterfly.commercial.model.CmPrintjobstate$PrintJobStates";
+"com.shutterfly.commercial.model.CmPrintjobstate" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.PrintJobStateEvent$PrintJobStateMachine"->"com.shutterfly.commercial.model.CmPrintjobstate";
+"com.shutterfly.commercial.apps.model.PrintJobStateEvent" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.PrintJobStateEvent$PrintJobStateMachine"->"com.shutterfly.commercial.apps.model.PrintJobStateEvent";
+}

@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.efi.model.EFIOrder" [fontcolor="red"];
+"com.shutterfly.commercial.efi.model.XmlCreator" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.model.EFIOrder"->"com.shutterfly.commercial.efi.model.XmlCreator";
+"com.shutterfly.commercial.efi.model.EFIJobPart" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.model.EFIOrder"->"com.shutterfly.commercial.efi.model.EFIJobPart";
+"com.shutterfly.commercial.efi.model.EFIJobNote" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.model.EFIOrder"->"com.shutterfly.commercial.efi.model.EFIJobNote";
+"org.w3c.dom.Document" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.model.EFIOrder"->"org.w3c.dom.Document";
+"org.w3c.dom.Node" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.model.EFIOrder"->"org.w3c.dom.Node";
+"org.w3c.dom.Element" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.model.EFIOrder"->"org.w3c.dom.Element";
+"com.shutterfly.commercial.transformers.model.CommercialOrder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.model.EFIOrder"->"com.shutterfly.commercial.transformers.model.CommercialOrder";
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader"->"com.shutterfly.commercial.efi.model.EFIOrder";
+"com.shutterfly.commercial.efi.EFIOrderBuilder" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIOrderBuilder"->"com.shutterfly.commercial.efi.model.EFIOrder";
+"com.shutterfly.commercial.apps.BrandMuscleApp" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp"->"com.shutterfly.commercial.efi.model.EFIOrder";
+}

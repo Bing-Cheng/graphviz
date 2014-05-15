@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.cards.EnvelopeServices" [fontcolor="red"];
+"com.itextpdf.text.Document" [ fontcolor="blue" ];
+"com.shutterfly.cards.EnvelopeServices"->"com.itextpdf.text.Document";
+"com.itextpdf.text.Paragraph" [ fontcolor="blue" ];
+"com.shutterfly.cards.EnvelopeServices"->"com.itextpdf.text.Paragraph";
+"com.itextpdf.text.DocumentException" [ fontcolor="blue" ];
+"com.shutterfly.cards.EnvelopeServices"->"com.itextpdf.text.DocumentException";
+"com.itextpdf.text.pdf.PdfWriter" [ fontcolor="blue" ];
+"com.shutterfly.cards.EnvelopeServices"->"com.itextpdf.text.pdf.PdfWriter";
+"com.itextpdf.text.Element" [ fontcolor="blue" ];
+"com.shutterfly.cards.EnvelopeServices"->"com.itextpdf.text.Element";
+}

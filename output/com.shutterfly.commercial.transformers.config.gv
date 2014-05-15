@@ -1,0 +1,7 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.commercial.transformers.config.ClientConfigEnum"; 
+"com.shutterfly.commercial.transformers.config.TransformerClient"; 
+}

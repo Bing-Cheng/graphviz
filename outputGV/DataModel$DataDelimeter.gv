@@ -1,0 +1,37 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.DataModel$DataDelimeter" [fontcolor="red"];
+"com.shutterfly.commercial.apps.DataSetupPanel$4" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSetupPanel$4"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.apps.DataSetupPanel" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.apps.DataSplitPanel$4" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSplitPanel$4"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.apps.DataSplitPanel" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSplitPanel"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.data.DataBigMac" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.DataBigMac"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.data.DataManager" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.DataManager"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.apps.CommercialData" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.apps.DataMergePanel" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataMergePanel"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.apps.DataSplitPanel$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSplitPanel$3"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.data.DataModel$DataDelimeter" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.DataModel$DataDelimeter"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.data.PrintJobModel" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.PrintJobModel"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.data.HotFolderMonitor" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.HotFolderMonitor"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.data.HotFolderMonitor$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.HotFolderMonitor$1"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.data.HotFolderMonitor$TraySetCache" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.HotFolderMonitor$TraySetCache"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.data.DataModel" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.data.DataModel"->"com.shutterfly.commercial.data.DataModel$DataDelimeter" [dir=both];
+}

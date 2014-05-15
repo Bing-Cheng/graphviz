@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BatchBuilder$5" [fontcolor="red"];
+"com.shutterfly.apps.BatchBuilder" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$5"->"com.shutterfly.apps.BatchBuilder";
+"com.shutterfly.apps.BatchBuilder$CycleData" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$5"->"com.shutterfly.apps.BatchBuilder$CycleData";
+"com.shutterfly.db.model.LTStationType" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$5"->"com.shutterfly.db.model.LTStationType";
+"com.shutterfly.apps.ScanStationUi" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$5"->"com.shutterfly.apps.ScanStationUi";
+}

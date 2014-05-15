@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ScanStation$ModifiedLabel" [fontcolor="red"];
+"com.shutterfly.labels.Label" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStation$ModifiedLabel"->"com.shutterfly.labels.Label";
+"com.shutterfly.apps.ScanStation" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStation$ModifiedLabel"->"com.shutterfly.apps.ScanStation";
+}

@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.cache.CmShipInfoCollection$1" [fontcolor="red"];
+"com.shutterfly.commercial.data.cache.CmShipInfoCollection" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmShipInfoCollection$1"->"com.shutterfly.commercial.data.cache.CmShipInfoCollection";
+}

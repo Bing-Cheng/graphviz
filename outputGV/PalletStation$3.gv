@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.PalletStation$3" [fontcolor="red"];
+"com.shutterfly.commercial.apps.PalletStation$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.PalletStation$3"->"com.shutterfly.commercial.apps.PalletStation$3";
+"com.shutterfly.commercial.apps.PalletStation$JobUpdater" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.PalletStation$JobUpdater"->"com.shutterfly.commercial.apps.PalletStation$3";
+"com.shutterfly.commercial.apps.PalletStation" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.PalletStation"->"com.shutterfly.commercial.apps.PalletStation$3" [dir=both];
+}

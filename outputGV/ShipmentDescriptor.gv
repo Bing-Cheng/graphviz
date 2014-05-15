@@ -1,0 +1,37 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor" [fontcolor="red"];
+"org.exolab.castor.xml.util.XMLClassDescriptorImpl" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"org.exolab.castor.xml.util.XMLClassDescriptorImpl";
+"org.exolab.castor.xml.XMLFieldDescriptor" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"org.exolab.castor.xml.XMLFieldDescriptor";
+"org.exolab.castor.xml.validators.StringValidator" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"org.exolab.castor.xml.validators.StringValidator";
+"org.exolab.castor.xml.validators.DecimalValidator" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"org.exolab.castor.xml.validators.DecimalValidator";
+"org.exolab.castor.xml.util.XMLFieldDescriptorImpl" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"org.exolab.castor.xml.util.XMLFieldDescriptorImpl";
+"org.exolab.castor.mapping.FieldHandler" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"org.exolab.castor.mapping.FieldHandler";
+"org.exolab.castor.xml.FieldValidator" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"org.exolab.castor.xml.FieldValidator";
+"org.exolab.castor.mapping.AccessMode" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"org.exolab.castor.mapping.AccessMode";
+"org.exolab.castor.mapping.FieldDescriptor" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"org.exolab.castor.mapping.FieldDescriptor";
+"org.exolab.castor.xml.TypeValidator" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"org.exolab.castor.xml.TypeValidator";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$1";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$2" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$2";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$3" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$3";
+"com.shutterfly.commercial.data.orderstatus.castor.Shipment" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"com.shutterfly.commercial.data.orderstatus.castor.Shipment";
+"org.exolab.castor.xml.NodeType" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"org.exolab.castor.xml.NodeType";
+}

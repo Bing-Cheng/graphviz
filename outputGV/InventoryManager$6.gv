@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.InventoryManager$6" [fontcolor="red"];
+"com.shutterfly.commercial.apps.InventoryManager$6" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.InventoryManager$6"->"com.shutterfly.commercial.apps.InventoryManager$6";
+"com.shutterfly.commercial.apps.InventoryManager" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.commercial.apps.InventoryManager$6" [dir=both];
+}

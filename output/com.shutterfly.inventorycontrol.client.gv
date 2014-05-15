@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.inventorycontrol.client.ICClient"; 
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.servlets.inventory.utils.ICXMLPost";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.util.Timer";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.inventorycontrol.core.response.ICSOPResponse";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.order.Address";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.order.Shipment";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.db.LabDB";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.db.LabDBSingletonManager";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.servlets.inventory.core.InventorySkuData";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.servlets.inventory.core.InventorySkuDataItem";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.order.InventoryItem";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.order.WorkTypeFactory";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.order.WorkType";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.inventorycontrol.core.request.ICXMLSOPRequest";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.inventorycontrol.core.request.ICBinTransferRequest";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.connectship.utils.SFProperties";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.inventorycontrol.client.ICClient"->"com.shutterfly.order.Item";
+splines="ortho";
+}

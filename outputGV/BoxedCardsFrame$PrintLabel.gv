@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.cards.BoxedCardsFrame$PrintLabel" [fontcolor="red"];
+"com.shutterfly.labels.Label" [ fontcolor="blue" ];
+"com.shutterfly.cards.BoxedCardsFrame$PrintLabel"->"com.shutterfly.labels.Label";
+"com.shutterfly.labels.LabelPrinterException" [ fontcolor="blue" ];
+"com.shutterfly.cards.BoxedCardsFrame$PrintLabel"->"com.shutterfly.labels.LabelPrinterException";
+"com.shutterfly.labels.PaperOutException" [ fontcolor="blue" ];
+"com.shutterfly.cards.BoxedCardsFrame$PrintLabel"->"com.shutterfly.labels.PaperOutException";
+"com.shutterfly.labels.RibbonOutException" [ fontcolor="blue" ];
+"com.shutterfly.cards.BoxedCardsFrame$PrintLabel"->"com.shutterfly.labels.RibbonOutException";
+"com.shutterfly.labels.LabelPrinter" [ fontcolor="blue" ];
+"com.shutterfly.cards.BoxedCardsFrame$PrintLabel"->"com.shutterfly.labels.LabelPrinter";
+"com.shutterfly.cards.BoxedCardsFrame$PrintLabel" [ fontcolor="green" ];
+"com.shutterfly.cards.BoxedCardsFrame$PrintLabel"->"com.shutterfly.cards.BoxedCardsFrame$PrintLabel";
+"com.shutterfly.cards.BoxedCardsFrame$SymAction" [ fontcolor="green" ];
+"com.shutterfly.cards.BoxedCardsFrame$SymAction"->"com.shutterfly.cards.BoxedCardsFrame$PrintLabel";
+"com.shutterfly.cards.BoxedCardsFrame$SymWindow" [ fontcolor="green" ];
+"com.shutterfly.cards.BoxedCardsFrame$SymWindow"->"com.shutterfly.cards.BoxedCardsFrame$PrintLabel";
+"com.shutterfly.cards.BoxedCardsFrame" [ fontcolor="turquoise" ];
+"com.shutterfly.cards.BoxedCardsFrame"->"com.shutterfly.cards.BoxedCardsFrame$PrintLabel" [dir=both];
+}

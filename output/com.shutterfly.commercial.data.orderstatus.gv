@@ -1,0 +1,14 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"; 
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState";
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.model.CmPartner";
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.model.CmOrder";
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.data.cache.CmPartnerCollection";
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderDao";
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.properties.LabDBHostname";
+splines="ortho";
+}

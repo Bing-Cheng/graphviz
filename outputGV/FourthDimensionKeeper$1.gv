@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.FourthDimensionKeeper$1" [fontcolor="red"];
+"com.shutterfly.apps.FourthDimensionKeeper$1" [ fontcolor="green" ];
+"com.shutterfly.apps.FourthDimensionKeeper$1"->"com.shutterfly.apps.FourthDimensionKeeper$1";
+"com.shutterfly.apps.FourthDimensionKeeper$Message" [ fontcolor="green" ];
+"com.shutterfly.apps.FourthDimensionKeeper$Message"->"com.shutterfly.apps.FourthDimensionKeeper$1";
+"com.shutterfly.apps.FourthDimensionKeeper" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.FourthDimensionKeeper"->"com.shutterfly.apps.FourthDimensionKeeper$1" [dir=both];
+}

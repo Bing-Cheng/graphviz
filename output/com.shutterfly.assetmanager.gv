@@ -1,0 +1,18 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.assetmanager.DAMClientTester$ReceiveThread"; 
+"com.shutterfly.assetmanager.DAMClientTester$ReceiveThread"->"com.shutterfly.assetmanager.DAMClientTester";
+"com.shutterfly.assetmanager.DAMClientTester$SendThread"; 
+"com.shutterfly.assetmanager.DAMClientTester$SendThread"->"com.shutterfly.assetmanager.DAMClientTester";
+"com.shutterfly.assetmanager.DAMClientTester$SendThread"->"com.shutterfly.assetmanager.server.model.FileTransferBySocket";
+"com.shutterfly.assetmanager.DAMClientTester"; 
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.assetmanager.DAMClientTester$ReceiveThread";
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.assetmanager.DAMClientTester$SendThread";
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.properties.SflyProperties";
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.assetmanager.support.AssetClassification";
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.assetmanager.client.DigitalAssetPool";
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.util.Debug";
+splines="ortho";
+}

@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.DeleteObjectLocator" [fontcolor="red"];
+"org.apache.axis.client.Service" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectLocator"->"org.apache.axis.client.Service";
+"com.pace2020.epace.sdk.DeleteObject" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectLocator"->"com.pace2020.epace.sdk.DeleteObject";
+"org.apache.axis.EngineConfiguration" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectLocator"->"org.apache.axis.EngineConfiguration";
+"com.pace2020.epace.sdk.DeleteObjectPortType" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectLocator"->"com.pace2020.epace.sdk.DeleteObjectPortType";
+"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectLocator"->"com.pace2020.epace.sdk.DeleteObjectHttpBindingStub";
+"org.apache.axis.AxisFault" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectLocator"->"org.apache.axis.AxisFault";
+"org.apache.axis.client.Stub" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.DeleteObjectLocator"->"org.apache.axis.client.Stub";
+}

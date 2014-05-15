@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.inventory.utils.ICXMLPost"; 
+"com.shutterfly.servlets.inventory.utils.ICXMLPost"->"com.shutterfly.servlets.inventory.core.InventorySkuData";
+"com.shutterfly.servlets.inventory.utils.ICXMLPost"->"com.shutterfly.util.FileUtil";
+splines="ortho";
+}

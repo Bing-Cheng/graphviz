@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobStateDao" [fontcolor="red"];
+"com.shutterfly.db.hibernate.dao.AbstractDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobStateDao"->"com.shutterfly.db.hibernate.dao.AbstractDao";
+"com.shutterfly.commercial.model.CmJobstate" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobStateDao"->"com.shutterfly.commercial.model.CmJobstate";
+"com.shutterfly.commercial.model.CmJobstate$JobStates" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobStateDao"->"com.shutterfly.commercial.model.CmJobstate$JobStates";
+"org.hibernate.criterion.Criterion" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobStateDao"->"org.hibernate.criterion.Criterion";
+"org.hibernate.criterion.Expression" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobStateDao"->"org.hibernate.criterion.Expression";
+"org.hibernate.criterion.SimpleExpression" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobStateDao"->"org.hibernate.criterion.SimpleExpression";
+}

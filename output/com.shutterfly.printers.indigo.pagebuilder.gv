@@ -1,0 +1,14 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.printers.indigo.pagebuilder.Page"; 
+"com.shutterfly.printers.indigo.pagebuilder.PhotoJournalCoverSimplexPage$Element"; 
+"com.shutterfly.printers.indigo.pagebuilder.PhotoJournalCoverSimplexPage$Element"->"com.shutterfly.printers.indigo.pagebuilder.PhotoJournalCoverSimplexPage";
+"com.shutterfly.printers.indigo.pagebuilder.PhotoJournalCoverSimplexPage"; 
+"com.shutterfly.printers.indigo.pagebuilder.PhotoJournalCoverSimplexPage"->"com.shutterfly.printers.indigo.pagebuilder.Page";
+"com.shutterfly.printers.indigo.pagebuilder.PhotoJournalCoverSimplexPage"->"com.shutterfly.printers.indigo.pagebuilder.PhotoJournalCoverSimplexPage$Element";
+"com.shutterfly.printers.indigo.pagebuilder.PhotoJournalCoverSimplexPage"->"com.shutterfly.order.PrintItem";
+"com.shutterfly.printers.indigo.pagebuilder.PhotoJournalCoverSimplexPage"->"com.shutterfly.printers.indigo.PathResolver";
+splines="ortho";
+}

@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ObservableLeadLoginObserver" [fontcolor="red"];
+"com.shutterfly.labourtracking.support.LTStationInfo" [ fontcolor="blue" ];
+"com.shutterfly.apps.ObservableLeadLoginObserver"->"com.shutterfly.labourtracking.support.LTStationInfo";
+"com.shutterfly.labourtracking.support.LTPersonResource" [ fontcolor="blue" ];
+"com.shutterfly.apps.ObservableLeadLoginObserver"->"com.shutterfly.labourtracking.support.LTPersonResource";
+"com.shutterfly.consolidation.BadgeScan" [ fontcolor="blue" ];
+"com.shutterfly.apps.ObservableLeadLoginObserver"->"com.shutterfly.consolidation.BadgeScan";
+}

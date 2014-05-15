@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.ParserHelper" [fontcolor="red"];
+"com.shutterfly.commercial.impl.CSVReader" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ParserHelper"->"com.shutterfly.commercial.impl.CSVReader";
+}

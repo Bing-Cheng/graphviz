@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.directorywatcher.BaseListener" [fontcolor="red"];
+"com.shutterfly.colorsure.directorywatcher.FileListener" [ fontcolor="green" ];
+"com.shutterfly.colorsure.directorywatcher.FileListener"->"com.shutterfly.colorsure.directorywatcher.BaseListener";
+"com.shutterfly.colorsure.directorywatcher.DirectoryWatcher" [ fontcolor="green" ];
+"com.shutterfly.colorsure.directorywatcher.DirectoryWatcher"->"com.shutterfly.colorsure.directorywatcher.BaseListener";
+}

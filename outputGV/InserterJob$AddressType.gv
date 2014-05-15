@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.model.InserterJob$AddressType" [fontcolor="red"];
+"com.shutterfly.commercial.apps.model.InserterJob$HeaderColumns" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.InserterJob$HeaderColumns"->"com.shutterfly.commercial.apps.model.InserterJob$AddressType";
+"com.shutterfly.commercial.apps.model.InserterJob$AddressType" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.InserterJob$AddressType"->"com.shutterfly.commercial.apps.model.InserterJob$AddressType";
+"com.shutterfly.commercial.apps.model.InserterStationController" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.InserterStationController"->"com.shutterfly.commercial.apps.model.InserterJob$AddressType";
+"com.shutterfly.commercial.apps.model.InserterStationController$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.InserterStationController$1"->"com.shutterfly.commercial.apps.model.InserterJob$AddressType";
+"com.shutterfly.commercial.apps.model.InserterStationController$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.InserterStationController$2"->"com.shutterfly.commercial.apps.model.InserterJob$AddressType";
+"com.shutterfly.commercial.apps.model.InserterStationController$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.InserterStationController$3"->"com.shutterfly.commercial.apps.model.InserterJob$AddressType";
+"com.shutterfly.commercial.apps.model.InserterStationController$InserterMode" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.InserterStationController$InserterMode"->"com.shutterfly.commercial.apps.model.InserterJob$AddressType";
+"com.shutterfly.commercial.apps.model.InserterJob" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.model.InserterJob"->"com.shutterfly.commercial.apps.model.InserterJob$AddressType" [dir=both];
+}

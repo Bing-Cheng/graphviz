@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BookBuildStation$StationMode" [fontcolor="red"];
+"com.shutterfly.apps.BookBuildStation$StationMode" [ fontcolor="green" ];
+"com.shutterfly.apps.BookBuildStation$StationMode"->"com.shutterfly.apps.BookBuildStation$StationMode";
+"com.shutterfly.apps.BookBuildStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.BookBuildStation"->"com.shutterfly.apps.BookBuildStation$StationMode" [dir=both];
+}

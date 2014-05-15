@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="lib/pf-application.jar"/>
+	<classpathentry kind="lib" path="lib/pf-bcel.jar"/>
+	<classpathentry kind="lib" path="lib/pf.jar"/>
+	<classpathentry kind="lib" path="lib/pf-odem.jar"/>
+	<classpathentry kind="lib" path="lib/pf-cda-base-xpi.jar"/>
+	<classpathentry kind="lib" path="lib/pf-cda-base.jar"/>
+	<classpathentry kind="lib" path="lib/pf-cda-core.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

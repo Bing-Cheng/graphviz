@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.lab.presentation.services.ServicesLandingAction"; 
+"com.shutterfly.lab.presentation.services.ServicesLandingAction"->"com.shutterfly.lab.presentation.action.LabViewAction";
+"com.shutterfly.lab.presentation.services.ServicesLandingAction"->"com.shutterfly.lab.presentation.action.LabMapForm";
+splines="ortho";
+}

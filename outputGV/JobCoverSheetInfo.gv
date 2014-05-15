@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.JobCoverSheetInfo" [fontcolor="red"];
+"com.shutterfly.commercial.model.CmProduct" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JobCoverSheetInfo"->"com.shutterfly.commercial.model.CmProduct";
+"com.shutterfly.commercial.model.CmItemgroup" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JobCoverSheetInfo"->"com.shutterfly.commercial.model.CmItemgroup";
+"com.shutterfly.commercial.model.CmPrintjob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JobCoverSheetInfo"->"com.shutterfly.commercial.model.CmPrintjob";
+"com.shutterfly.commercial.data.IMBCode" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JobCoverSheetInfo"->"com.shutterfly.commercial.data.IMBCode";
+"com.shutterfly.commercial.model.CmJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JobCoverSheetInfo"->"com.shutterfly.commercial.model.CmJob";
+"com.shutterfly.commercial.data.CommercialJob$ServiceTypeID" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JobCoverSheetInfo"->"com.shutterfly.commercial.data.CommercialJob$ServiceTypeID";
+"com.shutterfly.util.StringUtil" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JobCoverSheetInfo"->"com.shutterfly.util.StringUtil";
+"com.shutterfly.commercial.model.CmOrder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JobCoverSheetInfo"->"com.shutterfly.commercial.model.CmOrder";
+"com.shutterfly.commercial.model.CmTray" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JobCoverSheetInfo"->"com.shutterfly.commercial.model.CmTray";
+"com.shutterfly.commercial.data.CommercialJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JobCoverSheetInfo"->"com.shutterfly.commercial.data.CommercialJob";
+}

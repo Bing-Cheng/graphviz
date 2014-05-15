@@ -1,0 +1,18 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ splines="ortho";
+"com.shutterfly.apps.AddressEditingUi" [ shape="circle" ];
+"com.shutterfly.apps.ScanStationEventListener" [ shape="hexagon" ];
+"com.shutterfly.apps.AddressEditingUi"->"com.shutterfly.apps.ScanStationEventListener";
+"com.shutterfly.barcode.BarcodeListener" [ shape="hexagon" ];
+"com.shutterfly.apps.AddressEditingUi"->"com.shutterfly.barcode.BarcodeListener";
+"com.shutterfly.order.Address" [ shape="hexagon" ];
+"com.shutterfly.apps.AddressEditingUi"->"com.shutterfly.order.Address";
+"com.shutterfly.apps.ScanStationEvent" [ shape="hexagon" ];
+"com.shutterfly.apps.AddressEditingUi"->"com.shutterfly.apps.ScanStationEvent";
+"com.shutterfly.util.UiUtil" [ shape="hexagon" ];
+"com.shutterfly.apps.AddressEditingUi"->"com.shutterfly.util.UiUtil";
+"com.shutterfly.apps.CorrectionStation" [ shape="invhouse" ];
+"com.shutterfly.apps.CorrectionStation"->"com.shutterfly.apps.AddressEditingUi";
+}

@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.barcode.BarcodeFactory$BarcodeFactoryHolder" [fontcolor="red"];
+"com.shutterfly.barcode.BarcodeFactory" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeFactoryHolder"->"com.shutterfly.barcode.BarcodeFactory";
+"com.shutterfly.barcode.BarcodeFactory$1" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeFactoryHolder"->"com.shutterfly.barcode.BarcodeFactory$1";
+}

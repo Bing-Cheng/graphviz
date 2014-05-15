@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.CommercialJob$ServiceTypeID" [fontcolor="red"];
+"com.shutterfly.commercial.data.CommercialJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialJob$ServiceTypeID"->"com.shutterfly.commercial.data.CommercialJob";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialJob$ServiceTypeID"->"com.shutterfly.util.Debug";
+}

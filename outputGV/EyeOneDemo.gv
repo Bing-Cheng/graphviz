@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.EyeOne.EyeOneDemo" [fontcolor="red"];
+"com.shutterfly.colorsure.EyeOne.EyeOne" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.EyeOne.EyeOneDemo"->"com.shutterfly.colorsure.EyeOne.EyeOne";
+"com.shutterfly.colorsure.EyeOne.EyeOneException" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.EyeOne.EyeOneDemo"->"com.shutterfly.colorsure.EyeOne.EyeOneException";
+}

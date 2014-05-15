@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.PhotoBookStation$SubBatchScan" [fontcolor="red"];
+"com.shutterfly.apps.PhotoBookStation$SubBatchScan" [ fontcolor="green" ];
+"com.shutterfly.apps.PhotoBookStation$SubBatchScan"->"com.shutterfly.apps.PhotoBookStation$SubBatchScan";
+"com.shutterfly.apps.PhotoBookStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.PhotoBookStation"->"com.shutterfly.apps.PhotoBookStation$SubBatchScan" [dir=both];
+}

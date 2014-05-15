@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.TransformerUtil" [fontcolor="red"];
+"org.w3c.dom.Node" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.TransformerUtil"->"org.w3c.dom.Node";
+"com.sun.org.apache.xerces.internal.parsers.DOMParser" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.TransformerUtil"->"com.sun.org.apache.xerces.internal.parsers.DOMParser";
+"org.w3c.dom.Document" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.TransformerUtil"->"org.w3c.dom.Document";
+"org.xml.sax.SAXException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.TransformerUtil"->"org.xml.sax.SAXException";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.TransformerUtil"->"com.shutterfly.util.Debug";
+}

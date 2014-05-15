@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ConsolidationOnlyStation$1" [fontcolor="red"];
+"com.shutterfly.apps.ConsolidationOnlyStation" [ fontcolor="blue" ];
+"com.shutterfly.apps.ConsolidationOnlyStation$1"->"com.shutterfly.apps.ConsolidationOnlyStation";
+"com.shutterfly.apps.ScanStationUiSimple" [ fontcolor="blue" ];
+"com.shutterfly.apps.ConsolidationOnlyStation$1"->"com.shutterfly.apps.ScanStationUiSimple";
+"com.shutterfly.db.model.LTStationType" [ fontcolor="blue" ];
+"com.shutterfly.apps.ConsolidationOnlyStation$1"->"com.shutterfly.db.model.LTStationType";
+"com.shutterfly.apps.ScanStationUi" [ fontcolor="blue" ];
+"com.shutterfly.apps.ConsolidationOnlyStation$1"->"com.shutterfly.apps.ScanStationUi";
+"com.shutterfly.consolidation.BadgeScan" [ fontcolor="blue" ];
+"com.shutterfly.apps.ConsolidationOnlyStation$1"->"com.shutterfly.consolidation.BadgeScan";
+"com.shutterfly.soundbytes.StationSounds" [ fontcolor="blue" ];
+"com.shutterfly.apps.ConsolidationOnlyStation$1"->"com.shutterfly.soundbytes.StationSounds";
+}

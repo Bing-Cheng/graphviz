@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ScanStationUiSimple$2" [fontcolor="red"];
+"com.shutterfly.apps.ScanStationUiSimple" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStationUiSimple$2"->"com.shutterfly.apps.ScanStationUiSimple";
+"com.shutterfly.labourtracking.support.Incident" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStationUiSimple$2"->"com.shutterfly.labourtracking.support.Incident";
+"com.shutterfly.db.LabDBException" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStationUiSimple$2"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.apps.ScanStation" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStationUiSimple$2"->"com.shutterfly.apps.ScanStation";
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStationUiSimple$2"->"com.shutterfly.db.LabDB";
+"com.shutterfly.labourtracking.support.LTActionType" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStationUiSimple$2"->"com.shutterfly.labourtracking.support.LTActionType";
+"com.shutterfly.labourtracking.support.LTStationInfo" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStationUiSimple$2"->"com.shutterfly.labourtracking.support.LTStationInfo";
+"com.shutterfly.labourtracking.support.LTPersonResource" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStationUiSimple$2"->"com.shutterfly.labourtracking.support.LTPersonResource";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStationUiSimple$2"->"com.shutterfly.util.Debug";
+}

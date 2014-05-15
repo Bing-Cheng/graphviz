@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.PieceCount$1" [fontcolor="red"];
+"com.shutterfly.commercial.apps.PieceCount$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.PieceCount$1"->"com.shutterfly.commercial.apps.PieceCount$1";
+"com.shutterfly.commercial.apps.PieceCount$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.PieceCount$2"->"com.shutterfly.commercial.apps.PieceCount$1";
+"com.shutterfly.commercial.apps.PieceCount$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.PieceCount$3"->"com.shutterfly.commercial.apps.PieceCount$1";
+"com.shutterfly.commercial.apps.PieceCount" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.PieceCount"->"com.shutterfly.commercial.apps.PieceCount$1" [dir=both];
+}

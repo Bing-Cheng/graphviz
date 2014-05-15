@@ -1,0 +1,22 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgress"; 
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction$Cards"; 
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction$Cards"->"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction$WorkInProgressLine"; 
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction$WorkInProgressLine"->"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction"; 
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction"->"com.shutterfly.lab.presentation.action.LabViewAction";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction"->"com.shutterfly.lab.presentation.action.LabMapForm";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction"->"com.shutterfly.reporting.ItemTotalsList";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction"->"com.shutterfly.reporting.ReportingUtil";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction"->"com.shutterfly.reporting.ItemTotalsWorkInProgress";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction"->"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction$WorkInProgressLine";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction"->"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction$Cards";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction"->"com.shutterfly.servlets.SchedulerServices";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction"->"com.shutterfly.order.ItemFactory$ItemType";
+"com.shutterfly.lab.presentation.workinprogress.WorkInProgressAction"->"com.shutterfly.order.ItemFactory";
+splines="ortho";
+}

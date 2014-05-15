@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ObserverDialog" [fontcolor="red"];
+"com.shutterfly.apps.test.ObserverableTester" [ fontcolor="blue" ];
+"com.shutterfly.apps.ObserverDialog"->"com.shutterfly.apps.test.ObserverableTester";
+"com.shutterfly.apps.SwingResourceManager" [ fontcolor="blue" ];
+"com.shutterfly.apps.ObserverDialog"->"com.shutterfly.apps.SwingResourceManager";
+}

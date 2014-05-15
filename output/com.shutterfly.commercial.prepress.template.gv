@@ -1,0 +1,35 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.commercial.prepress.template.CmJobTemplate"; 
+"com.shutterfly.commercial.prepress.template.CmJobTemplate"->"com.shutterfly.commercial.prepress.template.TemplateConfig";
+"com.shutterfly.commercial.prepress.template.CmJobTemplate"->"com.shutterfly.commercial.model.CmJobasset";
+"com.shutterfly.commercial.prepress.template.CmJobTemplate"->"com.shutterfly.util.FileUtil";
+"com.shutterfly.commercial.prepress.template.CmJobTemplate"->"com.shutterfly.commercial.data.cache.CmPartnerProductCollection";
+"com.shutterfly.commercial.prepress.template.CmJobTemplate"->"com.shutterfly.commercial.model.CmPartnerProduct";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"; 
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.orderimporter.support.CommercialOrder";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.orderimporter.support.CommercialJob";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.data.cache.CmClientConfig";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.model.CmJob";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.model.CmJobasset";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.prepress.template.CmJobTemplate";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.orderimporter.castor.Asset";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.model.CmAssettype";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.data.cache.CmClientConfigCollection";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.orderimporter.support.CommercialJobs";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.orderimporter.support.CommercialTemplate";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.model.CmOrder";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.model.CmPartner";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.transformers.model.ClientOrderConfig";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.util.FileUtil";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.orderimporter.castor.Assets";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.orderimporter.castor.Location";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobDao";
+"com.shutterfly.commercial.prepress.template.CmJobTemplateBuilder"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobAssetDao";
+"com.shutterfly.commercial.prepress.template.TemplateConfig"; 
+splines="ortho";
+}

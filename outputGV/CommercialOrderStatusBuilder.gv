@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder" [fontcolor="red"];
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState";
+"com.shutterfly.commercial.model.CmPartner" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.model.CmPartner";
+"com.shutterfly.commercial.model.CmOrder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.model.CmOrder";
+"org.exolab.castor.xml.MarshalException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"org.exolab.castor.xml.MarshalException";
+"org.exolab.castor.xml.ValidationException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"org.exolab.castor.xml.ValidationException";
+"com.shutterfly.commercial.data.cache.CmPartnerCollection" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.data.cache.CmPartnerCollection";
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderDao";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.commercial.data.CommercialOrderStatusUpdate" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.CommercialOrderStatusUpdate"->"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder";
+"com.shutterfly.commercial.data.CommercialStaleState" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.CommercialStaleState"->"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder";
+"com.shutterfly.servlets.commercial.CommercialServices" [ fontcolor="green" ];
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder";
+}

@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDaoFactory" [fontcolor="red"];
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDaoFactory"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDaoFactory"->"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDao";
+"com.shutterfly.commercial.model.CmSortStatus" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDaoFactory"->"com.shutterfly.commercial.model.CmSortStatus";
+"com.shutterfly.commercial.model.CmJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDaoFactory"->"com.shutterfly.commercial.model.CmJob";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDaoFactory"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDaoFactory"->"com.shutterfly.util.Debug";
+}

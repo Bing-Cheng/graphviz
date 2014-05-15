@@ -1,0 +1,20 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.printers.indigo.IndigoFolderNameInfo"; 
+"com.shutterfly.printers.indigo.IndigoFolderNameInfo"->"com.shutterfly.printers.FolderNameInfo";
+"com.shutterfly.printers.indigo.IndigoFolderNameInfo"->"com.shutterfly.order.WorkType";
+"com.shutterfly.printers.indigo.IndigoFolderNameInfo"->"com.shutterfly.order.PaperType";
+"com.shutterfly.printers.indigo.IndigoFolderNameInfo"->"com.shutterfly.util.Debug";
+"com.shutterfly.printers.indigo.IndigoTemplate"; 
+"com.shutterfly.printers.indigo.PathResolver"; 
+"com.shutterfly.printers.indigo.PathResolver"->"com.shutterfly.order.DocumentItem";
+"com.shutterfly.printers.indigo.PathResolver"->"com.shutterfly.order.PrintItem";
+"com.shutterfly.printers.indigo.PathResolver"->"com.shutterfly.printers.indigo.IndigoFolderNameInfo";
+"com.shutterfly.printers.indigo.PathResolver"->"com.shutterfly.util.Debug";
+"com.shutterfly.printers.indigo.PrinterTemplate"; 
+"com.shutterfly.printers.indigo.ReverseStack"; 
+"com.shutterfly.printers.indigo.ReverseStack"->"com.shutterfly.util.Debug";
+splines="ortho";
+}

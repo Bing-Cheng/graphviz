@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.properties.ClientEnvironment"; 
+"com.shutterfly.properties.DigitalShipperHostname"; 
+"com.shutterfly.properties.LabDBHostname"; 
+"com.shutterfly.properties.LabID"; 
+"com.shutterfly.properties.LocalMachineHostname"; 
+"com.shutterfly.properties.MainDBHostname"; 
+"com.shutterfly.properties.NumWorkstations"; 
+"com.shutterfly.properties.PilotOrderCountThreshold"; 
+"com.shutterfly.properties.SflyProperties"; 
+"com.shutterfly.properties.SflyProperties"->"com.shutterfly.util.PropertiesConverter";
+"com.shutterfly.properties.SflyProperties"->"com.shutterfly.db.LabDB";
+"com.shutterfly.properties.SflyProperties"->"com.shutterfly.util.Debug";
+"com.shutterfly.properties.SflyProperties"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.properties.SflyProperties"->"com.shutterfly.util.LabEnvironment";
+"com.shutterfly.properties.SflyProperties"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.properties.SflyPropertyCategory"; 
+"com.shutterfly.properties.ShippingCarrierPolicy"; 
+splines="ortho";
+}

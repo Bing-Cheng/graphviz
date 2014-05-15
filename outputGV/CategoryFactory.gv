@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.category.CategoryFactory" [fontcolor="red"];
+"com.shutterfly.category.Category" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryFactory"->"com.shutterfly.category.Category";
+"com.shutterfly.properties.SflyProperties" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryFactory"->"com.shutterfly.properties.SflyProperties";
+}

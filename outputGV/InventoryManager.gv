@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.InventoryManager" [fontcolor="red"];
+"com.shutterfly.labourtracking.interfaces.LTApplicationResourceType" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.labourtracking.interfaces.LTApplicationResourceType";
+"com.shutterfly.commercial.apps.InventoryManager$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.commercial.apps.InventoryManager$1";
+"com.shutterfly.commercial.apps.InventoryManager$2" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.commercial.apps.InventoryManager$2";
+"com.shutterfly.commercial.apps.InventoryManager$3" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.commercial.apps.InventoryManager$3";
+"com.shutterfly.commercial.apps.InventoryManager$4" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.commercial.apps.InventoryManager$4";
+"com.shutterfly.commercial.apps.InventoryManager$5" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.commercial.apps.InventoryManager$5";
+"com.shutterfly.commercial.apps.InventoryManager$6" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.commercial.apps.InventoryManager$6";
+"com.shutterfly.util.DebugMail" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.util.DebugMail";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.apps.AppAccessories" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.apps.AppAccessories";
+}

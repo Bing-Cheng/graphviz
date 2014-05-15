@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ScanStationUiSimple$UiUpdate" [fontcolor="red"];
+"com.shutterfly.apps.ScanStationUiSimple" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStationUiSimple$UiUpdate"->"com.shutterfly.apps.ScanStationUiSimple";
+}

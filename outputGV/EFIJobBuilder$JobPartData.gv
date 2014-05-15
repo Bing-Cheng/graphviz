@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData" [fontcolor="red"];
+"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData"->"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData";
+"com.shutterfly.servlets.commercial.controller.OrderAction" [ fontcolor="green" ];
+"com.shutterfly.servlets.commercial.controller.OrderAction"->"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData";
+"com.shutterfly.commercial.efi.EFIJobBuilder" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder"->"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData" [dir=both];
+}

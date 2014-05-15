@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.commercial.CommercialHotfolder"; 
+"com.shutterfly.servlets.commercial.CommercialHotfolder"->"com.shutterfly.commercial.data.CommercialOrderHotFolder";
+"com.shutterfly.servlets.commercial.CommercialHotfolder"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.commercial.CommercialHotfolder"->"com.shutterfly.util.Version";
+"com.shutterfly.servlets.commercial.CommercialHotfolder"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.servlets.commercial.CommercialPpmlUpload"; 
+"com.shutterfly.servlets.commercial.CommercialPpmlUpload"->"com.shutterfly.util.FileUtil";
+"com.shutterfly.servlets.commercial.CommercialPpmlUpload"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.commercial.CommercialServices"; 
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.commercial.data.CommercialStaleState";
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.commercial.data.CommercialAuditApproved";
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.reporting.CommercialReportingUtil";
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.commercial.prepress.ItemGroupRender";
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.commercial.prepress.ItemGroupRenderWithCallBack";
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.reporting.CommercialReportWriter";
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.util.Version";
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.servlets.commercial.UploadFileServlet"; 
+"com.shutterfly.servlets.commercial.UploadFileServlet"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.commercial.UploadFileServlet"->"com.shutterfly.util.FileUtil";
+splines="ortho";
+}

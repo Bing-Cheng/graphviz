@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.ui.IntTextField$IntTextDocument" [fontcolor="red"];
+"com.shutterfly.commercial.apps.ui.IntTextField$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.ui.IntTextField$IntTextDocument"->"com.shutterfly.commercial.apps.ui.IntTextField$1";
+"com.shutterfly.commercial.apps.ui.IntTextField$IntTextDocument" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.ui.IntTextField$IntTextDocument"->"com.shutterfly.commercial.apps.ui.IntTextField$IntTextDocument";
+"com.shutterfly.commercial.apps.ui.IntTextField" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.ui.IntTextField"->"com.shutterfly.commercial.apps.ui.IntTextField$IntTextDocument" [dir=both];
+}

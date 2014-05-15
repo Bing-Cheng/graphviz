@@ -1,0 +1,34 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.inventorycontrol.core.request.ICBinTransferRequest"; 
+"com.shutterfly.inventorycontrol.core.request.ICBinTransferRequest"->"com.shutterfly.inventorycontrol.core.request.ICXMLRequest";
+"com.shutterfly.inventorycontrol.core.request.ICBinTransferRequest"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.inventorycontrol.core.request.ICBinTransferRequest"->"com.shutterfly.order.Item";
+"com.shutterfly.inventorycontrol.core.request.ICBinTransferRequest"->"com.shutterfly.order.ItemList";
+"com.shutterfly.inventorycontrol.core.request.ICSOPHeader"; 
+"com.shutterfly.inventorycontrol.core.request.ICSOPHeader"->"com.shutterfly.inventorycontrol.core.request.ICXMLRequest";
+"com.shutterfly.inventorycontrol.core.request.ICSOPHeader"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.inventorycontrol.core.request.ICSOPItem"; 
+"com.shutterfly.inventorycontrol.core.request.ICSOPItem"->"com.shutterfly.inventorycontrol.core.request.ICXMLRequest";
+"com.shutterfly.inventorycontrol.core.request.ICSOPItem"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.inventorycontrol.core.request.ICSOPItem"->"com.shutterfly.order.ItemList";
+"com.shutterfly.inventorycontrol.core.request.ICSOPItem"->"com.shutterfly.order.Item";
+"com.shutterfly.inventorycontrol.core.request.ICSOPItemBin"; 
+"com.shutterfly.inventorycontrol.core.request.ICSOPItemBin"->"com.shutterfly.inventorycontrol.core.request.ICSOPItem";
+"com.shutterfly.inventorycontrol.core.request.ICSOPItemBin"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.inventorycontrol.core.request.ICSOPItems"; 
+"com.shutterfly.inventorycontrol.core.request.ICSOPItems"->"com.shutterfly.inventorycontrol.core.request.ICXMLRequest";
+"com.shutterfly.inventorycontrol.core.request.ICSOPItems"->"com.shutterfly.inventorycontrol.core.request.ICSOPItem";
+"com.shutterfly.inventorycontrol.core.request.ICSOPItems"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.inventorycontrol.core.request.ICSOPItems"->"com.shutterfly.inventorycontrol.core.request.ICSOPItemBin";
+"com.shutterfly.inventorycontrol.core.request.ICXMLRequest"; 
+"com.shutterfly.inventorycontrol.core.request.ICXMLRequest"->"com.shutterfly.servlets.inventory.response.InventoryControlResponse";
+"com.shutterfly.inventorycontrol.core.request.ICXMLSOPRequest"; 
+"com.shutterfly.inventorycontrol.core.request.ICXMLSOPRequest"->"com.shutterfly.inventorycontrol.core.request.ICXMLRequest";
+"com.shutterfly.inventorycontrol.core.request.ICXMLSOPRequest"->"com.shutterfly.inventorycontrol.core.request.ICSOPItems";
+"com.shutterfly.inventorycontrol.core.request.ICXMLSOPRequest"->"com.shutterfly.inventorycontrol.core.request.ICSOPHeader";
+"com.shutterfly.inventorycontrol.core.request.ICXMLSOPRequest"->"com.shutterfly.order.SubBatch";
+splines="ortho";
+}

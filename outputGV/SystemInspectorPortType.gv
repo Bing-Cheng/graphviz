@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.SystemInspectorPortType" [fontcolor="red"];
+"com.pace2020.epace.sdk.SystemInspector" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.SystemInspector"->"com.pace2020.epace.sdk.SystemInspectorPortType";
+"com.pace2020.epace.sdk.SystemInspectorHttpBindingStub" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.SystemInspectorHttpBindingStub"->"com.pace2020.epace.sdk.SystemInspectorPortType";
+"com.pace2020.epace.sdk.SystemInspectorLocator" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.SystemInspectorLocator"->"com.pace2020.epace.sdk.SystemInspectorPortType";
+}

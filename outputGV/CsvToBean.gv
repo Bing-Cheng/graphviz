@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.bean.CsvToBean" [fontcolor="red"];
+"com.shutterfly.commercial.impl.bean.MappingStrategy" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.bean.CsvToBean"->"com.shutterfly.commercial.impl.bean.MappingStrategy";
+"com.shutterfly.commercial.impl.CSVReader" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.bean.CsvToBean"->"com.shutterfly.commercial.impl.CSVReader";
+}

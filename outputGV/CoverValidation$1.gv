@@ -1,0 +1,33 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.CoverValidation$1" [fontcolor="red"];
+"com.shutterfly.commercial.transformers.model.OrderFtpClient" [ fontcolor="blue" ];
+"com.shutterfly.apps.CoverValidation$1"->"com.shutterfly.commercial.transformers.model.OrderFtpClient";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.CoverValidation$1"->"com.shutterfly.util.Debug";
+"com.shutterfly.apps.CoverValidation$1" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidation$1"->"com.shutterfly.apps.CoverValidation$1";
+"com.shutterfly.apps.CoverValidationUi$1" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$1"->"com.shutterfly.apps.CoverValidation$1";
+"com.shutterfly.apps.CoverValidationUi$5$1" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$5$1"->"com.shutterfly.apps.CoverValidation$1";
+"com.shutterfly.apps.CoverValidationUi$5" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$5"->"com.shutterfly.apps.CoverValidation$1";
+"com.shutterfly.apps.CoverValidationUi$6" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$6"->"com.shutterfly.apps.CoverValidation$1";
+"com.shutterfly.apps.CoverValidationUi$7" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$7"->"com.shutterfly.apps.CoverValidation$1";
+"com.shutterfly.apps.CoverValidationUi" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi"->"com.shutterfly.apps.CoverValidation$1";
+"com.shutterfly.apps.CoverValidationUi$2" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$2"->"com.shutterfly.apps.CoverValidation$1";
+"com.shutterfly.apps.CoverValidationUi$3" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$3"->"com.shutterfly.apps.CoverValidation$1";
+"com.shutterfly.apps.CoverValidationUi$4" [ fontcolor="green" ];
+"com.shutterfly.apps.CoverValidationUi$4"->"com.shutterfly.apps.CoverValidation$1";
+"com.shutterfly.apps.CoverValidation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.CoverValidation"->"com.shutterfly.apps.CoverValidation$1" [dir=both];
+}

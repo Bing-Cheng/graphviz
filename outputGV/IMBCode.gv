@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.IMBCode" [fontcolor="red"];
+"com.shutterfly.commercial.data.Tray$BarcodeID" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBCode"->"com.shutterfly.commercial.data.Tray$BarcodeID";
+"com.shutterfly.commercial.data.CommercialJob$ServiceTypeID" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBCode"->"com.shutterfly.commercial.data.CommercialJob$ServiceTypeID";
+"com.shutterfly.exception.ShutterflyException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBCode"->"com.shutterfly.exception.ShutterflyException";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBCode"->"com.shutterfly.util.Debug";
+"com.shutterfly.util.StringUtil" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBCode"->"com.shutterfly.util.StringUtil";
+"com.shutterfly.commercial.apps.USPSUtil" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBCode"->"com.shutterfly.commercial.apps.USPSUtil";
+"com.shutterfly.commercial.data.Tray" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBCode"->"com.shutterfly.commercial.data.Tray";
+"com.shutterfly.commercial.data.CommercialJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBCode"->"com.shutterfly.commercial.data.CommercialJob";
+}

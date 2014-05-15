@@ -1,0 +1,37 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.DataSetupPanel" [fontcolor="red"];
+"com.shutterfly.commercial.data.DataManager" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.data.DataManager";
+"com.shutterfly.commercial.data.DataModel$DataDelimeter" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.data.CommercialRecord" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.data.CommercialRecord";
+"com.shutterfly.commercial.data.CommercialJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.data.CommercialJob";
+"com.shutterfly.commercial.apps.DataSetupPanel$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.apps.DataSetupPanel$1";
+"com.shutterfly.commercial.apps.DataSetupPanel$2" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.apps.DataSetupPanel$2";
+"com.shutterfly.commercial.apps.DataSetupPanel$3" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.apps.DataSetupPanel$3";
+"com.shutterfly.commercial.apps.DataSetupPanel$4" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.apps.DataSetupPanel$4";
+"com.shutterfly.db.hibernate.commercial.CM_Product" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.db.hibernate.commercial.CM_Product";
+"com.shutterfly.commercial.apps.DataSetupPanel$DirectoryFilter" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.apps.DataSetupPanel$DirectoryFilter";
+"org.xml.sax.SAXException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"org.xml.sax.SAXException";
+"com.shutterfly.commercial.data.JobSpec" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.data.JobSpec";
+"com.shutterfly.commercial.data.CommercialRecord$CSVHeader" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.data.CommercialRecord$CSVHeader";
+"com.shutterfly.commercial.data.DataModel" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSetupPanel"->"com.shutterfly.commercial.data.DataModel";
+"com.shutterfly.commercial.apps.CommercialData" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.apps.DataSetupPanel";
+}

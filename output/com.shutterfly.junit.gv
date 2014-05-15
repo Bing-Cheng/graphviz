@@ -1,0 +1,32 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.junit.RenderLumaTest"; 
+"com.shutterfly.junit.RenderLumaTest"->"com.shutterfly.commercial.transformers.controller.luma.RenderClient";
+"com.shutterfly.junit.RenderLumaTest"->"com.shutterfly.commercial.transformers.controller.luma.Tray";
+"com.shutterfly.junit.RenderLumaTest"->"com.shutterfly.commercial.transformers.controller.luma.IRenderClient";
+"com.shutterfly.junit.RenderLumaTest"->"com.shutterfly.util.Debug";
+"com.shutterfly.junit.RenderLumaTest"->"com.shutterfly.commercial.orderimporter.dataprocessing.RemoteAssetTransferAgent";
+"com.shutterfly.junit.SubBatchStateMachineCDTest"; 
+"com.shutterfly.junit.SubBatchStateMachineCDTest"->"com.shutterfly.order.SubBatchStateMachineCD";
+"com.shutterfly.junit.SubBatchStateMachineCDTest"->"com.shutterfly.order.SubBatchEvent";
+"com.shutterfly.junit.SubBatchStateMachineCDTest"->"com.shutterfly.order.SubBatchEvent$Event";
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"; 
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"->"com.shutterfly.db.LabDB";
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"->"com.shutterfly.db.LabDBSingletonManager";
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"->"com.shutterfly.order.PhotoBookItem";
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"->"com.shutterfly.order.WorkTypeFactory";
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"->"com.shutterfly.order.WorkType";
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"->"com.shutterfly.order.SubBatchEvent";
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"->"com.shutterfly.order.Item";
+"com.shutterfly.junit.SubBatchStateMachinePhotobookTest"->"com.shutterfly.order.SubBatchEvent$Event";
+"com.shutterfly.junit.SubBatchStateMachinePrintsTest"; 
+"com.shutterfly.junit.SubBatchStateMachinePrintsTest"->"com.shutterfly.order.SubBatchStateMachinePrints";
+"com.shutterfly.junit.SubBatchStateMachinePrintsTest"->"com.shutterfly.order.SubBatchEvent";
+"com.shutterfly.junit.SubBatchStateMachinePrintsTest"->"com.shutterfly.order.SubBatchEvent$Event";
+splines="ortho";
+}

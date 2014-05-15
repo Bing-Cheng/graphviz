@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.HSBatchIntegrationStation$StationMode" [fontcolor="red"];
+"com.shutterfly.apps.HSBatchIntegrationStation$StationMode" [ fontcolor="green" ];
+"com.shutterfly.apps.HSBatchIntegrationStation$StationMode"->"com.shutterfly.apps.HSBatchIntegrationStation$StationMode";
+"com.shutterfly.apps.HSBatchIntegrationStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.HSBatchIntegrationStation"->"com.shutterfly.apps.HSBatchIntegrationStation$StationMode" [dir=both];
+}

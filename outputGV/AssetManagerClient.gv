@@ -1,0 +1,33 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.support.AssetManagerClient" [fontcolor="red"];
+"com.shutterfly.assetmanager.server.model.AbstractDatabase" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.server.model.AbstractDatabase"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.assetmanager.server.model.AssetManagerMonitor" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.server.model.AssetManagerMonitor"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.assetmanager.server.model.ClientMonitorData" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.server.model.ClientMonitorData"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.assetmanager.server.model.DatabaseActivity" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.server.model.DatabaseActivity"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.assetmanager.server.model.PerforceDatabase" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.server.model.PerforceDatabase"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.assetmanager.server.model.FileSystemDatabase" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.server.model.FileSystemDatabase"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.assetmanager.server.model.ServerStartup" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.server.model.ServerStartup"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.servlets.assetmanager.ServerStartup$1" [ fontcolor="green" ];
+"com.shutterfly.servlets.assetmanager.ServerStartup$1"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.servlets.assetmanager.ServerStartup$2" [ fontcolor="green" ];
+"com.shutterfly.servlets.assetmanager.ServerStartup$2"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.servlets.assetmanager.ServerStartup" [ fontcolor="green" ];
+"com.shutterfly.servlets.assetmanager.ServerStartup"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.assetmanager.server.model.AssetManagerMonitorData" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.server.model.AssetManagerMonitorData"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+"com.shutterfly.assetmanager.server.model.DigitalAssetMonitorData" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.server.model.DigitalAssetMonitorData"->"com.shutterfly.assetmanager.support.AssetManagerClient";
+}

@@ -1,0 +1,37 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.JDFJobOrder" [fontcolor="red"];
+"com.shutterfly.commercial.data.CommercialJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.commercial.data.CommercialJob";
+"com.shutterfly.db.hibernate.dao.LabDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.db.hibernate.dao.LabDaoFactory";
+"com.shutterfly.db.hibernate.commercial.CM_SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.db.hibernate.commercial.CM_SubBatch";
+"com.shutterfly.db.hibernate.commercial.ShippingAddress" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.db.hibernate.commercial.ShippingAddress";
+"com.shutterfly.commercial.data.JDFParser" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.commercial.data.JDFParser";
+"com.shutterfly.db.hibernate.dao.impl.CM_JobDAO" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.db.hibernate.dao.impl.CM_JobDAO";
+"com.shutterfly.db.hibernate.commercial.CM_Job" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.db.hibernate.commercial.CM_Job";
+"com.shutterfly.db.hibernate.commercial.CM_Product" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.db.hibernate.commercial.CM_Product";
+"org.w3c.dom.Document" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"org.w3c.dom.Document";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.util.Debug";
+"com.shutterfly.db.hibernate.dao.impl.ShippingAddressDAO" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.db.hibernate.dao.impl.ShippingAddressDAO";
+"com.shutterfly.db.hibernate.commercial.CM_Job$JobStates" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.db.hibernate.commercial.CM_Job$JobStates";
+"com.shutterfly.db.hibernate.dao.impl.CM_ProductDAO" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.db.hibernate.dao.impl.CM_ProductDAO";
+"com.shutterfly.db.hibernate.dao.DBDAOs" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.db.hibernate.dao.DBDAOs";
+"com.shutterfly.db.hibernate.dao.AbstractDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.JDFJobOrder"->"com.shutterfly.db.hibernate.dao.AbstractDao";
+}

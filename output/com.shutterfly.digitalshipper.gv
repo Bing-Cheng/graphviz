@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.digitalshipper.ShipmentRequest"; 
+"com.shutterfly.digitalshipper.ShipmentRequest"->"com.shutterfly.shipping.ShippingState";
+"com.shutterfly.digitalshipper.ShipmentRequest"->"com.shutterfly.order.Address";
+"com.shutterfly.digitalshipper.ShipmentRequest"->"com.shutterfly.order.Partner";
+"com.shutterfly.digitalshipper.ShipmentRequest"->"com.shutterfly.order.Shipment";
+"com.shutterfly.digitalshipper.ShipmentRequest"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.digitalshipper.ShipmentRequest"->"com.shutterfly.order.ShippingMethod";
+"com.shutterfly.digitalshipper.ShipmentRequest"->"com.shutterfly.order.ShippingMethod$SHIPPING_CARRIER";
+"com.shutterfly.digitalshipper.ShipmentRequest"->"com.shutterfly.order.ReturnAddressFactory";
+"com.shutterfly.digitalshipper.ShipmentResponse"; 
+"com.shutterfly.digitalshipper.ShipmentResponse"->"com.shutterfly.labels.Label";
+splines="ortho";
+}

@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ScanStation$BarcodeCatcher" [fontcolor="red"];
+"com.shutterfly.barcode.Barcode" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStation$BarcodeCatcher"->"com.shutterfly.barcode.Barcode";
+"com.shutterfly.apps.ScanStation" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStation$BarcodeCatcher"->"com.shutterfly.apps.ScanStation";
+}

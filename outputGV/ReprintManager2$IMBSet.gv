@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.ReprintManager2$IMBSet" [fontcolor="red"];
+"com.shutterfly.commercial.data.IMBCode" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ReprintManager2$IMBSet"->"com.shutterfly.commercial.data.IMBCode";
+"com.shutterfly.commercial.impl.CommercialReprint" [ fontcolor="green" ];
+"com.shutterfly.commercial.impl.CommercialReprint"->"com.shutterfly.commercial.impl.ReprintManager2$IMBSet";
+"com.shutterfly.commercial.impl.ReprintManager2$IMBSet" [ fontcolor="green" ];
+"com.shutterfly.commercial.impl.ReprintManager2$IMBSet"->"com.shutterfly.commercial.impl.ReprintManager2$IMBSet";
+"com.shutterfly.commercial.impl.ReprintManager2" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.impl.ReprintManager2"->"com.shutterfly.commercial.impl.ReprintManager2$IMBSet" [dir=both];
+}

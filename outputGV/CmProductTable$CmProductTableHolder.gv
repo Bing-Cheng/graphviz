@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.CmProductTable$CmProductTableHolder" [fontcolor="red"];
+"com.shutterfly.commercial.data.CmProductTable$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmProductTable$CmProductTableHolder"->"com.shutterfly.commercial.data.CmProductTable$1";
+"com.shutterfly.commercial.data.CmProductTable$CmProductTableHolder" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.CmProductTable$CmProductTableHolder"->"com.shutterfly.commercial.data.CmProductTable$CmProductTableHolder";
+"com.shutterfly.commercial.transformers.model.inwk.InWkRequest" [ fontcolor="green" ];
+"com.shutterfly.commercial.transformers.model.inwk.InWkRequest"->"com.shutterfly.commercial.data.CmProductTable$CmProductTableHolder";
+"com.shutterfly.commercial.transformers.model.inwk.IWOrderingImpl" [ fontcolor="green" ];
+"com.shutterfly.commercial.transformers.model.inwk.IWOrderingImpl"->"com.shutterfly.commercial.data.CmProductTable$CmProductTableHolder";
+"com.shutterfly.commercial.transformers.model.inwk.InWkOrder" [ fontcolor="green" ];
+"com.shutterfly.commercial.transformers.model.inwk.InWkOrder"->"com.shutterfly.commercial.data.CmProductTable$CmProductTableHolder";
+"com.shutterfly.commercial.transformers.model.inwk.InWkOrderConfirm" [ fontcolor="green" ];
+"com.shutterfly.commercial.transformers.model.inwk.InWkOrderConfirm"->"com.shutterfly.commercial.data.CmProductTable$CmProductTableHolder";
+"com.shutterfly.commercial.transformers.model.inwk.InWkOrderConfirm$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.transformers.model.inwk.InWkOrderConfirm$1"->"com.shutterfly.commercial.data.CmProductTable$CmProductTableHolder";
+"com.shutterfly.commercial.data.CmProductTable" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.data.CmProductTable"->"com.shutterfly.commercial.data.CmProductTable$CmProductTableHolder" [dir=both];
+}

@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.clientreleasemanager.support.StationConfiguration" [fontcolor="red"];
+"com.shutterfly.clientreleasemanager.support.LabApplication" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.StationConfiguration"->"com.shutterfly.clientreleasemanager.support.LabApplication";
+"com.shutterfly.clientreleasemanager.support.InvalidStationConfigurationException" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.StationConfiguration"->"com.shutterfly.clientreleasemanager.support.InvalidStationConfigurationException";
+"com.shutterfly.clientreleasemanager.support.XMLToHashtable" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.StationConfiguration"->"com.shutterfly.clientreleasemanager.support.XMLToHashtable";
+"com.shutterfly.clientreleasemanager.support.ServerStatusReport" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.StationConfiguration"->"com.shutterfly.clientreleasemanager.support.ServerStatusReport";
+"com.shutterfly.clientreleasemanager.support.ServerRequest" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.StationConfiguration"->"com.shutterfly.clientreleasemanager.support.ServerRequest";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.StationConfiguration"->"com.shutterfly.util.Debug";
+"com.shutterfly.clientreleasemanager.support.CommandUtil" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.StationConfiguration"->"com.shutterfly.clientreleasemanager.support.CommandUtil";
+"com.shutterfly.clientreleasemanager.support.TheMoneyShot" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.StationConfiguration"->"com.shutterfly.clientreleasemanager.support.TheMoneyShot";
+"com.shutterfly.clientreleasemanager.support.LabVersion" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.StationConfiguration"->"com.shutterfly.clientreleasemanager.support.LabVersion";
+}

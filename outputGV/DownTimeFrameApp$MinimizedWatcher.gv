@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.DownTimeFrameApp$MinimizedWatcher" [fontcolor="red"];
+"com.shutterfly.apps.DownTimeFrame" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrameApp$MinimizedWatcher"->"com.shutterfly.apps.DownTimeFrame";
+"com.shutterfly.apps.DownTimeFrameApp$MinimizedWatcher" [ fontcolor="green" ];
+"com.shutterfly.apps.DownTimeFrameApp$MinimizedWatcher"->"com.shutterfly.apps.DownTimeFrameApp$MinimizedWatcher";
+"com.shutterfly.apps.DownTimeFrameApp" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.DownTimeFrameApp"->"com.shutterfly.apps.DownTimeFrameApp$MinimizedWatcher" [dir=both];
+}

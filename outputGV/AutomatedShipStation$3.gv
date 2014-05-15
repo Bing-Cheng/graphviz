@@ -1,0 +1,37 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.AutomatedShipStation$3" [fontcolor="red"];
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.AutomatedShipStation$3"->"com.shutterfly.util.Debug";
+"com.shutterfly.apps.AutomatedShipStation$3" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$3"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$4" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$4"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$5" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$5"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$6" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$6"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$ErrorLabel" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$ErrorLabel"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$FlushLabel" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$FlushLabel"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$PrintShipLabel" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$PrintShipLabel"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$RFIDPort" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$RFIDPort"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$Step" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$Step"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$1"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$2" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$2"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$3" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo$3"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo" [ fontcolor="green" ];
+"com.shutterfly.apps.AutomatedShipStation$TrackingInfo"->"com.shutterfly.apps.AutomatedShipStation$3";
+"com.shutterfly.apps.AutomatedShipStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.AutomatedShipStation"->"com.shutterfly.apps.AutomatedShipStation$3" [dir=both];
+}

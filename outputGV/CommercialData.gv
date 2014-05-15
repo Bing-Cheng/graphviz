@@ -1,0 +1,35 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.CommercialData" [fontcolor="red"];
+"com.shutterfly.commercial.apps.DataSetupPanel" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.apps.DataSetupPanel";
+"org.xml.sax.SAXException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"org.xml.sax.SAXException";
+"com.shutterfly.rendertest.regression.support.SFFileChooser" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.rendertest.regression.support.SFFileChooser";
+"org.w3c.dom.Node" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"org.w3c.dom.Node";
+"com.shutterfly.rendertest.regression.support.XmlTreeModel" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.rendertest.regression.support.XmlTreeModel";
+"com.shutterfly.rendertest.regression.ui.SFRFMessageFrame" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.rendertest.regression.ui.SFRFMessageFrame";
+"com.shutterfly.commercial.apps.DataSplitPanel" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.apps.DataSplitPanel";
+"com.shutterfly.commercial.apps.DataMergePanel" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.apps.DataMergePanel";
+"com.shutterfly.commercial.apps.CommercialData$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.apps.CommercialData$1";
+"com.shutterfly.commercial.data.DataManager" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.data.DataManager";
+"com.shutterfly.commercial.data.JobSpec" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.data.JobSpec";
+"org.w3c.dom.Document" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"org.w3c.dom.Document";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.util.Debug";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.properties.LabDBHostname";
+}

@@ -1,0 +1,28 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.HeaderHeaderTypeTypeDescriptor"; 
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.HeaderHeaderTypeTypeDescriptor"->"com.shutterfly.commercial.orderimporter.castor.types.HeaderHeaderTypeType";
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.JobTypeTypeTypeDescriptor"; 
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.JobTypeTypeTypeDescriptor"->"com.shutterfly.commercial.orderimporter.castor.types.JobTypeTypeType";
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.MailingMethodMailingOptionTypeDescriptor"; 
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.MailingMethodMailingOptionTypeDescriptor"->"com.shutterfly.commercial.orderimporter.castor.types.MailingMethodMailingOptionType";
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.ProductDetailsCoatingOptionTypeDescriptor"; 
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.ProductDetailsCoatingOptionTypeDescriptor"->"com.shutterfly.commercial.orderimporter.castor.types.ProductDetailsCoatingOptionType";
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.ProductDetailsPaperOptionTypeDescriptor"; 
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.ProductDetailsPaperOptionTypeDescriptor"->"com.shutterfly.commercial.orderimporter.castor.types.ProductDetailsPaperOptionType";
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.ProductDetailsPrintOptionTypeDescriptor"; 
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.ProductDetailsPrintOptionTypeDescriptor"->"com.shutterfly.commercial.orderimporter.castor.types.ProductDetailsPrintOptionType";
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.ProductDetailsSkuTypeDescriptor"; 
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.ProductDetailsSkuTypeDescriptor"->"com.shutterfly.commercial.orderimporter.castor.types.ProductDetailsSkuType";
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.ShipMethodShipMethodOptionTypeDescriptor"; 
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.ShipMethodShipMethodOptionTypeDescriptor"->"com.shutterfly.commercial.orderimporter.castor.types.ShipMethodShipMethodOptionType";
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.SortingMethodNCOATypeDescriptor"; 
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.SortingMethodNCOATypeDescriptor"->"com.shutterfly.commercial.orderimporter.castor.types.SortingMethodNCOAType";
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.SortingMethodSortingOptionTypeDescriptor"; 
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.SortingMethodSortingOptionTypeDescriptor"->"com.shutterfly.commercial.orderimporter.castor.types.SortingMethodSortingOptionType";
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.StatusStatusMethodTypeDescriptor"; 
+"com.shutterfly.commercial.orderimporter.castor.types.descriptors.StatusStatusMethodTypeDescriptor"->"com.shutterfly.commercial.orderimporter.castor.types.StatusStatusMethodType";
+splines="ortho";
+}

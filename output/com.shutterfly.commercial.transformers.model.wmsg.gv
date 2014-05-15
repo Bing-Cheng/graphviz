@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.commercial.transformers.model.wmsg.WMSGOrder"; 
+"com.shutterfly.commercial.transformers.model.wmsg.WMSGOrder"->"com.shutterfly.commercial.transformers.model.ClientOrder";
+"com.shutterfly.commercial.transformers.model.wmsg.WMSGOrder"->"com.shutterfly.commercial.orderimporter.castor.types.ShipMethodShipMethodOptionType";
+"com.shutterfly.commercial.transformers.model.wmsg.WMSGOrder"->"com.shutterfly.commercial.orderimporter.castor.types.SortingMethodSortingOptionType";
+"com.shutterfly.commercial.transformers.model.wmsg.WMSGOrder"->"com.shutterfly.commercial.transformers.model.ClientOrder$OrderXMLVariable";
+"com.shutterfly.commercial.transformers.model.wmsg.WMSGOrder"->"com.shutterfly.commercial.transformers.ui.AddressPane$AddressComponents";
+"com.shutterfly.commercial.transformers.model.wmsg.WMSGOrder"->"com.shutterfly.commercial.transformers.ui.AddressPane";
+splines="ortho";
+}

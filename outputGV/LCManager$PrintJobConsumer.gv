@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer" [fontcolor="red"];
+"com.shutterfly.commercial.model.CmPrintjob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.commercial.model.CmPrintjob";
+"com.shutterfly.commercial.model.CmItemgroup" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.commercial.model.CmItemgroup";
+"com.shutterfly.commercial.imposition.PpmlZipSet" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.commercial.imposition.PpmlZipSet";
+"com.shutterfly.commercial.imposition.PpmlImposeZip" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.commercial.imposition.PpmlImposeZip";
+"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter";
+"com.shutterfly.commercial.linecontroller.Press" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.commercial.linecontroller.Press";
+"com.shutterfly.commercial.data.JobCoverSheetInfo" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.commercial.data.JobCoverSheetInfo";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.util.Debug";
+"com.shutterfly.commercial.apps.model.LCManager$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.commercial.apps.model.LCManager$1";
+"com.shutterfly.util.FileUtil" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.util.FileUtil";
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer";
+"com.shutterfly.commercial.apps.model.LCManager" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.model.LCManager"->"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer" [dir=both];
+}

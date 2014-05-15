@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.test.OrderSender$OrderFileFilter" [fontcolor="red"];
+"com.shutterfly.apps.test.OrderSender$1" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.OrderSender$OrderFileFilter"->"com.shutterfly.apps.test.OrderSender$1";
+"com.shutterfly.apps.test.OrderSender$OrderFileFilter" [ fontcolor="green" ];
+"com.shutterfly.apps.test.OrderSender$OrderFileFilter"->"com.shutterfly.apps.test.OrderSender$OrderFileFilter";
+"com.shutterfly.apps.test.OrderSender" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.test.OrderSender"->"com.shutterfly.apps.test.OrderSender$OrderFileFilter" [dir=both];
+}

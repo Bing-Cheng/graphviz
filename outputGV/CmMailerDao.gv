@@ -1,0 +1,29 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao" [fontcolor="red"];
+"com.shutterfly.db.hibernate.dao.AbstractDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao"->"com.shutterfly.db.hibernate.dao.AbstractDao";
+"com.shutterfly.commercial.model.CmJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao"->"com.shutterfly.commercial.model.CmJob";
+"com.shutterfly.commercial.model.CmMailer" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao"->"com.shutterfly.commercial.model.CmMailer";
+"org.hibernate.Transaction" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao"->"org.hibernate.Transaction";
+"org.hibernate.Query" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao"->"org.hibernate.Query";
+"org.apache.struts.util.LabelValueBean" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao"->"org.apache.struts.util.LabelValueBean";
+"org.hibernate.criterion.Criterion" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao"->"org.hibernate.criterion.Criterion";
+"org.hibernate.Session" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao"->"org.hibernate.Session";
+"com.shutterfly.commercial.model.CmOrder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao"->"com.shutterfly.commercial.model.CmOrder";
+"com.shutterfly.commercial.model.CmPartner" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao"->"com.shutterfly.commercial.model.CmPartner";
+"org.hibernate.LockMode" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao"->"org.hibernate.LockMode";
+}

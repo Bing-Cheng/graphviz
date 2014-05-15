@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.miam.jack.ItemStation"; 
+"com.shutterfly.miam.jack.ItemStation"->"com.shutterfly.miam.jack.control.JackController";
+"com.shutterfly.miam.jack.ItemStation"->"com.shutterfly.miam.jack.model.ItemFetchThread";
+"com.shutterfly.miam.jack.ItemStation"->"com.shutterfly.miam.jack.model.ItemStateMachineCollection";
+"com.shutterfly.miam.jack.ItemStation"->"com.shutterfly.connectship.utils.SFXMLToHashTable";
+"com.shutterfly.miam.jack.ItemStation"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.miam.jack.ItemStation"->"com.shutterfly.miam.base.control.DBController";
+"com.shutterfly.miam.jack.ItemStation"->"com.shutterfly.miam.jack.model.pdfrip.PDF2Image";
+"com.shutterfly.miam.jack.ItemStation"->"com.shutterfly.util.Debug";
+splines="ortho";
+}

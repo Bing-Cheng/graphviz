@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.clientreleasemanager.support.ServerPollingTimerTask" [fontcolor="red"];
+"com.shutterfly.clientreleasemanager.support.StationConfiguration" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.ServerPollingTimerTask"->"com.shutterfly.clientreleasemanager.support.StationConfiguration";
+"com.shutterfly.clientreleasemanager.support.ServerPollingTask" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.ServerPollingTimerTask"->"com.shutterfly.clientreleasemanager.support.ServerPollingTask";
+"com.shutterfly.clientreleasemanager.support.StationManagerController" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.support.StationManagerController"->"com.shutterfly.clientreleasemanager.support.ServerPollingTimerTask";
+"com.shutterfly.clientreleasemanager.support.StationManagerController$1" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.support.StationManagerController$1"->"com.shutterfly.clientreleasemanager.support.ServerPollingTimerTask";
+"com.shutterfly.clientreleasemanager.support.StationManagerController$2" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.support.StationManagerController$2"->"com.shutterfly.clientreleasemanager.support.ServerPollingTimerTask";
+"com.shutterfly.clientreleasemanager.support.StationManagerController$3" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.support.StationManagerController$3"->"com.shutterfly.clientreleasemanager.support.ServerPollingTimerTask";
+}

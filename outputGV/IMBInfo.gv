@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.IMBInfo" [fontcolor="red"];
+"com.shutterfly.commercial.data.Tray$BarcodeID" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBInfo"->"com.shutterfly.commercial.data.Tray$BarcodeID";
+"com.shutterfly.commercial.model.CmMailer" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBInfo"->"com.shutterfly.commercial.model.CmMailer";
+"com.shutterfly.exception.ShutterflyException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBInfo"->"com.shutterfly.exception.ShutterflyException";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBInfo"->"com.shutterfly.util.Debug";
+"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBInfo"->"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDaoFactory";
+"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBInfo"->"com.shutterfly.commercial.impl.hibernate.dao.CmGenericDao";
+"com.shutterfly.util.StringUtil" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBInfo"->"com.shutterfly.util.StringUtil";
+"com.shutterfly.commercial.apps.USPSUtil" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBInfo"->"com.shutterfly.commercial.apps.USPSUtil";
+"com.shutterfly.commercial.data.Tray" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.IMBInfo"->"com.shutterfly.commercial.data.Tray";
+}

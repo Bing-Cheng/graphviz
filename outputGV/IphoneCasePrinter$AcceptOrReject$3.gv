@@ -1,0 +1,33 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3" [fontcolor="red"];
+"com.shutterfly.apps.ScanStationUiSimple" [ fontcolor="blue" ];
+"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3"->"com.shutterfly.apps.ScanStationUiSimple";
+"com.shutterfly.apps.ScanStationUi" [ fontcolor="blue" ];
+"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3"->"com.shutterfly.apps.ScanStationUi";
+"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3" [ fontcolor="green" ];
+"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3"->"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3";
+"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$4" [ fontcolor="green" ];
+"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$4"->"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3";
+"com.shutterfly.apps.IphoneCasePrinter$DDimension" [ fontcolor="green" ];
+"com.shutterfly.apps.IphoneCasePrinter$DDimension"->"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3";
+"com.shutterfly.apps.IphoneCasePrinter$Details" [ fontcolor="green" ];
+"com.shutterfly.apps.IphoneCasePrinter$Details"->"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3";
+"com.shutterfly.apps.IphoneCasePrinter$GetBatchno" [ fontcolor="green" ];
+"com.shutterfly.apps.IphoneCasePrinter$GetBatchno"->"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3";
+"com.shutterfly.apps.IphoneCasePrinter$GetCountByCategory" [ fontcolor="green" ];
+"com.shutterfly.apps.IphoneCasePrinter$GetCountByCategory"->"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3";
+"com.shutterfly.apps.IphoneCasePrinter$GetReprintReasons" [ fontcolor="green" ];
+"com.shutterfly.apps.IphoneCasePrinter$GetReprintReasons"->"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3";
+"com.shutterfly.apps.IphoneCasePrinter$GetSbNos" [ fontcolor="green" ];
+"com.shutterfly.apps.IphoneCasePrinter$GetSbNos"->"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3";
+"com.shutterfly.apps.IphoneCasePrinter$InsertReasonCode" [ fontcolor="green" ];
+"com.shutterfly.apps.IphoneCasePrinter$InsertReasonCode"->"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3";
+"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject"->"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3" [dir=both];
+"com.shutterfly.apps.IphoneCasePrinter" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.IphoneCasePrinter"->"com.shutterfly.apps.IphoneCasePrinter$AcceptOrReject$3" [dir=both];
+}

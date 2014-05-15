@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.barcode.BarcodeType" [fontcolor="red"];
+"org.krysalis.barcode4j.BarcodeGenerator" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeType"->"org.krysalis.barcode4j.BarcodeGenerator";
+"org.krysalis.barcode4j.impl.code128.Code128" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeType"->"org.krysalis.barcode4j.impl.code128.Code128";
+"org.krysalis.barcode4j.impl.datamatrix.DataMatrix" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeType"->"org.krysalis.barcode4j.impl.datamatrix.DataMatrix";
+"org.krysalis.barcode4j.impl.postnet.POSTNET" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeType"->"org.krysalis.barcode4j.impl.postnet.POSTNET";
+}

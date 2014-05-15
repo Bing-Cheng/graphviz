@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine" [fontcolor="red"];
+"com.shutterfly.barcode.BarcodeConfig" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine"->"com.shutterfly.barcode.BarcodeConfig";
+"com.shutterfly.barcode.BarcodeFactory" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine"->"com.shutterfly.barcode.BarcodeFactory";
+"org.krysalis.barcode4j.BarcodeGenerator" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine"->"org.krysalis.barcode4j.BarcodeGenerator";
+"org.krysalis.barcode4j.output.bitmap.BitmapCanvasProvider" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine"->"org.krysalis.barcode4j.output.bitmap.BitmapCanvasProvider";
+"org.krysalis.barcode4j.impl.datamatrix.DataMatrix" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine"->"org.krysalis.barcode4j.impl.datamatrix.DataMatrix";
+"com.shutterfly.barcode.ImageTypeEnum" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine"->"com.shutterfly.barcode.ImageTypeEnum";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine"->"com.shutterfly.util.Debug";
+"org.krysalis.barcode4j.BarcodeDimension" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine"->"org.krysalis.barcode4j.BarcodeDimension";
+"org.krysalis.barcode4j.output.CanvasProvider" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine"->"org.krysalis.barcode4j.output.CanvasProvider";
+}

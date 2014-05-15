@@ -1,0 +1,35 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.DMBatchStation$GetJobsInProgress" [fontcolor="red"];
+"com.shutterfly.db.transaction.SingleQueryTransaction" [ fontcolor="blue" ];
+"com.shutterfly.apps.DMBatchStation$GetJobsInProgress"->"com.shutterfly.db.transaction.SingleQueryTransaction";
+"com.shutterfly.apps.DMBatchStation$JobsInProgress" [ fontcolor="green" ];
+"com.shutterfly.apps.DMBatchStation$JobsInProgress"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.apps.DMBatchStation$GetJobsInProgress" [ fontcolor="green" ];
+"com.shutterfly.apps.DMBatchStation$GetJobsInProgress"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.apps.DMBatchStation$JobFileFilter" [ fontcolor="green" ];
+"com.shutterfly.apps.DMBatchStation$JobFileFilter"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.apps.PrintConfirmation" [ fontcolor="green" ];
+"com.shutterfly.apps.PrintConfirmation"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.apps.ReprintStation" [ fontcolor="green" ];
+"com.shutterfly.apps.ReprintStation"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.apps.PrintConfirmation$1" [ fontcolor="green" ];
+"com.shutterfly.apps.PrintConfirmation$1"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.apps.PrintConfirmation$2" [ fontcolor="green" ];
+"com.shutterfly.apps.PrintConfirmation$2"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.apps.PrintConfirmation$GetCoverCounts" [ fontcolor="green" ];
+"com.shutterfly.apps.PrintConfirmation$GetCoverCounts"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.apps.ReprintStation$okToReprint" [ fontcolor="green" ];
+"com.shutterfly.apps.ReprintStation$okToReprint"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.iqmeasurements.ReprintCauseDialog" [ fontcolor="green" ];
+"com.shutterfly.iqmeasurements.ReprintCauseDialog"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.iqmeasurements.ReprintCauseDialog$1" [ fontcolor="green" ];
+"com.shutterfly.iqmeasurements.ReprintCauseDialog$1"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.iqmeasurements.ReprintCauseDialog$CurrentStateBlinker" [ fontcolor="green" ];
+"com.shutterfly.iqmeasurements.ReprintCauseDialog$CurrentStateBlinker"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress";
+"com.shutterfly.apps.DMBatchStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.DMBatchStation"->"com.shutterfly.apps.DMBatchStation$GetJobsInProgress" [dir=both];
+}

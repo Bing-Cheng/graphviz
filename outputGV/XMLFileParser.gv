@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.xml.XMLFileParser" [fontcolor="red"];
+"com.shutterfly.connectship.utils.SFXMLToHashTable" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.xml.XMLFileParser"->"com.shutterfly.connectship.utils.SFXMLToHashTable";
+}

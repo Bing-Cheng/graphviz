@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.directorywatcher.AbstractResourceWatcher" [fontcolor="red"];
+"com.shutterfly.colorsure.directorywatcher.IntervalThread" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.directorywatcher.AbstractResourceWatcher"->"com.shutterfly.colorsure.directorywatcher.IntervalThread";
+"com.shutterfly.colorsure.directorywatcher.IResourceWatcher" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.directorywatcher.AbstractResourceWatcher"->"com.shutterfly.colorsure.directorywatcher.IResourceWatcher";
+"com.shutterfly.colorsure.directorywatcher.IResourceListener" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.directorywatcher.AbstractResourceWatcher"->"com.shutterfly.colorsure.directorywatcher.IResourceListener";
+"com.shutterfly.colorsure.directorywatcher.DirectoryWatcher" [ fontcolor="green" ];
+"com.shutterfly.colorsure.directorywatcher.DirectoryWatcher"->"com.shutterfly.colorsure.directorywatcher.AbstractResourceWatcher";
+}

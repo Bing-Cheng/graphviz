@@ -1,0 +1,24 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.miam.prepress.CustomerService"; 
+"com.shutterfly.servlets.miam.prepress.CustomerService"->"com.shutterfly.cs.PrepressStatusBuilder";
+"com.shutterfly.servlets.miam.prepress.CustomerService"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.miam.prepress.CustomerService"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.servlets.miam.prepress.CustomerService"->"com.shutterfly.miam.base.control.DBController";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"; 
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.miam.prepress.PrepressStation";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.miam.base.model.XMLValidator";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.miam.prepress.model.OrderModel";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.orderprocessing.IllegalOrderProcessingException";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.db.hibernate.miam.PP_order";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.util.Version";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.miam.base.control.DBController";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.util.FileUtil";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.util.ExceptionUtil";
+"com.shutterfly.servlets.miam.prepress.PrepressOrder"->"com.shutterfly.xml.XMLUtil";
+splines="ortho";
+}

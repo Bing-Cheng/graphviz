@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.test.RejectedOrderReset" [fontcolor="red"];
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.RejectedOrderReset"->"com.shutterfly.db.LabDB";
+"com.shutterfly.db.LabDBSingletonManager" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.RejectedOrderReset"->"com.shutterfly.db.LabDBSingletonManager";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.RejectedOrderReset"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.db.LabDBFactory" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.RejectedOrderReset"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.RejectedOrderReset"->"com.shutterfly.util.Debug";
+}

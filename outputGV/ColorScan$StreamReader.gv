@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.client.ColorScan$StreamReader" [fontcolor="red"];
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamReader"->"com.shutterfly.util.Debug";
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamReader"->"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter";
+"com.shutterfly.colorsure.client.ColorScan$StreamReader" [ fontcolor="green" ];
+"com.shutterfly.colorsure.client.ColorScan$StreamReader"->"com.shutterfly.colorsure.client.ColorScan$StreamReader";
+"com.shutterfly.colorsure.client.ColorScan" [ fontcolor="turquoise" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.client.ColorScan$StreamReader" [dir=both];
+}

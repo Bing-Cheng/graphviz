@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.test.LabelTest$PickListPage" [fontcolor="red"];
+"com.shutterfly.apps.test.LabelTest$1" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.LabelTest$PickListPage"->"com.shutterfly.apps.test.LabelTest$1";
+"com.shutterfly.apps.test.LabelTest$PickListPage" [ fontcolor="green" ];
+"com.shutterfly.apps.test.LabelTest$PickListPage"->"com.shutterfly.apps.test.LabelTest$PickListPage";
+"com.shutterfly.apps.test.LabelTest" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.test.LabelTest"->"com.shutterfly.apps.test.LabelTest$PickListPage" [dir=both];
+}

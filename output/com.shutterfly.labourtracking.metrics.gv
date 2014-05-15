@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.labourtracking.metrics.MetricCollector"; 
+"com.shutterfly.labourtracking.metrics.MetricCollector"->"com.shutterfly.db.ltreports.LTReportTransaction";
+"com.shutterfly.labourtracking.metrics.MetricManager"; 
+"com.shutterfly.labourtracking.metrics.MetricManager"->"com.shutterfly.db.LabDB";
+"com.shutterfly.labourtracking.metrics.MetricManager"->"com.shutterfly.connectship.utils.SFXMLToHashTable";
+"com.shutterfly.labourtracking.metrics.MetricManager"->"com.shutterfly.db.ltreports.MetricCollector";
+"com.shutterfly.labourtracking.metrics.MetricManager"->"com.shutterfly.labourtracking.metrics.MetricScheduler";
+"com.shutterfly.labourtracking.metrics.MetricManager"->"com.shutterfly.util.Util";
+"com.shutterfly.labourtracking.metrics.MetricManager"->"com.shutterfly.util.FileUtil";
+"com.shutterfly.labourtracking.metrics.MetricManager"->"com.shutterfly.util.Debug";
+"com.shutterfly.labourtracking.metrics.MetricScheduler"; 
+"com.shutterfly.labourtracking.metrics.MetricScheduler"->"com.shutterfly.db.LabDB";
+"com.shutterfly.labourtracking.metrics.MetricScheduler"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.labourtracking.metrics.MetricScheduler"->"com.shutterfly.db.ltreports.MetricCollector";
+"com.shutterfly.labourtracking.metrics.MetricScheduler"->"com.shutterfly.util.Debug";
+splines="ortho";
+}

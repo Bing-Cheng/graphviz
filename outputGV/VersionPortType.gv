@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.VersionPortType" [fontcolor="red"];
+"com.pace2020.epace.sdk.Version" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.Version"->"com.pace2020.epace.sdk.VersionPortType";
+"com.pace2020.epace.sdk.VersionHttpBindingStub" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.VersionHttpBindingStub"->"com.pace2020.epace.sdk.VersionPortType";
+"com.pace2020.epace.sdk.VersionLocator" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.VersionLocator"->"com.pace2020.epace.sdk.VersionPortType";
+}

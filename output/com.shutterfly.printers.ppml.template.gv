@@ -1,0 +1,24 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.printers.ppml.template.DataString"; 
+"com.shutterfly.printers.ppml.template.DataString"->"com.shutterfly.printers.indigo.pagebuilder.Page";
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger210"; 
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger210"->"com.shutterfly.printers.ppml.template.TemplateMergerProperties";
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger210"->"com.shutterfly.printers.ppml.template.model.TabDataModel";
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger210"->"com.shutterfly.util.Debug";
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger210"->"com.shutterfly.printers.ppml.PPMLGenerator210";
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger220"; 
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger220"->"com.shutterfly.printers.ppml.template.TemplateMergerProperties";
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger220"->"com.shutterfly.printers.ppml.template.model.TabDataModel";
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger220"->"com.shutterfly.util.Debug";
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger220"->"com.shutterfly.printers.ppml.PPMLGenerator220";
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger300"; 
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger300"->"com.shutterfly.printers.ppml.template.model.TabDataModel";
+"com.shutterfly.printers.ppml.template.PpmlTemplateMerger300"->"com.shutterfly.printers.ppml.PPMLGenerator300";
+"com.shutterfly.printers.ppml.template.TemplateMergerProperties"; 
+"com.shutterfly.printers.ppml.template.TemplateQueryUtil"; 
+"com.shutterfly.printers.ppml.template.TemplateQueryUtil"->"com.shutterfly.printers.ppml.PPMLGenerator210";
+splines="ortho";
+}

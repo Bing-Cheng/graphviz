@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.inventory.Slot" [fontcolor="red"];
+"com.shutterfly.apps.inventory.SlotInfo" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.Slot"->"com.shutterfly.apps.inventory.SlotInfo";
+"com.shutterfly.order.SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.Slot"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.Slot"->"com.shutterfly.util.Debug";
+}

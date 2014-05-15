@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.lab.presentation.targeted.TargetedInsertsRequestAction"; 
+"com.shutterfly.lab.presentation.targeted.TargetedInsertsRequestAction"->"com.shutterfly.lab.presentation.action.LabRequestAction";
+"com.shutterfly.lab.presentation.targeted.TargetedInsertsRequestAction"->"com.shutterfly.lab.presentation.action.LabMapForm";
+"com.shutterfly.lab.presentation.targeted.TargetedInsertsRequestAction"->"com.shutterfly.db.transaction.FetchCollateralTransaction$CollateralDetails";
+"com.shutterfly.lab.presentation.targeted.TargetedInsertsRequestAction"->"com.shutterfly.db.LabDB";
+"com.shutterfly.lab.presentation.targeted.TargetedInsertsRequestAction"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.lab.presentation.targeted.TargetedInsertsRequestAction"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.lab.presentation.targeted.TargetedInsertsRequestAction"->"com.shutterfly.lab.util.StringUtils";
+"com.shutterfly.lab.presentation.targeted.TargetedInsertsRequestAction"->"com.shutterfly.db.transaction.FetchCollateralTransaction";
+splines="ortho";
+}

@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.barcode.Barcode" [fontcolor="red"];
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.barcode.Barcode"->"com.shutterfly.util.Debug";
+"com.shutterfly.labourtracking.support.LTPersonResource" [ fontcolor="blue" ];
+"com.shutterfly.barcode.Barcode"->"com.shutterfly.labourtracking.support.LTPersonResource";
+}

@@ -1,0 +1,38 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.printers.ppml.PPMLGenerator210$1"; 
+"com.shutterfly.printers.ppml.PPMLGenerator210$1"->"com.shutterfly.printers.ppml.PPMLGenerator210";
+"com.shutterfly.printers.ppml.PPMLGenerator210$1"->"com.shutterfly.printers.ppml.template.model.TextColor";
+"com.shutterfly.printers.ppml.PPMLGenerator210$1"->"com.shutterfly.printers.ppml.template.model.TextAlignment";
+"com.shutterfly.printers.ppml.PPMLGenerator210"; 
+"com.shutterfly.printers.ppml.PPMLGenerator210"->"com.shutterfly.printers.ppml.template.model.TextAlignment";
+"com.shutterfly.printers.ppml.PPMLGenerator210"->"com.shutterfly.printers.ppml.template.model.TextColor";
+"com.shutterfly.printers.ppml.PPMLGenerator210"->"com.shutterfly.printers.ppml.PPMLGenerator210$1";
+"com.shutterfly.printers.ppml.PPMLGenerator210"->"com.shutterfly.util.FontStringMeasurerUtil";
+"com.shutterfly.printers.ppml.PPMLGenerator210"->"com.shutterfly.util.Debug";
+"com.shutterfly.printers.ppml.PPMLGenerator210"->"com.shutterfly.printers.ppml.utils.PpmlFont";
+"com.shutterfly.printers.ppml.PPMLGenerator220$1"; 
+"com.shutterfly.printers.ppml.PPMLGenerator220$1"->"com.shutterfly.printers.ppml.PPMLGenerator220";
+"com.shutterfly.printers.ppml.PPMLGenerator220$1"->"com.shutterfly.printers.ppml.template.model.TextColor";
+"com.shutterfly.printers.ppml.PPMLGenerator220$1"->"com.shutterfly.printers.ppml.template.model.TextAlignment";
+"com.shutterfly.printers.ppml.PPMLGenerator220"; 
+"com.shutterfly.printers.ppml.PPMLGenerator220"->"com.shutterfly.printers.ppml.template.model.TextAlignment";
+"com.shutterfly.printers.ppml.PPMLGenerator220"->"com.shutterfly.printers.ppml.template.model.TextColor";
+"com.shutterfly.printers.ppml.PPMLGenerator220"->"com.shutterfly.printers.ppml.PPMLGenerator220$1";
+"com.shutterfly.printers.ppml.PPMLGenerator220"->"com.shutterfly.util.FontStringMeasurerUtil";
+"com.shutterfly.printers.ppml.PPMLGenerator220"->"com.shutterfly.util.Debug";
+"com.shutterfly.printers.ppml.PPMLGenerator220"->"com.shutterfly.printers.ppml.utils.PpmlFont";
+"com.shutterfly.printers.ppml.PPMLGenerator300$1"; 
+"com.shutterfly.printers.ppml.PPMLGenerator300$1"->"com.shutterfly.printers.ppml.PPMLGenerator300";
+"com.shutterfly.printers.ppml.PPMLGenerator300$1"->"com.shutterfly.printers.ppml.template.model.TextColor";
+"com.shutterfly.printers.ppml.PPMLGenerator300$1"->"com.shutterfly.printers.ppml.template.model.TextAlignment";
+"com.shutterfly.printers.ppml.PPMLGenerator300"; 
+"com.shutterfly.printers.ppml.PPMLGenerator300"->"com.shutterfly.printers.ppml.template.model.TextAlignment";
+"com.shutterfly.printers.ppml.PPMLGenerator300"->"com.shutterfly.printers.ppml.template.model.TextColor";
+"com.shutterfly.printers.ppml.PPMLGenerator300"->"com.shutterfly.printers.ppml.PPMLGenerator300$1";
+"com.shutterfly.printers.ppml.PPMLGenerator300"->"com.shutterfly.util.FontStringMeasurerUtil";
+"com.shutterfly.printers.ppml.PPMLGenerator300"->"com.shutterfly.printers.ppml.utils.PpmlFont";
+splines="ortho";
+}

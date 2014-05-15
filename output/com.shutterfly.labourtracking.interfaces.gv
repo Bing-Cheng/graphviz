@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.labourtracking.interfaces.LTActionType"; 
+"com.shutterfly.labourtracking.interfaces.LTApplicationResourceType"; 
+"com.shutterfly.labourtracking.interfaces.LTCategoryType"; 
+"com.shutterfly.labourtracking.interfaces.LTIssueType"; 
+}

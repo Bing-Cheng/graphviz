@@ -1,0 +1,34 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.printers.coversheet.CoverDocumentBulder"; 
+"com.shutterfly.printers.coversheet.CoverDocumentBulder"->"com.shutterfly.printers.coversheet.CoverSheet";
+"com.shutterfly.printers.coversheet.CoverDocumentBulder"->"com.shutterfly.printers.coversheet.template.CoverDocument";
+"com.shutterfly.printers.coversheet.CoverDocumentBulder"->"com.shutterfly.db.LabDB";
+"com.shutterfly.printers.coversheet.CoverDocumentBulder"->"com.shutterfly.db.LabDBSingletonManager";
+"com.shutterfly.printers.coversheet.CoverDocumentBulder"->"com.shutterfly.order.Batch";
+"com.shutterfly.printers.coversheet.CoverDocumentBulder"->"com.shutterfly.order.BatchUtils";
+"com.shutterfly.printers.coversheet.CoverDocumentBulder"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.printers.coversheet.CoverDocumentBulder"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.printers.coversheet.CoverDocumentBulder"->"com.shutterfly.printers.coversheet.CoverSheetSize";
+"com.shutterfly.printers.coversheet.CoverDocumentBulder"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.printers.coversheet.CoverSheet"; 
+"com.shutterfly.printers.coversheet.CoverSheet"->"com.shutterfly.printers.coversheet.CoverSheetSize";
+"com.shutterfly.printers.coversheet.CoverSheet"->"com.shutterfly.util.Debug";
+"com.shutterfly.printers.coversheet.CoverSheetSize"; 
+"com.shutterfly.printers.coversheet.CoverSheetSize"->"com.shutterfly.order.PrintSize";
+"com.shutterfly.printers.coversheet.SheetSeparatorDocument"; 
+"com.shutterfly.printers.coversheet.SheetSeparatorDocument"->"com.shutterfly.printers.coversheet.CoverSheet";
+"com.shutterfly.printers.coversheet.SheetSeparatorDocument"->"com.shutterfly.printers.coversheet.CoverSheetSize";
+"com.shutterfly.printers.coversheet.SheetSeparatorDocument"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.printers.coversheet.SheetSeparatorDocument"->"com.shutterfly.util.Debug";
+"com.shutterfly.printers.coversheet.SheetSeparatorDocument"->"com.shutterfly.render.RenderPdfUtils";
+"com.shutterfly.printers.coversheet.SheetSeparatorDocument"->"com.shutterfly.properties.SflyProperties";
+"com.shutterfly.printers.coversheet.SheetSeparatorDocumentBuilder"; 
+"com.shutterfly.printers.coversheet.SheetSeparatorDocumentBuilder"->"com.shutterfly.printers.coversheet.CoverSheet";
+"com.shutterfly.printers.coversheet.SheetSeparatorDocumentBuilder"->"com.shutterfly.printers.coversheet.SheetSeparatorDocument";
+"com.shutterfly.printers.coversheet.SheetSeparatorDocumentBuilder"->"com.shutterfly.printers.coversheet.CoverSheetSize";
+"com.shutterfly.printers.coversheet.SheetSeparatorDocumentBuilder"->"com.shutterfly.util.Debug";
+splines="ortho";
+}

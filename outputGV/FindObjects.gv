@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.FindObjects" [fontcolor="red"];
+"com.pace2020.epace.sdk.FindObjectsPortType" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.FindObjects"->"com.pace2020.epace.sdk.FindObjectsPortType";
+"com.pace2020.epace.sdk.FindObjectsLocator" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.FindObjectsLocator"->"com.pace2020.epace.sdk.FindObjects";
+"com.shutterfly.commercial.efi.EFIJobBuilder" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder"->"com.pace2020.epace.sdk.FindObjects";
+"com.shutterfly.commercial.efi.EFIJobBuilder$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.pace2020.epace.sdk.FindObjects";
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIInitializer" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIInitializer"->"com.pace2020.epace.sdk.FindObjects";
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIJobCreator" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIJobCreator"->"com.pace2020.epace.sdk.FindObjects";
+"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData"->"com.pace2020.epace.sdk.FindObjects";
+"com.shutterfly.servlets.commercial.controller.OrderAction" [ fontcolor="green" ];
+"com.shutterfly.servlets.commercial.controller.OrderAction"->"com.pace2020.epace.sdk.FindObjects";
+}

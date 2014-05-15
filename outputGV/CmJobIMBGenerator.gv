@@ -1,0 +1,35 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.CmJobIMBGenerator" [fontcolor="red"];
+"com.shutterfly.commercial.model.CmJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.commercial.model.CmJob";
+"com.shutterfly.commercial.model.CmMailer" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.commercial.model.CmMailer";
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.data.IMBInfo" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.commercial.data.IMBInfo";
+"com.shutterfly.commercial.data.CmJobIMBGenerator$CmPartnerProductTableHolder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.commercial.data.CmJobIMBGenerator$CmPartnerProductTableHolder";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmMailerDao";
+"com.shutterfly.commercial.model.CmShipInfo" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.commercial.model.CmShipInfo";
+"com.shutterfly.util.StringUtil" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.util.StringUtil";
+"com.shutterfly.commercial.data.Tray$BarcodeID" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.commercial.data.Tray$BarcodeID";
+"com.shutterfly.connectship.utils.SFProperties" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.connectship.utils.SFProperties";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmJobDao";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.util.Debug";
+"com.shutterfly.commercial.data.Tray" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmJobIMBGenerator"->"com.shutterfly.commercial.data.Tray";
+}

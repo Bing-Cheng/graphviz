@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BaseVerify$SleeperThread" [fontcolor="red"];
+"com.shutterfly.apps.BatchVerify" [ fontcolor="blue" ];
+"com.shutterfly.apps.BaseVerify$SleeperThread"->"com.shutterfly.apps.BatchVerify";
+"com.shutterfly.apps.BaseVerify" [ fontcolor="blue" ];
+"com.shutterfly.apps.BaseVerify$SleeperThread"->"com.shutterfly.apps.BaseVerify";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.BaseVerify$SleeperThread"->"com.shutterfly.util.Debug";
+}

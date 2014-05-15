@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.support.RenderFarmStaticAsset" [fontcolor="red"];
+"com.shutterfly.assetmanager.support.AbstractDigitalAsset" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.support.RenderFarmStaticAsset"->"com.shutterfly.assetmanager.support.AbstractDigitalAsset";
+"com.shutterfly.assetmanager.support.PerforceAssetInterface" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.support.RenderFarmStaticAsset"->"com.shutterfly.assetmanager.support.PerforceAssetInterface";
+}

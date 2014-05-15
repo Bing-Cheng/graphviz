@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory" [fontcolor="red"];
+"com.shutterfly.assetmanager.server.model.AbstractDatabase" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory"->"com.shutterfly.assetmanager.server.model.AbstractDatabase";
+"com.shutterfly.assetmanager.server.model.ServerStartup" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.server.model.ServerStartup"->"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory";
+"com.shutterfly.servlets.assetmanager.ServerStartup$1" [ fontcolor="green" ];
+"com.shutterfly.servlets.assetmanager.ServerStartup$1"->"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory";
+"com.shutterfly.servlets.assetmanager.ServerStartup$2" [ fontcolor="green" ];
+"com.shutterfly.servlets.assetmanager.ServerStartup$2"->"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory";
+"com.shutterfly.servlets.assetmanager.ServerStartup" [ fontcolor="green" ];
+"com.shutterfly.servlets.assetmanager.ServerStartup"->"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory";
+}

@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.DAMClientTester" [fontcolor="red"];
+"com.shutterfly.assetmanager.DAMClientTester$ReceiveThread" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.assetmanager.DAMClientTester$ReceiveThread";
+"com.shutterfly.assetmanager.DAMClientTester$SendThread" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.assetmanager.DAMClientTester$SendThread";
+"com.shutterfly.properties.SflyProperties" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.properties.SflyProperties";
+"com.shutterfly.assetmanager.support.AssetClassification" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.assetmanager.support.AssetClassification";
+"com.shutterfly.assetmanager.client.DigitalAssetPool" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.assetmanager.client.DigitalAssetPool";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.util.Debug";
+}

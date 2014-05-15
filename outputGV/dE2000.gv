@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.colormath.dE2000" [fontcolor="red"];
+"com.shutterfly.colorsure.colormath.LabCoord" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.dE2000"->"com.shutterfly.colorsure.colormath.LabCoord";
+"com.shutterfly.colorsure.colormath.ColorMath" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.dE2000"->"com.shutterfly.colorsure.colormath.ColorMath";
+"com.shutterfly.colorsure.colormath.dE2000Test" [ fontcolor="green" ];
+"com.shutterfly.colorsure.colormath.dE2000Test"->"com.shutterfly.colorsure.colormath.dE2000";
+}

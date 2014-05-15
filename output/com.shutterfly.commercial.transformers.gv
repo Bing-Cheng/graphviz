@@ -1,0 +1,32 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.commercial.transformers.FrameController$1"; 
+"com.shutterfly.commercial.transformers.FrameController$1"->"com.shutterfly.commercial.transformers.FrameController";
+"com.shutterfly.commercial.transformers.FrameController$1"->"com.shutterfly.commercial.transformers.config.TransformerClient";
+"com.shutterfly.commercial.transformers.FrameController"; 
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.commercial.transformers.ui.ClientOrderPane";
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.commercial.transformers.model.ClientOrderConfig";
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.commercial.transformers.config.TransformerClient";
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.commercial.transformers.ui.WMSGPane$AppOperation";
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.commercial.transformers.model.CommercialOrder";
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.rendertest.regression.support.SFRFHttpRequest";
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.commercial.transformers.ui.PartnerSelectionPane";
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.commercial.transformers.ui.WMSGPane";
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.commercial.transformers.FrameController$1";
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.util.Debug";
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.commercial.data.cache.CmClientConfigCollection";
+"com.shutterfly.commercial.transformers.FrameController"->"com.shutterfly.commercial.data.cache.CmClientConfig";
+"com.shutterfly.commercial.transformers.TransformerFrame$1"; 
+"com.shutterfly.commercial.transformers.TransformerFrame$1"->"com.shutterfly.commercial.transformers.TransformerFrame";
+"com.shutterfly.commercial.transformers.TransformerFrame$1"->"com.shutterfly.commercial.transformers.FrameController";
+"com.shutterfly.commercial.transformers.TransformerFrame"; 
+"com.shutterfly.commercial.transformers.TransformerFrame"->"com.shutterfly.commercial.transformers.FrameController";
+"com.shutterfly.commercial.transformers.TransformerFrame"->"com.shutterfly.commercial.transformers.TransformerFrame$1";
+"com.shutterfly.commercial.transformers.TransformerFrame"->"com.shutterfly.util.CmVersion";
+"com.shutterfly.commercial.transformers.TransformerFrame"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.commercial.transformers.TransformerFrame"->"com.shutterfly.util.Debug";
+"com.shutterfly.commercial.transformers.TransformerFrame"->"com.shutterfly.connectship.utils.SFProperties";
+splines="ortho";
+}

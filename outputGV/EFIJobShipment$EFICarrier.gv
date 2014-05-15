@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.efi.model.EFIJobShipment$EFICarrier" [fontcolor="red"];
+"com.shutterfly.commercial.efi.EFIOrderBuilder" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIOrderBuilder"->"com.shutterfly.commercial.efi.model.EFIJobShipment$EFICarrier";
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader"->"com.shutterfly.commercial.efi.model.EFIJobShipment$EFICarrier";
+"com.shutterfly.commercial.apps.BrandMuscleApp" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp"->"com.shutterfly.commercial.efi.model.EFIJobShipment$EFICarrier";
+"com.shutterfly.commercial.efi.model.EFIJobPart" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.model.EFIJobPart"->"com.shutterfly.commercial.efi.model.EFIJobShipment$EFICarrier";
+"com.shutterfly.commercial.efi.model.EFIJobShipment$EFICarrier" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.model.EFIJobShipment$EFICarrier"->"com.shutterfly.commercial.efi.model.EFIJobShipment$EFICarrier";
+"com.shutterfly.commercial.efi.model.EFIOrder" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.model.EFIOrder"->"com.shutterfly.commercial.efi.model.EFIJobShipment$EFICarrier";
+"com.shutterfly.commercial.efi.model.EFIJobShipment" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.efi.model.EFIJobShipment"->"com.shutterfly.commercial.efi.model.EFIJobShipment$EFICarrier" [dir=both];
+}

@@ -1,0 +1,30 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.miam.base.model.ActionModel"; 
+"com.shutterfly.miam.base.model.BaseModelInterface"; 
+"com.shutterfly.miam.base.model.CaseInsensitiveXMLElemNameFilter"; 
+"com.shutterfly.miam.base.model.Event"; 
+"com.shutterfly.miam.base.model.Event"->"com.shutterfly.miam.base.model.BaseModelInterface";
+"com.shutterfly.miam.base.model.ImageClassToPropertyMap"; 
+"com.shutterfly.miam.base.model.ImageServer"; 
+"com.shutterfly.miam.base.model.ImageServer"->"com.shutterfly.db.hibernate.miam.PP_image";
+"com.shutterfly.miam.base.model.ImageServer"->"com.shutterfly.util.Debug";
+"com.shutterfly.miam.base.model.StateEventListener"; 
+"com.shutterfly.miam.base.model.StateMachine"; 
+"com.shutterfly.miam.base.model.StateMachine"->"com.shutterfly.miam.base.model.StateMachineConfig";
+"com.shutterfly.miam.base.model.StateMachineCollection"; 
+"com.shutterfly.miam.base.model.StateMachineConfig"; 
+"com.shutterfly.miam.base.model.StateTransitEvent"; 
+"com.shutterfly.miam.base.model.StateTransitEvent"->"com.shutterfly.miam.base.model.ActionModel";
+"com.shutterfly.miam.base.model.StateTransitEvent"->"com.shutterfly.miam.base.model.StateEventListener";
+"com.shutterfly.miam.base.model.Util"; 
+"com.shutterfly.miam.base.model.XMLHandler"; 
+"com.shutterfly.miam.base.model.XMLHandler"->"com.shutterfly.miam.base.model.XMLUtil";
+"com.shutterfly.miam.base.model.XMLUtil"; 
+"com.shutterfly.miam.base.model.XMLValidator"; 
+"com.shutterfly.miam.base.model.XMLValidator"->"com.shutterfly.miam.base.model.CaseInsensitiveXMLElemNameFilter";
+"com.shutterfly.miam.base.model.XMLValidator"->"com.shutterfly.miam.base.model.XMLHandler";
+splines="ortho";
+}

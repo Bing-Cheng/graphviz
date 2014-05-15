@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.TrayStation$1" [fontcolor="red"];
+"com.shutterfly.commercial.apps.TestDataHelper" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayStation$1"->"com.shutterfly.commercial.apps.TestDataHelper";
+"com.shutterfly.commercial.model.CmOrder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayStation$1"->"com.shutterfly.commercial.model.CmOrder";
+"com.shutterfly.commercial.model.CmItemgroup" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayStation$1"->"com.shutterfly.commercial.model.CmItemgroup";
+"com.shutterfly.commercial.model.CmPallet" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayStation$1"->"com.shutterfly.commercial.model.CmPallet";
+"com.shutterfly.commercial.model.CmAddress" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayStation$1"->"com.shutterfly.commercial.model.CmAddress";
+"com.shutterfly.commercial.apps.TrayStation$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.TrayStation$1"->"com.shutterfly.commercial.apps.TrayStation$1";
+"com.shutterfly.commercial.apps.TrayStation$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.TrayStation$2"->"com.shutterfly.commercial.apps.TrayStation$1";
+"com.shutterfly.commercial.apps.TrayStation$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.TrayStation$3"->"com.shutterfly.commercial.apps.TrayStation$1";
+"com.shutterfly.commercial.apps.TrayStation$4" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.TrayStation$4"->"com.shutterfly.commercial.apps.TrayStation$1";
+"com.shutterfly.commercial.apps.TrayStation" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.TrayStation"->"com.shutterfly.commercial.apps.TrayStation$1" [dir=both];
+}

@@ -1,0 +1,10 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.reporting.model.LTStationTypeForm"; 
+"com.shutterfly.servlets.reporting.model.LTStationTypeForm"->"com.shutterfly.servlets.commercial.model.BaseValidatorForm";
+"com.shutterfly.servlets.reporting.model.LaborResourceForm"; 
+"com.shutterfly.servlets.reporting.model.LaborResourceForm"->"com.shutterfly.servlets.commercial.model.BaseValidatorForm";
+splines="ortho";
+}

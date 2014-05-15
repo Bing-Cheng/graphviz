@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.UsbBarcodeScanner" [fontcolor="red"];
+"com.icaste.JCommUSB_4_0.USBDevice" [ fontcolor="blue" ];
+"com.shutterfly.apps.UsbBarcodeScanner"->"com.icaste.JCommUSB_4_0.USBDevice";
+"com.shutterfly.barcode.BarcodeListener" [ fontcolor="blue" ];
+"com.shutterfly.apps.UsbBarcodeScanner"->"com.shutterfly.barcode.BarcodeListener";
+"com.icaste.JCommUSB_4_0.USBException" [ fontcolor="blue" ];
+"com.shutterfly.apps.UsbBarcodeScanner"->"com.icaste.JCommUSB_4_0.USBException";
+"com.shutterfly.apps.UsbBarcodeScanner$MonitorUsbScanner" [ fontcolor="blue" ];
+"com.shutterfly.apps.UsbBarcodeScanner"->"com.shutterfly.apps.UsbBarcodeScanner$MonitorUsbScanner";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.UsbBarcodeScanner"->"com.shutterfly.util.Debug";
+}

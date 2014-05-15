@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.support.AbstractDigitalAsset" [fontcolor="red"];
+"com.shutterfly.assetmanager.support.DAMPreprocessor" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.support.AbstractDigitalAsset"->"com.shutterfly.assetmanager.support.DAMPreprocessor";
+"com.shutterfly.assetmanager.support.PerforceAssetInterface" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.support.AbstractDigitalAsset"->"com.shutterfly.assetmanager.support.PerforceAssetInterface";
+"com.shutterfly.assetmanager.xml.XMLFileParser" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.support.AbstractDigitalAsset"->"com.shutterfly.assetmanager.xml.XMLFileParser";
+}

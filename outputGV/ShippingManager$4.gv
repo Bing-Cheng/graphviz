@@ -1,0 +1,29 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ShippingManager$4" [fontcolor="red"];
+"com.shutterfly.labourtracking.support.LTStationInfo" [ fontcolor="blue" ];
+"com.shutterfly.apps.ShippingManager$4"->"com.shutterfly.labourtracking.support.LTStationInfo";
+"com.shutterfly.shipping.ShippingState" [ fontcolor="blue" ];
+"com.shutterfly.apps.ShippingManager$4"->"com.shutterfly.shipping.ShippingState";
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.apps.ShippingManager$4"->"com.shutterfly.db.LabDB";
+"com.shutterfly.shipping.ShippingUpgradePolicyTP" [ fontcolor="blue" ];
+"com.shutterfly.apps.ShippingManager$4"->"com.shutterfly.shipping.ShippingUpgradePolicyTP";
+"com.shutterfly.apps.ShippingManager$4" [ fontcolor="green" ];
+"com.shutterfly.apps.ShippingManager$4"->"com.shutterfly.apps.ShippingManager$4";
+"com.shutterfly.apps.ShippingManager$5" [ fontcolor="green" ];
+"com.shutterfly.apps.ShippingManager$5"->"com.shutterfly.apps.ShippingManager$4";
+"com.shutterfly.apps.ShippingManager$6" [ fontcolor="green" ];
+"com.shutterfly.apps.ShippingManager$6"->"com.shutterfly.apps.ShippingManager$4";
+"com.shutterfly.apps.ShippingManager$7" [ fontcolor="green" ];
+"com.shutterfly.apps.ShippingManager$7"->"com.shutterfly.apps.ShippingManager$4";
+"com.shutterfly.apps.ShippingManager$8" [ fontcolor="green" ];
+"com.shutterfly.apps.ShippingManager$8"->"com.shutterfly.apps.ShippingManager$4";
+"com.shutterfly.apps.ShippingManager$9" [ fontcolor="green" ];
+"com.shutterfly.apps.ShippingManager$9"->"com.shutterfly.apps.ShippingManager$4";
+"com.shutterfly.apps.ShippingManager" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.ShippingManager"->"com.shutterfly.apps.ShippingManager$4" [dir=both];
+}

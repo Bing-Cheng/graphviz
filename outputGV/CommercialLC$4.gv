@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.CommercialLC$4" [fontcolor="red"];
+"com.shutterfly.commercial.linecontroller.CommercialLineController" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialLC$4"->"com.shutterfly.commercial.linecontroller.CommercialLineController";
+"com.shutterfly.commercial.data.cache.CmPaperTypeCollection" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialLC$4"->"com.shutterfly.commercial.data.cache.CmPaperTypeCollection";
+"com.shutterfly.commercial.model.CmPaperType" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialLC$4"->"com.shutterfly.commercial.model.CmPaperType";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialLC$4"->"com.shutterfly.util.Debug";
+"com.shutterfly.commercial.apps.CommercialLC$4" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialLC$4"->"com.shutterfly.commercial.apps.CommercialLC$4";
+"com.shutterfly.commercial.apps.CommercialLC$5" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialLC$5"->"com.shutterfly.commercial.apps.CommercialLC$4";
+"com.shutterfly.commercial.apps.CommercialLC$6" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialLC$6"->"com.shutterfly.commercial.apps.CommercialLC$4";
+"com.shutterfly.commercial.apps.CommercialLC$MyComboBoxRenderer" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialLC$MyComboBoxRenderer"->"com.shutterfly.commercial.apps.CommercialLC$4";
+"com.shutterfly.commercial.apps.CommercialLC" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.CommercialLC"->"com.shutterfly.commercial.apps.CommercialLC$4" [dir=both];
+}

@@ -1,0 +1,14 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.reporting.scheduler.jobs.HoldingTankAlertJob"; 
+"com.shutterfly.servlets.reporting.scheduler.jobs.HoldingTankAlertJob"->"com.shutterfly.order.HoldingTank";
+"com.shutterfly.servlets.reporting.scheduler.jobs.HoldingTankAlertJob"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.servlets.reporting.scheduler.jobs.HoldingTankAlertJob"->"com.shutterfly.db.LabDB";
+"com.shutterfly.servlets.reporting.scheduler.jobs.HoldingTankAlertJob"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.servlets.reporting.scheduler.jobs.HoldingTankAlertJob"->"com.shutterfly.servlets.reporting.util.ReportDateUtils";
+"com.shutterfly.servlets.reporting.scheduler.jobs.HoldingTankAlertJob"->"com.shutterfly.util.DebugMail";
+"com.shutterfly.servlets.reporting.scheduler.jobs.HoldingTankAlertJob"->"com.shutterfly.util.Debug";
+splines="ortho";
+}

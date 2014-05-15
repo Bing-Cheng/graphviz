@@ -1,0 +1,14 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.satori.interfaces.ICASSCert"; 
+"com.shutterfly.satori.interfaces.ICASSCert"->"com.shutterfly.satori.exceptions.SatoriException";
+"com.shutterfly.satori.interfaces.IPAVECert"; 
+"com.shutterfly.satori.interfaces.IPAVECert"->"com.shutterfly.satori.PAVETask$PAVEAddressInfo";
+"com.shutterfly.satori.interfaces.IPAVECert"->"com.shutterfly.satori.PAVETask$PAVETrayInfo";
+"com.shutterfly.satori.interfaces.IPAVECert"->"com.shutterfly.satori.PAVETask$PAVEPalletInfo";
+"com.shutterfly.satori.interfaces.IPAVECert"->"com.shutterfly.satori.exceptions.SatoriException";
+"com.shutterfly.satori.interfaces.IPAVECert"->"com.shutterfly.satori.PAVETask";
+splines="ortho";
+}

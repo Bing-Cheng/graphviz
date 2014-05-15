@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer" [fontcolor="red"];
+"com.shutterfly.commercial.transformers.model.CommercialOrderStatus" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer"->"com.shutterfly.commercial.transformers.model.CommercialOrderStatus";
+"com.shutterfly.commercial.transformers.model.EnumNotFoundException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer"->"com.shutterfly.commercial.transformers.model.EnumNotFoundException";
+"com.shutterfly.commercial.transformers.model.OrderStatusMethod" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer"->"com.shutterfly.commercial.transformers.model.OrderStatusMethod";
+"com.shutterfly.commercial.transformers.model.brandMuscle.ProductSKU" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer"->"com.shutterfly.commercial.transformers.model.brandMuscle.ProductSKU";
+"com.shutterfly.util.DebugMail" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer"->"com.shutterfly.util.DebugMail";
+"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer"->"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer";
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader$1"->"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer";
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader"->"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer";
+"com.shutterfly.commercial.apps.BrandMuscleApp$ShipMethod" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$ShipMethod"->"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer";
+"com.shutterfly.commercial.apps.BrandMuscleApp" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp"->"com.shutterfly.commercial.apps.BrandMuscleApp$Emailer" [dir=both];
+}

@@ -1,0 +1,20 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.db.model.EquipmentInterval"; 
+"com.shutterfly.db.model.LTCategory"; 
+"com.shutterfly.db.model.LTResource"; 
+"com.shutterfly.db.model.LTResource"->"com.shutterfly.db.model.LTCategory";
+"com.shutterfly.db.model.LTStationType"; 
+"com.shutterfly.db.model.LTStationType"->"com.shutterfly.db.model.LTTachometer";
+"com.shutterfly.db.model.LTTachometer"; 
+"com.shutterfly.db.model.Property"; 
+"com.shutterfly.db.model.Property"->"com.shutterfly.db.model.PropertyCategory";
+"com.shutterfly.db.model.PropertyCategory"; 
+"com.shutterfly.db.model.PropertyCategory"->"com.shutterfly.db.model.Property";
+"com.shutterfly.db.model.Widget"; 
+"com.shutterfly.db.model.Widget"->"com.shutterfly.db.model.WidgetState";
+"com.shutterfly.db.model.WidgetState"; 
+splines="ortho";
+}

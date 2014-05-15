@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfig"; 
+"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfig"->"com.shutterfly.order.FinishOption";
+"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfigFactory"; 
+"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfigFactory"->"com.shutterfly.order.WorkType";
+"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfigFactory"->"com.shutterfly.order.FinishOption";
+"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfigFactory"->"com.shutterfly.printers.PrinterType";
+"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfigFactory"->"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfig";
+"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfigFactory"->"com.shutterfly.db.LabDB";
+"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfigFactory"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfigFactory"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.jobbuilder.pressjobconfig.PressJobConfigFactory"->"com.shutterfly.util.Debug";
+splines="ortho";
+}

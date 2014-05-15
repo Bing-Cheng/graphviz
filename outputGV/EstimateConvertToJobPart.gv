@@ -1,0 +1,35 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.services.rpc.EstimateConvertToJobPart" [fontcolor="red"];
+"com.pace2020.epace.object.EstimatePart" [ fontcolor="blue" ];
+"com.pace2020.epace.services.rpc.EstimateConvertToJobPart"->"com.pace2020.epace.object.EstimatePart";
+"com.pace2020.epace.object.EstimateQuantity" [ fontcolor="blue" ];
+"com.pace2020.epace.services.rpc.EstimateConvertToJobPart"->"com.pace2020.epace.object.EstimateQuantity";
+"org.apache.axis.description.TypeDesc" [ fontcolor="blue" ];
+"com.pace2020.epace.services.rpc.EstimateConvertToJobPart"->"org.apache.axis.description.TypeDesc";
+"org.apache.axis.encoding.Serializer" [ fontcolor="blue" ];
+"com.pace2020.epace.services.rpc.EstimateConvertToJobPart"->"org.apache.axis.encoding.Serializer";
+"org.apache.axis.encoding.Deserializer" [ fontcolor="blue" ];
+"com.pace2020.epace.services.rpc.EstimateConvertToJobPart"->"org.apache.axis.encoding.Deserializer";
+"org.apache.axis.description.ElementDesc" [ fontcolor="blue" ];
+"com.pace2020.epace.services.rpc.EstimateConvertToJobPart"->"org.apache.axis.description.ElementDesc";
+"org.apache.axis.encoding.ser.BeanSerializer" [ fontcolor="blue" ];
+"com.pace2020.epace.services.rpc.EstimateConvertToJobPart"->"org.apache.axis.encoding.ser.BeanSerializer";
+"org.apache.axis.encoding.ser.BeanDeserializer" [ fontcolor="blue" ];
+"com.pace2020.epace.services.rpc.EstimateConvertToJobPart"->"org.apache.axis.encoding.ser.BeanDeserializer";
+"org.apache.axis.description.FieldDesc" [ fontcolor="blue" ];
+"com.pace2020.epace.services.rpc.EstimateConvertToJobPart"->"org.apache.axis.description.FieldDesc";
+"com.pace2020.epace.object.EstimateConvertToJob" [ fontcolor="green" ];
+"com.pace2020.epace.object.EstimateConvertToJob"->"com.pace2020.epace.services.rpc.EstimateConvertToJobPart";
+"com.pace2020.epace.sdk.InvokeActionHttpBindingStub" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.InvokeActionHttpBindingStub"->"com.pace2020.epace.services.rpc.EstimateConvertToJobPart";
+"com.pace2020.epace.sdk.InvokeActionPortType" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.InvokeActionPortType"->"com.pace2020.epace.services.rpc.EstimateConvertToJobPart";
+"com.pace2020.epace.sdk.InvokeAction" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.InvokeAction"->"com.pace2020.epace.services.rpc.EstimateConvertToJobPart";
+"com.pace2020.epace.sdk.InvokeActionLocator" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.InvokeActionLocator"->"com.pace2020.epace.services.rpc.EstimateConvertToJobPart";
+}

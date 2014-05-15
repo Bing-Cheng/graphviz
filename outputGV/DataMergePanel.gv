@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.DataMergePanel" [fontcolor="red"];
+"com.shutterfly.commercial.data.DataBigMac" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataMergePanel"->"com.shutterfly.commercial.data.DataBigMac";
+"com.shutterfly.commercial.apps.DataMergePanel$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataMergePanel"->"com.shutterfly.commercial.apps.DataMergePanel$1";
+"com.shutterfly.commercial.apps.DataMergePanel$2" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataMergePanel"->"com.shutterfly.commercial.apps.DataMergePanel$2";
+"com.shutterfly.commercial.apps.DataMergePanel$3" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataMergePanel"->"com.shutterfly.commercial.apps.DataMergePanel$3";
+"com.shutterfly.commercial.apps.DataMergePanel$4" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataMergePanel"->"com.shutterfly.commercial.apps.DataMergePanel$4";
+"com.shutterfly.commercial.apps.DataMergePanel$DirectoryFilter" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataMergePanel"->"com.shutterfly.commercial.apps.DataMergePanel$DirectoryFilter";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataMergePanel"->"com.shutterfly.util.Debug";
+"com.shutterfly.commercial.apps.CommercialData" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.apps.DataMergePanel";
+}

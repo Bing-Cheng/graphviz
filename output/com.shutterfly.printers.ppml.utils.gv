@@ -1,0 +1,24 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.printers.ppml.utils.CompileUtil"; 
+"com.shutterfly.printers.ppml.utils.CompileUtil"->"com.shutterfly.util.Debug";
+"com.shutterfly.printers.ppml.utils.Converter$1"; 
+"com.shutterfly.printers.ppml.utils.Converter$1"->"com.shutterfly.printers.ppml.utils.Converter";
+"com.shutterfly.printers.ppml.utils.Converter$1"->"com.shutterfly.printers.ppml.template.model.ScaleType";
+"com.shutterfly.printers.ppml.utils.Converter$1"->"com.shutterfly.printers.ppml.utils.Rotate";
+"com.shutterfly.printers.ppml.utils.Converter"; 
+"com.shutterfly.printers.ppml.utils.Converter"->"com.shutterfly.printers.ppml.utils.Rotate";
+"com.shutterfly.printers.ppml.utils.Converter"->"com.shutterfly.printers.ppml.template.model.OriginType";
+"com.shutterfly.printers.ppml.utils.Converter"->"com.shutterfly.printers.ppml.template.model.ScaleType";
+"com.shutterfly.printers.ppml.utils.Converter"->"com.shutterfly.printers.ppml.utils.Converter$1";
+"com.shutterfly.printers.ppml.utils.FontUtil"; 
+"com.shutterfly.printers.ppml.utils.PpmlFont"; 
+"com.shutterfly.printers.ppml.utils.PpmlFont"->"com.shutterfly.printers.ppml.utils.FontUtil";
+"com.shutterfly.printers.ppml.utils.Rotate"; 
+"com.shutterfly.printers.ppml.utils.TemplateSpecUtil"; 
+"com.shutterfly.printers.ppml.utils.TemplateSpecUtil"->"com.shutterfly.printers.ppml.template.model.ImposedElement";
+"com.shutterfly.printers.ppml.utils.TemplateSpecUtil"->"com.shutterfly.util.Debug";
+splines="ortho";
+}

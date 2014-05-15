@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.IphoneCasePrinter$InsertReasonCode" [fontcolor="red"];
+"com.shutterfly.db.transaction.SingleQueryTransaction" [ fontcolor="blue" ];
+"com.shutterfly.apps.IphoneCasePrinter$InsertReasonCode"->"com.shutterfly.db.transaction.SingleQueryTransaction";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.IphoneCasePrinter$InsertReasonCode"->"com.shutterfly.util.Debug";
+"com.shutterfly.apps.IphoneCasePrinter$InsertReasonCode" [ fontcolor="green" ];
+"com.shutterfly.apps.IphoneCasePrinter$InsertReasonCode"->"com.shutterfly.apps.IphoneCasePrinter$InsertReasonCode";
+"com.shutterfly.apps.IphoneCasePrinter" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.IphoneCasePrinter"->"com.shutterfly.apps.IphoneCasePrinter$InsertReasonCode" [dir=both];
+}

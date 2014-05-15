@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.cache.CmClientConfig" [fontcolor="red"];
+"com.shutterfly.commercial.transformers.model.ClientOrderConfig" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmClientConfig"->"com.shutterfly.commercial.transformers.model.ClientOrderConfig";
+"com.shutterfly.commercial.linecontroller.CmLCManager" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmClientConfig"->"com.shutterfly.commercial.linecontroller.CmLCManager";
+}

@@ -1,0 +1,37 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.xml.Handlers"; 
+"com.shutterfly.xml.Handlers"->"com.shutterfly.util.Debug";
+"com.shutterfly.xml.MyHandlerBase$1"; 
+"com.shutterfly.xml.MyHandlerBase$1"->"com.shutterfly.xml.MyHandlerBase";
+"com.shutterfly.xml.MyHandlerBase$CharStackElement"; 
+"com.shutterfly.xml.MyHandlerBase$CharStackElement"->"com.shutterfly.xml.VersionHandler";
+"com.shutterfly.xml.MyHandlerBase$CharStackElement"->"com.shutterfly.xml.MyHandlerBase";
+"com.shutterfly.xml.MyHandlerBase$CharStackElement"->"com.shutterfly.xml.MyHandlerBase$1";
+"com.shutterfly.xml.MyHandlerBase"; 
+"com.shutterfly.xml.MyHandlerBase"->"com.shutterfly.xml.VersionHandler";
+"com.shutterfly.xml.MyHandlerBase"->"com.shutterfly.xml.Handlers";
+"com.shutterfly.xml.MyHandlerBase"->"com.shutterfly.xml.MyHandlerBase$CharStackElement";
+"com.shutterfly.xml.MyHandlerBase"->"com.shutterfly.xml.MyHandlerBase$1";
+"com.shutterfly.xml.MyHandlerBase"->"com.shutterfly.util.Debug";
+"com.shutterfly.xml.MyHandlerBase"->"com.shutterfly.util.ExceptionUtil";
+"com.shutterfly.xml.OrderXMLParseException"; 
+"com.shutterfly.xml.OrderXMLParseException"->"com.shutterfly.exception.ShutterflyException";
+"com.shutterfly.xml.ReplyHandlerV1"; 
+"com.shutterfly.xml.ReplyHandlerV1"->"com.shutterfly.xml.VersionHandler";
+"com.shutterfly.xml.ReplyHandlerV2"; 
+"com.shutterfly.xml.ReplyHandlerV2"->"com.shutterfly.xml.VersionHandler";
+"com.shutterfly.xml.ReplyHandlerV2"->"com.shutterfly.util.Debug";
+"com.shutterfly.xml.ShipmentInterfaceHandler"; 
+"com.shutterfly.xml.ShipmentInterfaceHandler"->"com.shutterfly.xml.VersionHandler";
+"com.shutterfly.xml.ShipmentInterfaceHandler"->"com.shutterfly.order.ManifestShipmentEntry";
+"com.shutterfly.xml.ShipmentInterfaceHandler"->"com.shutterfly.order.ShippingMethod";
+"com.shutterfly.xml.VersionHandler"; 
+"com.shutterfly.xml.VersionHandler"->"com.shutterfly.xml.Handlers";
+"com.shutterfly.xml.XMLParser"; 
+"com.shutterfly.xml.XMLParser"->"com.shutterfly.util.Debug";
+"com.shutterfly.xml.XMLUtil"; 
+splines="ortho";
+}

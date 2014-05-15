@@ -1,0 +1,8 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.miam.base.StationBase"; 
+"com.shutterfly.miam.base.StationBase"->"com.shutterfly.connectship.utils.SFXMLToHashTable";
+splines="ortho";
+}

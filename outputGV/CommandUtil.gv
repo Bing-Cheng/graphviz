@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.clientreleasemanager.support.CommandUtil" [fontcolor="red"];
+"com.shutterfly.clientreleasemanager.support.CommandUtil$ExecStreamReader" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.CommandUtil"->"com.shutterfly.clientreleasemanager.support.CommandUtil$ExecStreamReader";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.CommandUtil"->"com.shutterfly.util.Debug";
+"com.shutterfly.properties.ClientEnvironment" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.CommandUtil"->"com.shutterfly.properties.ClientEnvironment";
+}

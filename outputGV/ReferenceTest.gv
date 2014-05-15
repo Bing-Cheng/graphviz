@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.colormath.ReferenceTest" [fontcolor="red"];
+"org.junit.BeforeClass" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.ReferenceTest"->"org.junit.BeforeClass";
+"org.junit.AfterClass" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.ReferenceTest"->"org.junit.AfterClass";
+"org.junit.Before" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.ReferenceTest"->"org.junit.Before";
+"org.junit.After" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.ReferenceTest"->"org.junit.After";
+"com.shutterfly.colorsure.colormath.CMYKCoord" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.ReferenceTest"->"com.shutterfly.colorsure.colormath.CMYKCoord";
+"com.shutterfly.colorsure.colormath.Reference" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.ReferenceTest"->"com.shutterfly.colorsure.colormath.Reference";
+"org.junit.Test" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.ReferenceTest"->"org.junit.Test";
+"com.shutterfly.colorsure.colormath.LabCoord" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.ReferenceTest"->"com.shutterfly.colorsure.colormath.LabCoord";
+"org.junit.Assert" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.ReferenceTest"->"org.junit.Assert";
+}

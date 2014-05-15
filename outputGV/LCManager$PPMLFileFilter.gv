@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter" [fontcolor="red"];
+"com.shutterfly.commercial.apps.model.LCManager$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter"->"com.shutterfly.commercial.apps.model.LCManager$1";
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter";
+"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter"->"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter";
+"com.shutterfly.commercial.apps.model.LCManager$PrintByMethod" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintByMethod"->"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter";
+"com.shutterfly.commercial.apps.model.LCManager" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.model.LCManager"->"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter" [dir=both];
+}

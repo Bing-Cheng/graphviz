@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.CmReprintStateList$CmJobStateListHolder" [fontcolor="red"];
+"com.shutterfly.commercial.data.CmReprintStateList" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmReprintStateList$CmJobStateListHolder"->"com.shutterfly.commercial.data.CmReprintStateList";
+"com.shutterfly.commercial.data.CmReprintStateList$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmReprintStateList$CmJobStateListHolder"->"com.shutterfly.commercial.data.CmReprintStateList$1";
+}

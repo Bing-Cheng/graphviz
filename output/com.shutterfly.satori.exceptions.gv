@@ -1,0 +1,7 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.satori.exceptions.NCOAException"; 
+"com.shutterfly.satori.exceptions.SatoriException"; 
+}

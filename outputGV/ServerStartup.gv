@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.server.model.ServerStartup" [fontcolor="red"];
+"com.shutterfly.assetmanager.server.model.PerforceDatabase" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.server.model.ServerStartup"->"com.shutterfly.assetmanager.server.model.PerforceDatabase";
+"com.shutterfly.assetmanager.server.model.FileSystemDatabase" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.server.model.ServerStartup"->"com.shutterfly.assetmanager.server.model.FileSystemDatabase";
+"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.server.model.ServerStartup"->"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.server.model.ServerStartup"->"com.shutterfly.util.Debug";
+}

@@ -1,0 +1,33 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.client.ColorScan" [fontcolor="red"];
+"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.client.ColorScan$StreamInterpreter";
+"com.shutterfly.colorsure.client.ColorSure" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.client.ColorSure";
+"com.shutterfly.colorsure.client.ColorScan$StreamReader" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.client.ColorScan$StreamReader";
+"org.w3c.dom.Document" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"org.w3c.dom.Document";
+"org.w3c.dom.Element" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"org.w3c.dom.Element";
+"org.w3c.dom.NodeList" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"org.w3c.dom.NodeList";
+"com.shutterfly.colorsure.colormath.LabCoord" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.colormath.LabCoord";
+"com.shutterfly.colorsure.client.ColorScan$1" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.client.ColorScan$1";
+"com.shutterfly.colorsure.client.ColorScan$2" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.client.ColorScan$2";
+"com.shutterfly.colorsure.client.ColorScan$3" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.client.ColorScan$3";
+"com.shutterfly.colorsure.client.ColorException" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.client.ColorException";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.util.Debug";
+"com.shutterfly.colorsure.xml.XMLOp" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorScan"->"com.shutterfly.colorsure.xml.XMLOp";
+}

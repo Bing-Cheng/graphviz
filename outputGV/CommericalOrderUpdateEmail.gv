@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.CommericalOrderUpdateEmail" [fontcolor="red"];
+"com.shutterfly.commercial.transformers.model.CommercialOrderStatus" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommericalOrderUpdateEmail"->"com.shutterfly.commercial.transformers.model.CommercialOrderStatus";
+"com.shutterfly.commercial.transformers.model.OrderStatusMethod" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommericalOrderUpdateEmail"->"com.shutterfly.commercial.transformers.model.OrderStatusMethod";
+"com.shutterfly.util.DebugMail" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommericalOrderUpdateEmail"->"com.shutterfly.util.DebugMail";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommericalOrderUpdateEmail"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.commercial.data.CommercialOrderHotFolder" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.CommercialOrderHotFolder"->"com.shutterfly.commercial.data.CommericalOrderUpdateEmail";
+"com.shutterfly.commercial.data.CommercialOrderStatusUpdate" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.CommercialOrderStatusUpdate"->"com.shutterfly.commercial.data.CommericalOrderUpdateEmail";
+"com.shutterfly.servlets.commercial.CommercialHotfolder" [ fontcolor="green" ];
+"com.shutterfly.servlets.commercial.CommercialHotfolder"->"com.shutterfly.commercial.data.CommericalOrderUpdateEmail";
+"com.shutterfly.commercial.data.CommercialStaleState" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.CommercialStaleState"->"com.shutterfly.commercial.data.CommericalOrderUpdateEmail";
+"com.shutterfly.servlets.commercial.CommercialServices" [ fontcolor="green" ];
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.commercial.data.CommericalOrderUpdateEmail";
+}

@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.CommercialLC$MyComboBoxRenderer" [fontcolor="red"];
+"com.shutterfly.commercial.model.CmPaperType" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialLC$MyComboBoxRenderer"->"com.shutterfly.commercial.model.CmPaperType";
+"com.shutterfly.commercial.apps.CommercialLC$MyComboBoxRenderer" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialLC$MyComboBoxRenderer"->"com.shutterfly.commercial.apps.CommercialLC$MyComboBoxRenderer";
+"com.shutterfly.commercial.apps.CommercialLC" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.CommercialLC"->"com.shutterfly.commercial.apps.CommercialLC$MyComboBoxRenderer" [dir=both];
+}

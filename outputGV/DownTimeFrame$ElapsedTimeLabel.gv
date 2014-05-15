@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.DownTimeFrame$ElapsedTimeLabel" [fontcolor="red"];
+"com.shutterfly.apps.DownTimeFrame" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$ElapsedTimeLabel"->"com.shutterfly.apps.DownTimeFrame";
+"com.shutterfly.apps.DownTimeFrame$1" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$ElapsedTimeLabel"->"com.shutterfly.apps.DownTimeFrame$1";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$ElapsedTimeLabel"->"com.shutterfly.util.Debug";
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$ElapsedTimeLabel"->"com.shutterfly.db.LabDB";
+"com.shutterfly.labourtracking.support.LTStationInfo" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$ElapsedTimeLabel"->"com.shutterfly.labourtracking.support.LTStationInfo";
+"com.shutterfly.labourtracking.support.LTPersonResource" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$ElapsedTimeLabel"->"com.shutterfly.labourtracking.support.LTPersonResource";
+}

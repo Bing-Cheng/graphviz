@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.support.InvalidPartnerNameException" [fontcolor="red"];
+"com.shutterfly.assetmanager.support.IndigoDAPreprocessor" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.support.IndigoDAPreprocessor"->"com.shutterfly.assetmanager.support.InvalidPartnerNameException";
+"com.shutterfly.assetmanager.support.IndigoStaticImageAsset" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.support.IndigoStaticImageAsset"->"com.shutterfly.assetmanager.support.InvalidPartnerNameException";
+}

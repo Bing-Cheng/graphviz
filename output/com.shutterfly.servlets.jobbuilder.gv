@@ -1,0 +1,24 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.jobbuilder.BuildOneJob"; 
+"com.shutterfly.servlets.jobbuilder.BuildOneJob"->"com.shutterfly.render.RenderException";
+"com.shutterfly.servlets.jobbuilder.BuildOneJob"->"com.shutterfly.jobbuilder.JobBuilder";
+"com.shutterfly.servlets.jobbuilder.BuildOneJob"->"com.shutterfly.jobbuilder.JobInfo";
+"com.shutterfly.servlets.jobbuilder.BuildOneJob"->"com.shutterfly.jobbuilder.TestJobBuilder";
+"com.shutterfly.servlets.jobbuilder.BuildOneJob"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.jobbuilder.BuildOneJob"->"com.shutterfly.util.Version";
+"com.shutterfly.servlets.jobbuilder.BuildOneJob"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.servlets.jobbuilder.BuildOneJob"->"com.shutterfly.jobbuilder.JobBuilderUtil";
+"com.shutterfly.servlets.jobbuilder.PressJobCleanup"; 
+"com.shutterfly.servlets.jobbuilder.PressJobCleanup"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.jobbuilder.PressJobCleanup"->"com.shutterfly.util.Version";
+"com.shutterfly.servlets.jobbuilder.PressJobCleanup"->"com.shutterfly.jobbuilder.JobFileCleanup";
+"com.shutterfly.servlets.jobbuilder.PressJobService"; 
+"com.shutterfly.servlets.jobbuilder.PressJobService"->"com.shutterfly.jobbuilder.app.PressJobStation";
+"com.shutterfly.servlets.jobbuilder.PressJobService"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.jobbuilder.PressJobService"->"com.shutterfly.util.Version";
+"com.shutterfly.servlets.jobbuilder.PressJobService"->"com.shutterfly.properties.LabDBHostname";
+splines="ortho";
+}

@@ -1,0 +1,35 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.impl.ItemSortTester" [fontcolor="red"];
+"org.hibernate.Session" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"org.hibernate.Session";
+"org.hibernate.HibernateException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"org.hibernate.HibernateException";
+"com.shutterfly.satori.CASSTask" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"com.shutterfly.satori.CASSTask";
+"com.shutterfly.satori.CASSTask$CASSAddressInfo" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"com.shutterfly.satori.CASSTask$CASSAddressInfo";
+"com.shutterfly.satori.exceptions.SatoriException" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"com.shutterfly.satori.exceptions.SatoriException";
+"com.shutterfly.commercial.model.CmAddress" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"com.shutterfly.commercial.model.CmAddress";
+"org.hibernate.Transaction" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"org.hibernate.Transaction";
+"com.shutterfly.commercial.model.CmOrder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"com.shutterfly.commercial.model.CmOrder";
+"com.shutterfly.commercial.model.CmItem" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"com.shutterfly.commercial.model.CmItem";
+"com.shutterfly.commercial.impl.InitSessionFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"com.shutterfly.commercial.impl.InitSessionFactory";
+"org.hibernate.SessionFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"org.hibernate.SessionFactory";
+"org.hibernate.classic.Session" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"org.hibernate.classic.Session";
+"org.hibernate.Query" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"org.hibernate.Query";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.impl.ItemSortTester"->"com.shutterfly.util.Debug";
+}

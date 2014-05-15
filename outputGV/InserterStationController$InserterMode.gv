@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.model.InserterStationController$InserterMode" [fontcolor="red"];
+"com.shutterfly.commercial.apps.model.InserterStationController$InserterMode" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.InserterStationController$InserterMode"->"com.shutterfly.commercial.apps.model.InserterStationController$InserterMode";
+"com.shutterfly.commercial.apps.model.InserterStationController" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.model.InserterStationController"->"com.shutterfly.commercial.apps.model.InserterStationController$InserterMode" [dir=both];
+}

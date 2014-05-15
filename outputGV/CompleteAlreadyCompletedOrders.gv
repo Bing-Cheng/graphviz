@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.test.CompleteAlreadyCompletedOrders" [fontcolor="red"];
+"com.shutterfly.order.OrderHistoryItem" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.CompleteAlreadyCompletedOrders"->"com.shutterfly.order.OrderHistoryItem";
+"com.shutterfly.order.OrderHistory" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.CompleteAlreadyCompletedOrders"->"com.shutterfly.order.OrderHistory";
+"com.shutterfly.order.Order" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.CompleteAlreadyCompletedOrders"->"com.shutterfly.order.Order";
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.CompleteAlreadyCompletedOrders"->"com.shutterfly.db.LabDB";
+"com.shutterfly.db.LabDBSingletonManager" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.CompleteAlreadyCompletedOrders"->"com.shutterfly.db.LabDBSingletonManager";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.CompleteAlreadyCompletedOrders"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.db.LabDBFactory" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.CompleteAlreadyCompletedOrders"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.CompleteAlreadyCompletedOrders"->"com.shutterfly.util.Debug";
+}

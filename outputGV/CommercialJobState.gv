@@ -1,0 +1,35 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState" [fontcolor="red"];
+"com.shutterfly.commercial.data.orderstatus.castor.Job" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.data.orderstatus.castor.Job";
+"com.shutterfly.commercial.model.CmJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmJob";
+"com.shutterfly.commercial.model.CmItemgroup" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmItemgroup";
+"com.shutterfly.commercial.data.orderstatus.castor.Shipment" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.data.orderstatus.castor.Shipment";
+"com.shutterfly.commercial.model.CmShipment" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmShipment";
+"com.shutterfly.commercial.data.orderstatus.castor.Shipments" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.data.orderstatus.castor.Shipments";
+"com.shutterfly.commercial.model.CmJobstate" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmJobstate";
+"com.shutterfly.commercial.model.CmJobstate$JobStates" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmJobstate$JobStates";
+"com.shutterfly.commercial.model.CmShipInfo" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmShipInfo";
+"com.shutterfly.commercial.data.CommercialOrderStatusUpdate" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.CommercialOrderStatusUpdate"->"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"->"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState";
+"com.shutterfly.commercial.data.CommercialStaleState" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.CommercialStaleState"->"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState";
+"com.shutterfly.servlets.commercial.CommercialServices" [ fontcolor="green" ];
+"com.shutterfly.servlets.commercial.CommercialServices"->"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState";
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.CommercialOrderStatusBuilder"->"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState";
+}

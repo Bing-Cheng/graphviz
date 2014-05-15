@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.DownTimeFrame$6" [fontcolor="red"];
+"com.shutterfly.apps.DownTimeFrame" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$6"->"com.shutterfly.apps.DownTimeFrame";
+"com.shutterfly.labourtracking.support.LTIssueType" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$6"->"com.shutterfly.labourtracking.support.LTIssueType";
+}

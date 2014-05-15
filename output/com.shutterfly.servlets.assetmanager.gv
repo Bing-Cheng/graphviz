@@ -1,0 +1,20 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.assetmanager.ServerStartup$1"; 
+"com.shutterfly.servlets.assetmanager.ServerStartup$1"->"com.shutterfly.servlets.assetmanager.ServerStartup";
+"com.shutterfly.servlets.assetmanager.ServerStartup$1"->"com.shutterfly.assetmanager.server.model.PerforceDatabase";
+"com.shutterfly.servlets.assetmanager.ServerStartup$1"->"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory";
+"com.shutterfly.servlets.assetmanager.ServerStartup$2"; 
+"com.shutterfly.servlets.assetmanager.ServerStartup$2"->"com.shutterfly.servlets.assetmanager.ServerStartup";
+"com.shutterfly.servlets.assetmanager.ServerStartup$2"->"com.shutterfly.assetmanager.server.model.FileSystemDatabase";
+"com.shutterfly.servlets.assetmanager.ServerStartup$2"->"com.shutterfly.assetmanager.server.model.AssetManagerDatabaseFactory";
+"com.shutterfly.servlets.assetmanager.ServerStartup"; 
+"com.shutterfly.servlets.assetmanager.ServerStartup"->"com.shutterfly.servlets.assetmanager.ServerStartup$1";
+"com.shutterfly.servlets.assetmanager.ServerStartup"->"com.shutterfly.servlets.assetmanager.ServerStartup$2";
+"com.shutterfly.servlets.assetmanager.ServerStartup"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.assetmanager.ServerStartup"->"com.shutterfly.util.Version";
+"com.shutterfly.servlets.assetmanager.ServerStartup"->"com.shutterfly.properties.LabDBHostname";
+splines="ortho";
+}

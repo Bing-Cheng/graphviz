@@ -1,0 +1,29 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.db.ColorInitiateDB" [fontcolor="red"];
+"org.hibernate.Session" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"org.hibernate.Session";
+"org.hibernate.Transaction" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"org.hibernate.Transaction";
+"com.shutterfly.colorsure.db.CLR_facility" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"com.shutterfly.colorsure.db.CLR_facility";
+"com.shutterfly.colorsure.db.CLR_station" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"com.shutterfly.colorsure.db.CLR_station";
+"com.shutterfly.colorsure.db.CLR_criterion" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"com.shutterfly.colorsure.db.CLR_criterion";
+"com.shutterfly.colorsure.db.CLR_printerclass" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"com.shutterfly.colorsure.db.CLR_printerclass";
+"com.shutterfly.colorsure.db.CLR_papertype" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"com.shutterfly.colorsure.db.CLR_papertype";
+"com.shutterfly.colorsure.db.CLR_printer" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"com.shutterfly.colorsure.db.CLR_printer";
+"com.shutterfly.colorsure.client.ColorException" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"com.shutterfly.colorsure.client.ColorException";
+"com.shutterfly.colorsure.db.ColorDBUtils" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"com.shutterfly.colorsure.db.ColorDBUtils";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.db.ColorInitiateDB"->"com.shutterfly.properties.LabDBHostname";
+}

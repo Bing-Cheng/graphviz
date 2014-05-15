@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor$6" [fontcolor="red"];
+"org.exolab.castor.xml.XMLFieldHandler" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor$6"->"org.exolab.castor.xml.XMLFieldHandler";
+"com.shutterfly.commercial.data.orderstatus.castor.Job" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor$6"->"com.shutterfly.commercial.data.orderstatus.castor.Job";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor$6" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor$6"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor$6";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor$7" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor$7"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor$6";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobDescriptor$6" [dir=both];
+}

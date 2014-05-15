@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BookBuildStation$ShutdownThread" [fontcolor="red"];
+"com.shutterfly.soundbytes.StationSounds" [ fontcolor="blue" ];
+"com.shutterfly.apps.BookBuildStation$ShutdownThread"->"com.shutterfly.soundbytes.StationSounds";
+"com.shutterfly.apps.BookBuildStation$ShutdownThread" [ fontcolor="green" ];
+"com.shutterfly.apps.BookBuildStation$ShutdownThread"->"com.shutterfly.apps.BookBuildStation$ShutdownThread";
+"com.shutterfly.apps.BookBuildStation$StationMode" [ fontcolor="green" ];
+"com.shutterfly.apps.BookBuildStation$StationMode"->"com.shutterfly.apps.BookBuildStation$ShutdownThread";
+"com.shutterfly.apps.BookBuildStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.BookBuildStation"->"com.shutterfly.apps.BookBuildStation$ShutdownThread" [dir=both];
+}

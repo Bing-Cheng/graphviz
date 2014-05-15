@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.category.CategoryTest" [fontcolor="red"];
+"com.shutterfly.db.LabDBException" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryTest"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.category.Category" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryTest"->"com.shutterfly.category.Category";
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryTest"->"com.shutterfly.db.LabDB";
+"com.shutterfly.db.LabDBSingletonManager" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryTest"->"com.shutterfly.db.LabDBSingletonManager";
+"com.shutterfly.order.SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryTest"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryTest"->"com.shutterfly.util.Debug";
+"com.shutterfly.db.LabDBFactory" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryTest"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryTest"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.category.CategoryUtil" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryTest"->"com.shutterfly.category.CategoryUtil";
+"com.shutterfly.category.CategoryFactory" [ fontcolor="blue" ];
+"com.shutterfly.category.CategoryTest"->"com.shutterfly.category.CategoryFactory";
+}

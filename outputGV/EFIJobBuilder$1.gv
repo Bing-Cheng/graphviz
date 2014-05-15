@@ -1,0 +1,37 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.efi.EFIJobBuilder$1" [fontcolor="red"];
+"com.shutterfly.commercial.model.CmJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.shutterfly.commercial.model.CmJob";
+"com.pace2020.epace.object.Job" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.pace2020.epace.object.Job";
+"com.pace2020.epace.object.JobPart" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.pace2020.epace.object.JobPart";
+"com.shutterfly.commercial.model.CmOrder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.shutterfly.commercial.model.CmOrder";
+"com.pace2020.epace.sdk.FindObjectsPortType" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.pace2020.epace.sdk.FindObjectsPortType";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.shutterfly.util.Debug";
+"com.pace2020.epace.sdk.ReadObjectPortType" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.pace2020.epace.sdk.ReadObjectPortType";
+"com.shutterfly.commercial.model.CmProduct" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.shutterfly.commercial.model.CmProduct";
+"com.pace2020.epace.sdk.UpdateObjectHttpBindingStub" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.pace2020.epace.sdk.UpdateObjectHttpBindingStub";
+"com.shutterfly.commercial.efi.EFIJobBuilder$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$1"->"com.shutterfly.commercial.efi.EFIJobBuilder$1";
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIInitializer" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIInitializer"->"com.shutterfly.commercial.efi.EFIJobBuilder$1";
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIJobCreator" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$EFIJobCreator"->"com.shutterfly.commercial.efi.EFIJobBuilder$1";
+"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder$JobPartData"->"com.shutterfly.commercial.efi.EFIJobBuilder$1";
+"com.shutterfly.servlets.commercial.controller.OrderAction" [ fontcolor="green" ];
+"com.shutterfly.servlets.commercial.controller.OrderAction"->"com.shutterfly.commercial.efi.EFIJobBuilder$1";
+"com.shutterfly.commercial.efi.EFIJobBuilder" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.efi.EFIJobBuilder"->"com.shutterfly.commercial.efi.EFIJobBuilder$1" [dir=both];
+}

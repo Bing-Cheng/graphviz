@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.CoverSheetInfo" [fontcolor="red"];
+"com.shutterfly.db.hibernate.commercial.CM_Product" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CoverSheetInfo"->"com.shutterfly.db.hibernate.commercial.CM_Product";
+"com.shutterfly.db.hibernate.commercial.CM_Tray" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CoverSheetInfo"->"com.shutterfly.db.hibernate.commercial.CM_Tray";
+"com.shutterfly.db.hibernate.commercial.CM_PrintJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CoverSheetInfo"->"com.shutterfly.db.hibernate.commercial.CM_PrintJob";
+"com.shutterfly.commercial.data.IMBCode" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CoverSheetInfo"->"com.shutterfly.commercial.data.IMBCode";
+"com.shutterfly.util.StringUtil" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CoverSheetInfo"->"com.shutterfly.util.StringUtil";
+"com.shutterfly.db.hibernate.commercial.CM_SubJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CoverSheetInfo"->"com.shutterfly.db.hibernate.commercial.CM_SubJob";
+"com.shutterfly.db.hibernate.commercial.CM_Job" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CoverSheetInfo"->"com.shutterfly.db.hibernate.commercial.CM_Job";
+}

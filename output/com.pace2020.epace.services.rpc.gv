@@ -1,0 +1,10 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.pace2020.epace.services.rpc.EstimateConvertToJobPart"; 
+"com.pace2020.epace.services.rpc.FailedProcessItem"; 
+"com.pace2020.epace.services.rpc.ProcessResults"; 
+"com.pace2020.epace.services.rpc.QuoteConvertToJobPart"; 
+"com.pace2020.epace.services.rpc.SuccessProcessItem"; 
+}

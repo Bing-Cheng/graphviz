@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.test.MatiseFixer" [fontcolor="red"];
+"com.shutterfly.db.LabDBException" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.db.LabDBSql" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer"->"com.shutterfly.db.LabDBSql";
+"com.shutterfly.db.LabDBSingletonManager" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer"->"com.shutterfly.db.LabDBSingletonManager";
+"com.shutterfly.db.transaction.SingleQueryTransaction" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer"->"com.shutterfly.db.transaction.SingleQueryTransaction";
+"com.shutterfly.apps.test.MatiseFixer$1" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer"->"com.shutterfly.apps.test.MatiseFixer$1";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.db.LabDBFactory" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer"->"com.shutterfly.db.LabDB";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.MatiseFixer"->"com.shutterfly.util.Debug";
+}

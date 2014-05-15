@@ -1,0 +1,12 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.rendertest.regression.ui.ImagePane"; 
+"com.shutterfly.rendertest.regression.ui.SFRFMessageFrame$1"; 
+"com.shutterfly.rendertest.regression.ui.SFRFMessageFrame$1"->"com.shutterfly.rendertest.regression.ui.SFRFMessageFrame";
+"com.shutterfly.rendertest.regression.ui.SFRFMessageFrame"; 
+"com.shutterfly.rendertest.regression.ui.SFRFMessageFrame"->"com.shutterfly.rendertest.regression.ui.ImagePane";
+"com.shutterfly.rendertest.regression.ui.SFRFMessageFrame"->"com.shutterfly.rendertest.regression.ui.SFRFMessageFrame$1";
+splines="ortho";
+}

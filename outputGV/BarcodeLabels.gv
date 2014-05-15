@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.inventory.partner.BarcodeLabels" [fontcolor="red"];
+"com.lowagie.text.pdf.PdfWriter" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.lowagie.text.pdf.PdfWriter";
+"com.lowagie.text.pdf.PdfContentByte" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.lowagie.text.pdf.PdfContentByte";
+"com.lowagie.text.pdf.PdfPTable" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.lowagie.text.pdf.PdfPTable";
+"com.lowagie.text.pdf.Barcode128" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.lowagie.text.pdf.Barcode128";
+"com.lowagie.text.Image" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.lowagie.text.Image";
+"com.lowagie.text.pdf.PdfPCell" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.lowagie.text.pdf.PdfPCell";
+"com.lowagie.text.Document" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.lowagie.text.Document";
+"com.lowagie.text.Phrase" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.lowagie.text.Phrase";
+"com.lowagie.text.Chunk" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.lowagie.text.Chunk";
+"com.shutterfly.util.FileUtil" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.shutterfly.util.FileUtil";
+"com.lowagie.text.Rectangle" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.lowagie.text.Rectangle";
+"com.lowagie.text.Element" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.lowagie.text.Element";
+}

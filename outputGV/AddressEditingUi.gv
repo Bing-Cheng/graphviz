@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.AddressEditingUi" [fontcolor="red"];
+"com.shutterfly.apps.ScanStationEventListener" [ fontcolor="blue" ];
+"com.shutterfly.apps.AddressEditingUi"->"com.shutterfly.apps.ScanStationEventListener";
+"com.shutterfly.barcode.BarcodeListener" [ fontcolor="blue" ];
+"com.shutterfly.apps.AddressEditingUi"->"com.shutterfly.barcode.BarcodeListener";
+"com.shutterfly.order.Address" [ fontcolor="blue" ];
+"com.shutterfly.apps.AddressEditingUi"->"com.shutterfly.order.Address";
+"com.shutterfly.apps.ScanStationEvent" [ fontcolor="blue" ];
+"com.shutterfly.apps.AddressEditingUi"->"com.shutterfly.apps.ScanStationEvent";
+"com.shutterfly.util.UiUtil" [ fontcolor="blue" ];
+"com.shutterfly.apps.AddressEditingUi"->"com.shutterfly.util.UiUtil";
+"com.shutterfly.apps.CorrectionStation" [ fontcolor="green" ];
+"com.shutterfly.apps.CorrectionStation"->"com.shutterfly.apps.AddressEditingUi";
+}

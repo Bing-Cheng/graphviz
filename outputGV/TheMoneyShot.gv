@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.clientreleasemanager.support.TheMoneyShot" [fontcolor="red"];
+"com.shutterfly.clientreleasemanager.support.XMLToHashtable" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.TheMoneyShot"->"com.shutterfly.clientreleasemanager.support.XMLToHashtable";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.TheMoneyShot"->"com.shutterfly.util.Debug";
+}

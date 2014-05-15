@@ -1,0 +1,10 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.reporting.helper.SelectedAdmins"; 
+"com.shutterfly.servlets.reporting.helper.SelectedAdmins"->"com.shutterfly.servlets.reporting.helper.UserRole";
+"com.shutterfly.servlets.reporting.helper.SelectedAdmins"->"com.shutterfly.db.model.LTResource";
+"com.shutterfly.servlets.reporting.helper.UserRole"; 
+splines="ortho";
+}

@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.linecontroller.v2.task.DBSyncTask"; 
+"com.shutterfly.linecontroller.v2.task.DBSyncTask"->"com.shutterfly.linecontroller.v2.task.LCTask";
+"com.shutterfly.linecontroller.v2.task.DBSyncTask"->"com.shutterfly.order.Batch";
+"com.shutterfly.linecontroller.v2.task.DBSyncTask"->"com.shutterfly.db.LabDB";
+"com.shutterfly.linecontroller.v2.task.DBSyncTask"->"com.shutterfly.linecontroller.v2.BatchQueue";
+"com.shutterfly.linecontroller.v2.task.DBSyncTask"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.linecontroller.v2.task.DBSyncTask"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.linecontroller.v2.task.DBSyncTask"->"com.shutterfly.order.batching.BatchStateEnum";
+"com.shutterfly.linecontroller.v2.task.DBSyncTask"->"com.shutterfly.order.batching.BatchState";
+"com.shutterfly.linecontroller.v2.task.DBSyncTask"->"com.shutterfly.util.Debug";
+"com.shutterfly.linecontroller.v2.task.LCTask"; 
+"com.shutterfly.linecontroller.v2.task.LCTaskPool"; 
+"com.shutterfly.linecontroller.v2.task.LCTaskPool"->"com.shutterfly.linecontroller.v2.task.LCTask";
+"com.shutterfly.linecontroller.v2.task.LCTaskPool"->"com.shutterfly.util.Debug";
+"com.shutterfly.linecontroller.v2.task.SyncTask"; 
+splines="ortho";
+}

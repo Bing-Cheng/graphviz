@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.client.ServerConfig" [fontcolor="red"];
+"com.shutterfly.assetmanager.xml.XMLFileParser" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.ServerConfig"->"com.shutterfly.assetmanager.xml.XMLFileParser";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.ServerConfig"->"com.shutterfly.util.Debug";
+}

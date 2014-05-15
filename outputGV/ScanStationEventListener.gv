@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ScanStationEventListener" [fontcolor="red"];
+"com.shutterfly.apps.ScanStationEvent" [ fontcolor="blue" ];
+"com.shutterfly.apps.ScanStationEventListener"->"com.shutterfly.apps.ScanStationEvent";
+}

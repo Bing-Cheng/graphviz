@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BatchVerifyStation$5" [fontcolor="red"];
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerifyStation$5"->"com.shutterfly.db.LabDB";
+"com.shutterfly.apps.BatchVerify" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerifyStation$5"->"com.shutterfly.apps.BatchVerify";
+"com.shutterfly.db.LabDBException" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerifyStation$5"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchVerifyStation$5"->"com.shutterfly.util.Debug";
+"com.shutterfly.apps.BatchVerifyStation$5" [ fontcolor="green" ];
+"com.shutterfly.apps.BatchVerifyStation$5"->"com.shutterfly.apps.BatchVerifyStation$5";
+"com.shutterfly.apps.BatchVerifyStation$BatchVerifyShutdownHook" [ fontcolor="green" ];
+"com.shutterfly.apps.BatchVerifyStation$BatchVerifyShutdownHook"->"com.shutterfly.apps.BatchVerifyStation$5";
+"com.shutterfly.apps.BatchVerifyStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.BatchVerifyStation"->"com.shutterfly.apps.BatchVerifyStation$5" [dir=both];
+}

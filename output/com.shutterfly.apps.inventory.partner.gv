@@ -1,0 +1,8 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"; 
+"com.shutterfly.apps.inventory.partner.BarcodeLabels"->"com.shutterfly.util.FileUtil";
+splines="ortho";
+}

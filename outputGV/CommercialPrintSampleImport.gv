@@ -1,0 +1,35 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.CommercialPrintSampleImport" [fontcolor="red"];
+"gems.cli.CliOption" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"gems.cli.CliOption";
+"gems.cli.CliOptions" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"gems.cli.CliOptions";
+"com.shutterfly.commercial.impl.GroupoJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"com.shutterfly.commercial.impl.GroupoJob";
+"com.shutterfly.commercial.impl.CSVReader" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"com.shutterfly.commercial.impl.CSVReader";
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"gems.cli.CliActuators" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"gems.cli.CliActuators";
+"gems.cli.CliActuator" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"gems.cli.CliActuator";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmOrderDao";
+"gems.cli.CliParserImpl" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"gems.cli.CliParserImpl";
+"com.shutterfly.commercial.impl.MemoryUtil" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"com.shutterfly.commercial.impl.MemoryUtil";
+"com.shutterfly.util.DebugMail" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"com.shutterfly.util.DebugMail";
+"com.shutterfly.commercial.impl.JobSpecXMLParser" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"com.shutterfly.commercial.impl.JobSpecXMLParser";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"com.shutterfly.properties.LabDBHostname";
+"gems.cli.CliOptionType" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CommercialPrintSampleImport"->"gems.cli.CliOptionType";
+}

@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.WorkPlanner$StationAssignment" [fontcolor="red"];
+"com.shutterfly.apps.WorkPlanner$StationAssignment" [ fontcolor="green" ];
+"com.shutterfly.apps.WorkPlanner$StationAssignment"->"com.shutterfly.apps.WorkPlanner$StationAssignment";
+"com.shutterfly.apps.WorkPlanner" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.WorkPlanner"->"com.shutterfly.apps.WorkPlanner$StationAssignment" [dir=both];
+"com.shutterfly.apps.WorkPlanner$Task" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.WorkPlanner$Task"->"com.shutterfly.apps.WorkPlanner$StationAssignment" [dir=both];
+}

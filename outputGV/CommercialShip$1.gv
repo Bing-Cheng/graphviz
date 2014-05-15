@@ -1,0 +1,33 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.CommercialShip$1" [fontcolor="red"];
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.CommercialShip$1"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.apps.CommercialShip$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialShip$1"->"com.shutterfly.commercial.apps.CommercialShip$1";
+"com.shutterfly.commercial.apps.CommercialShip$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialShip$2"->"com.shutterfly.commercial.apps.CommercialShip$1";
+"com.shutterfly.commercial.apps.CommercialShip$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialShip$3"->"com.shutterfly.commercial.apps.CommercialShip$1";
+"com.shutterfly.commercial.apps.CommercialShip$4" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialShip$4"->"com.shutterfly.commercial.apps.CommercialShip$1";
+"com.shutterfly.commercial.apps.CommercialShip$STATES" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialShip$STATES"->"com.shutterfly.commercial.apps.CommercialShip$1";
+"com.shutterfly.commercial.apps.ConsolidationFrame$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame$1"->"com.shutterfly.commercial.apps.CommercialShip$1";
+"com.shutterfly.commercial.apps.ConsolidationFrame$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame$2"->"com.shutterfly.commercial.apps.CommercialShip$1";
+"com.shutterfly.commercial.apps.ConsolidationFrame" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame"->"com.shutterfly.commercial.apps.CommercialShip$1";
+"com.shutterfly.commercial.apps.ConsolidationFrame$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame$3"->"com.shutterfly.commercial.apps.CommercialShip$1";
+"com.shutterfly.commercial.apps.ConsolidationFrame$ConsolSubBatch" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame$ConsolSubBatch"->"com.shutterfly.commercial.apps.CommercialShip$1";
+"com.shutterfly.commercial.apps.ConsolidationFrame$LeftRenderer" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.ConsolidationFrame$LeftRenderer"->"com.shutterfly.commercial.apps.CommercialShip$1";
+"com.shutterfly.commercial.apps.CommercialShip" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.CommercialShip"->"com.shutterfly.commercial.apps.CommercialShip$1" [dir=both];
+}

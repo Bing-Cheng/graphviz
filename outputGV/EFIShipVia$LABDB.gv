@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.efi.model.EFIShipVia$LABDB" [fontcolor="red"];
+"com.shutterfly.commercial.data.cache.EFIShipViaCache" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.cache.EFIShipViaCache"->"com.shutterfly.commercial.efi.model.EFIShipVia$LABDB";
+"com.shutterfly.commercial.efi.EFIOrderBuilder" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIOrderBuilder"->"com.shutterfly.commercial.efi.model.EFIShipVia$LABDB";
+"com.shutterfly.commercial.efi.model.EFIShipVia$LABDB" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.model.EFIShipVia$LABDB"->"com.shutterfly.commercial.efi.model.EFIShipVia$LABDB";
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader"->"com.shutterfly.commercial.efi.model.EFIShipVia$LABDB";
+"com.shutterfly.commercial.apps.BrandMuscleApp" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp"->"com.shutterfly.commercial.efi.model.EFIShipVia$LABDB";
+"com.shutterfly.commercial.efi.model.EFIShipVia" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.efi.model.EFIShipVia"->"com.shutterfly.commercial.efi.model.EFIShipVia$LABDB" [dir=both];
+}

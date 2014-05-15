@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.client.CacheJanitor" [fontcolor="red"];
+"com.shutterfly.assetmanager.client.LocalAssetStorage" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.CacheJanitor"->"com.shutterfly.assetmanager.client.LocalAssetStorage";
+"com.shutterfly.assetmanager.support.AbstractDigitalAsset" [ fontcolor="blue" ];
+"com.shutterfly.assetmanager.client.CacheJanitor"->"com.shutterfly.assetmanager.support.AbstractDigitalAsset";
+}

@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$6" [fontcolor="red"];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$6" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$6"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$6";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperTest" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperTest"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$6";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper" [ fontcolor="turquoise" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$6" [dir=both];
+}

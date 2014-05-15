@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.DataSplitPanel$4" [fontcolor="red"];
+"com.shutterfly.commercial.data.DataModel$DataDelimeter" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSplitPanel$4"->"com.shutterfly.commercial.data.DataModel$DataDelimeter";
+"com.shutterfly.commercial.data.DataBigMac" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSplitPanel$4"->"com.shutterfly.commercial.data.DataBigMac";
+"com.shutterfly.commercial.data.DataModel" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.DataSplitPanel$4"->"com.shutterfly.commercial.data.DataModel";
+"com.shutterfly.commercial.apps.CommercialData" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.apps.DataSplitPanel$4";
+"com.shutterfly.commercial.apps.DataSplitPanel$4" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSplitPanel$4"->"com.shutterfly.commercial.apps.DataSplitPanel$4";
+"com.shutterfly.commercial.apps.DataSplitPanel$DirectoryFilter" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSplitPanel$DirectoryFilter"->"com.shutterfly.commercial.apps.DataSplitPanel$4";
+"com.shutterfly.commercial.apps.DataSplitPanel" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.DataSplitPanel"->"com.shutterfly.commercial.apps.DataSplitPanel$4" [dir=both];
+}

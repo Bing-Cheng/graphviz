@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.clientreleasemanager.support.XMLToHashtable" [fontcolor="red"];
+"com.shutterfly.clientreleasemanager.support.DOMUtilities" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.XMLToHashtable"->"com.shutterfly.clientreleasemanager.support.DOMUtilities";
+"org.w3c.dom.Document" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.XMLToHashtable"->"org.w3c.dom.Document";
+"org.w3c.dom.Node" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.XMLToHashtable"->"org.w3c.dom.Node";
+"org.w3c.dom.NodeList" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.XMLToHashtable"->"org.w3c.dom.NodeList";
+"org.w3c.dom.Element" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.XMLToHashtable"->"org.w3c.dom.Element";
+"com.shutterfly.util.FileUtil" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.support.XMLToHashtable"->"com.shutterfly.util.FileUtil";
+}

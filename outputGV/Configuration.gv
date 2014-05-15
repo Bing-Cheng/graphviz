@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.clientreleasemanager.versionserver.support.Configuration" [fontcolor="red"];
+"com.shutterfly.clientreleasemanager.versionserver.support.AbstractConfiguration" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.Configuration"->"com.shutterfly.clientreleasemanager.versionserver.support.AbstractConfiguration";
+"com.shutterfly.clientreleasemanager.versionserver.support.ApplicationGroup" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.Configuration"->"com.shutterfly.clientreleasemanager.versionserver.support.ApplicationGroup";
+"com.shutterfly.clientreleasemanager.versionserver.support.ClassPath" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.Configuration"->"com.shutterfly.clientreleasemanager.versionserver.support.ClassPath";
+"com.shutterfly.clientreleasemanager.versionserver.support.ApplicationGroupData" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.Configuration"->"com.shutterfly.clientreleasemanager.versionserver.support.ApplicationGroupData";
+"com.shutterfly.clientreleasemanager.versionserver.support.ClassPathData" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.Configuration"->"com.shutterfly.clientreleasemanager.versionserver.support.ClassPathData";
+"com.shutterfly.clientreleasemanager.versionserver.support.ClientConfigurationData" [ fontcolor="blue" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.Configuration"->"com.shutterfly.clientreleasemanager.versionserver.support.ClientConfigurationData";
+"com.shutterfly.clientreleasemanager.versionserver.support.ConfigurationData" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.ConfigurationData"->"com.shutterfly.clientreleasemanager.versionserver.support.Configuration";
+"com.shutterfly.clientreleasemanager.versionserver.support.StationConfigurationGenerator" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.StationConfigurationGenerator"->"com.shutterfly.clientreleasemanager.versionserver.support.Configuration";
+"com.shutterfly.clientreleasemanager.versionserver.support.Configuration" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.Configuration"->"com.shutterfly.clientreleasemanager.versionserver.support.Configuration";
+"com.shutterfly.clientreleasemanager.versionserver.support.LabVersionData$1" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.LabVersionData$1"->"com.shutterfly.clientreleasemanager.versionserver.support.Configuration";
+"com.shutterfly.clientreleasemanager.versionserver.support.LabVersion" [ fontcolor="turquoise" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.LabVersion"->"com.shutterfly.clientreleasemanager.versionserver.support.Configuration" [dir=both];
+"com.shutterfly.clientreleasemanager.versionserver.support.LabVersionData" [ fontcolor="turquoise" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.LabVersionData"->"com.shutterfly.clientreleasemanager.versionserver.support.Configuration" [dir=both];
+}

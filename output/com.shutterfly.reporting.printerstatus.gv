@@ -1,0 +1,29 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper$PrinterStatusProperties"; 
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper$PrinterStatusProperties"->"com.shutterfly.db.LabDB";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper$PrinterStatusProperties"->"com.shutterfly.order.WorkType";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper$PrinterStatusProperties"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper$PrinterStatusProperties"->"com.shutterfly.order.PrintSize";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper$PrinterStatusProperties"->"com.shutterfly.printers.PrinterType";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper$PrinterStatusProperties"->"com.shutterfly.order.PaperFinish";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper$PrinterStatusProperties"->"com.shutterfly.util.Debug";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper$PrinterStatusProperties"->"com.shutterfly.reporting.printerstatus.PrinterStatusHelper";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper"; 
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper"->"com.shutterfly.reporting.printerstatus.PrinterStatusReport";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper"->"com.shutterfly.db.LabDB";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper"->"com.shutterfly.reporting.printerstatus.PrinterStatusHelper$PrinterStatusProperties";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.reporting.printerstatus.PrinterStatusHelper"->"com.shutterfly.util.Debug";
+"com.shutterfly.reporting.printerstatus.PrinterStatusReport"; 
+"com.shutterfly.reporting.printerstatus.PrinterSummary"; 
+"com.shutterfly.reporting.printerstatus.PrinterSummaryListSorter"; 
+"com.shutterfly.reporting.printerstatus.PrinterSummaryListSorter"->"com.shutterfly.reporting.printerstatus.PrinterSummary";
+"com.shutterfly.reporting.printerstatus.WorkTypeSummary"; 
+"com.shutterfly.reporting.printerstatus.WorkTypeSummary"->"com.shutterfly.order.WorkType";
+splines="ortho";
+}

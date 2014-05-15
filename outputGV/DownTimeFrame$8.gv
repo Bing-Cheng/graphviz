@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.DownTimeFrame$8" [fontcolor="red"];
+"com.shutterfly.apps.DownTimeFrame" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$8"->"com.shutterfly.apps.DownTimeFrame";
+"com.shutterfly.db.transaction.FetchOutageState$OutageState" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$8"->"com.shutterfly.db.transaction.FetchOutageState$OutageState";
+"com.shutterfly.db.transaction.FetchOutageState" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$8"->"com.shutterfly.db.transaction.FetchOutageState";
+}

@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.cards.EnvelopePrintListener" [fontcolor="red"];
+"com.shutterfly.cards.EnvelopePrintEvent" [ fontcolor="blue" ];
+"com.shutterfly.cards.EnvelopePrintListener"->"com.shutterfly.cards.EnvelopePrintEvent";
+"com.shutterfly.cards.CardsFrame" [ fontcolor="green" ];
+"com.shutterfly.cards.CardsFrame"->"com.shutterfly.cards.EnvelopePrintListener";
+"com.shutterfly.cards.EnvelopePrintController" [ fontcolor="green" ];
+"com.shutterfly.cards.EnvelopePrintController"->"com.shutterfly.cards.EnvelopePrintListener";
+"com.shutterfly.cards.CardEnvelopePrinter" [ fontcolor="green" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.cards.EnvelopePrintListener";
+"com.shutterfly.cards.DesktopEnvelopePrinter" [ fontcolor="green" ];
+"com.shutterfly.cards.DesktopEnvelopePrinter"->"com.shutterfly.cards.EnvelopePrintListener";
+"com.shutterfly.cards.SingleEnvelopePrinter" [ fontcolor="green" ];
+"com.shutterfly.cards.SingleEnvelopePrinter"->"com.shutterfly.cards.EnvelopePrintListener";
+"com.shutterfly.cards.SingleEnvelopePrinter$SymAction" [ fontcolor="green" ];
+"com.shutterfly.cards.SingleEnvelopePrinter$SymAction"->"com.shutterfly.cards.EnvelopePrintListener";
+}

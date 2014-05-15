@@ -1,0 +1,8 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.miam.base.control.DBController"; 
+"com.shutterfly.miam.base.control.DBController"->"com.shutterfly.db.hibernate.HibernateUtil";
+splines="ortho";
+}

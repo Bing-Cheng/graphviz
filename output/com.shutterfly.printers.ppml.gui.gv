@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.printers.ppml.gui.PPMLMouseListener"; 
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel$1"; 
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel$1"->"com.shutterfly.printers.ppml.gui.PPMLViewPanel";
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel$1"->"com.shutterfly.printers.ppml.utils.Rotate";
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel"; 
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel"->"com.shutterfly.printers.ppml.gui.ShapeProperties";
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel"->"com.shutterfly.printers.ppml.utils.Rotate";
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel"->"com.shutterfly.printers.ppml.template.model.ImposedElement";
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel"->"com.shutterfly.printers.ppml.gui.PPMLViewPanel$1";
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel"->"com.shutterfly.printers.ppml.utils.TemplateSpecUtil";
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel"->"com.shutterfly.printers.ppml.utils.Converter";
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel"->"com.shutterfly.util.Debug";
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel"->"com.shutterfly.printers.ppml.template.model.SheetSide";
+"com.shutterfly.printers.ppml.gui.PPMLViewPanel"->"com.shutterfly.printers.ppml.template.model.ContentType";
+"com.shutterfly.printers.ppml.gui.ShapeProperties"; 
+splines="ortho";
+}

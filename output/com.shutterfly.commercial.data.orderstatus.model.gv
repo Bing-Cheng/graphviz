@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"; 
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.data.orderstatus.castor.Job";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmJob";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmItemgroup";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.data.orderstatus.castor.Shipment";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmShipment";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.data.orderstatus.castor.Shipments";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmJobstate";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmJobstate$JobStates";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState"->"com.shutterfly.commercial.model.CmShipInfo";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"; 
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"->"com.shutterfly.commercial.data.orderstatus.castor.OrderState";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"->"com.shutterfly.commercial.model.CmOrder";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"->"com.shutterfly.commercial.data.orderstatus.model.CommercialJobState";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"->"com.shutterfly.commercial.model.CmJob";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"->"com.shutterfly.commercial.data.orderstatus.castor.Jobs";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"->"com.shutterfly.commercial.orderimporter.support.CommercialOrder";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"->"com.shutterfly.commercial.model.CmPartner";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"->"com.shutterfly.commercial.model.CmOrderstate";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"->"com.shutterfly.commercial.model.CmOrderstate$CmOrderStates";
+"com.shutterfly.commercial.data.orderstatus.model.CommercialOrderState"->"com.shutterfly.commercial.data.orderstatus.castor.Job";
+splines="ortho";
+}

@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.HotFolderMonitor$TraySetCache" [fontcolor="red"];
+"com.shutterfly.db.hibernate.commercial.CM_Tray" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.HotFolderMonitor$TraySetCache"->"com.shutterfly.db.hibernate.commercial.CM_Tray";
+"com.shutterfly.commercial.data.HotFolderMonitor$TraySetCache" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.HotFolderMonitor$TraySetCache"->"com.shutterfly.commercial.data.HotFolderMonitor$TraySetCache";
+"com.shutterfly.commercial.data.HotFolderMonitor" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.data.HotFolderMonitor"->"com.shutterfly.commercial.data.HotFolderMonitor$TraySetCache" [dir=both];
+}

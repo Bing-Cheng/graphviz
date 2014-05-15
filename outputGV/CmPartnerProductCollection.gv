@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.cache.CmPartnerProductCollection" [fontcolor="red"];
+"com.shutterfly.commercial.data.cache.InstanceCollection" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerProductCollection"->"com.shutterfly.commercial.data.cache.InstanceCollection";
+"com.shutterfly.commercial.model.CmPartnerProduct" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerProductCollection"->"com.shutterfly.commercial.model.CmPartnerProduct";
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerProductCollection"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.transformers.config.ClientConfigEnum" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerProductCollection"->"com.shutterfly.commercial.transformers.config.ClientConfigEnum";
+"com.shutterfly.commercial.data.cache.CmPartnerProductCollection$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerProductCollection"->"com.shutterfly.commercial.data.cache.CmPartnerProductCollection$1";
+"com.shutterfly.commercial.data.cache.CmPartnerProductCollection$CmPartnerProductCollectionHolder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerProductCollection"->"com.shutterfly.commercial.data.cache.CmPartnerProductCollection$CmPartnerProductCollectionHolder";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmPartnerProductDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerProductCollection"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmPartnerProductDao";
+"com.shutterfly.commercial.model.CmPartner" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerProductCollection"->"com.shutterfly.commercial.model.CmPartner";
+}

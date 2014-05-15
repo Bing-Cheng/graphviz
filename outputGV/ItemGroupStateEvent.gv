@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.model.ItemGroupStateEvent" [fontcolor="red"];
+"com.shutterfly.commercial.apps.model.CommercialEvent" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.ItemGroupStateEvent"->"com.shutterfly.commercial.apps.model.CommercialEvent";
+"com.shutterfly.commercial.model.CmItemgroup" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.ItemGroupStateEvent"->"com.shutterfly.commercial.model.CmItemgroup";
+"com.shutterfly.commercial.apps.model.ItemGroupStateEvent$ItemGroupStateMachine" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.ItemGroupStateEvent"->"com.shutterfly.commercial.apps.model.ItemGroupStateEvent$ItemGroupStateMachine";
+"com.shutterfly.commercial.apps.model.CommercialEventListener" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.ItemGroupStateEvent"->"com.shutterfly.commercial.apps.model.CommercialEventListener";
+}

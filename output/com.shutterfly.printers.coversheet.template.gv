@@ -1,0 +1,32 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.printers.coversheet.template.CoverDocument"; 
+"com.shutterfly.printers.coversheet.template.CoverDocument"->"com.shutterfly.printers.coversheet.template.TopVariableForm";
+"com.shutterfly.printers.coversheet.template.CoverDocument"->"com.shutterfly.printers.coversheet.template.UserForm";
+"com.shutterfly.printers.coversheet.template.CoverDocument"->"com.shutterfly.printers.coversheet.template.MidForm";
+"com.shutterfly.printers.coversheet.template.CoverDocument"->"com.shutterfly.printers.coversheet.CoverSheet";
+"com.shutterfly.printers.coversheet.template.CoverDocument"->"com.shutterfly.order.Batch";
+"com.shutterfly.printers.coversheet.template.CoverDocument"->"com.shutterfly.printers.coversheet.CoverSheetSize";
+"com.shutterfly.printers.coversheet.template.CoverDocument"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.printers.coversheet.template.CoverDocument"->"com.shutterfly.printers.coversheet.template.PDFFont";
+"com.shutterfly.printers.coversheet.template.MidForm"; 
+"com.shutterfly.printers.coversheet.template.MidForm"->"com.shutterfly.printers.coversheet.CoverSheet";
+"com.shutterfly.printers.coversheet.template.MidForm"->"com.shutterfly.printers.coversheet.CoverSheetSize";
+"com.shutterfly.printers.coversheet.template.MidForm"->"com.shutterfly.printers.coversheet.template.CoverDocument";
+"com.shutterfly.printers.coversheet.template.MidForm"->"com.shutterfly.printers.coversheet.template.PDFFont";
+"com.shutterfly.printers.coversheet.template.PDFFont"; 
+"com.shutterfly.printers.coversheet.template.TopVariableForm"; 
+"com.shutterfly.printers.coversheet.template.TopVariableForm"->"com.shutterfly.printers.coversheet.CoverSheet";
+"com.shutterfly.printers.coversheet.template.TopVariableForm"->"com.shutterfly.printers.coversheet.template.PDFFont";
+"com.shutterfly.printers.coversheet.template.TopVariableForm"->"com.shutterfly.util.FileUtil";
+"com.shutterfly.printers.coversheet.template.UserForm"; 
+"com.shutterfly.printers.coversheet.template.UserForm"->"com.shutterfly.order.Batch";
+"com.shutterfly.printers.coversheet.template.UserForm"->"com.shutterfly.order.BatchUtils";
+"com.shutterfly.printers.coversheet.template.UserForm"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.printers.coversheet.template.UserForm"->"com.shutterfly.printers.coversheet.template.PDFFont";
+"com.shutterfly.printers.coversheet.template.UserForm"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.printers.coversheet.template.UserForm"->"com.shutterfly.printers.coversheet.template.CoverDocument";
+splines="ortho";
+}

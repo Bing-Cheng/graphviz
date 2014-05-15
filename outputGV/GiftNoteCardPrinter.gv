@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.cards.GiftNoteCardPrinter" [fontcolor="red"];
+"com.shutterfly.order.GiftNoteCardItem" [ fontcolor="blue" ];
+"com.shutterfly.cards.GiftNoteCardPrinter"->"com.shutterfly.order.GiftNoteCardItem";
+"com.shutterfly.order.SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.cards.GiftNoteCardPrinter"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.db.LabDBException" [ fontcolor="blue" ];
+"com.shutterfly.cards.GiftNoteCardPrinter"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.cards.GiftNoteCardPrinter"->"com.shutterfly.db.LabDB";
+"com.shutterfly.db.LabDBSingletonManager" [ fontcolor="blue" ];
+"com.shutterfly.cards.GiftNoteCardPrinter"->"com.shutterfly.db.LabDBSingletonManager";
+"com.shutterfly.properties.SflyProperties" [ fontcolor="blue" ];
+"com.shutterfly.cards.GiftNoteCardPrinter"->"com.shutterfly.properties.SflyProperties";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.cards.GiftNoteCardPrinter"->"com.shutterfly.util.Debug";
+"com.shutterfly.db.LabDBFactory" [ fontcolor="blue" ];
+"com.shutterfly.cards.GiftNoteCardPrinter"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.properties.LabDBHostname" [ fontcolor="blue" ];
+"com.shutterfly.cards.GiftNoteCardPrinter"->"com.shutterfly.properties.LabDBHostname";
+}

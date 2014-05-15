@@ -1,0 +1,33 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest" [fontcolor="red"];
+"org.junit.BeforeClass" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"org.junit.BeforeClass";
+"org.junit.AfterClass" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"org.junit.AfterClass";
+"org.junit.Before" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"org.junit.Before";
+"org.junit.After" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"org.junit.After";
+"com.shutterfly.colorsure.db.CLR_papertype" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"com.shutterfly.colorsure.db.CLR_papertype";
+"org.hibernate.Session" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"org.hibernate.Session";
+"org.hibernate.Transaction" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"org.hibernate.Transaction";
+"org.hibernate.Criteria" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"org.hibernate.Criteria";
+"org.junit.Test" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"org.junit.Test";
+"com.shutterfly.colorsure.tools.ColorSureCmdLineTool" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"com.shutterfly.colorsure.tools.ColorSureCmdLineTool";
+"org.junit.Assert" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"org.junit.Assert";
+"com.shutterfly.colorsure.db.ColorDBUtils" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"com.shutterfly.colorsure.db.ColorDBUtils";
+"org.hibernate.criterion.Order" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"org.hibernate.criterion.Order";
+}

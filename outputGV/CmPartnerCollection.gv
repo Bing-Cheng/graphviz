@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.cache.CmPartnerCollection" [fontcolor="red"];
+"com.shutterfly.commercial.data.cache.InstanceCollection" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerCollection"->"com.shutterfly.commercial.data.cache.InstanceCollection";
+"com.shutterfly.commercial.model.CmPartner" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerCollection"->"com.shutterfly.commercial.model.CmPartner";
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerCollection"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.data.cache.CmPartnerCollection$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerCollection"->"com.shutterfly.commercial.data.cache.CmPartnerCollection$1";
+"com.shutterfly.commercial.data.cache.CmPartnerCollection$CmPartnerCollectionHolder" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerCollection"->"com.shutterfly.commercial.data.cache.CmPartnerCollection$CmPartnerCollectionHolder";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmPartnerDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPartnerCollection"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmPartnerDao";
+}

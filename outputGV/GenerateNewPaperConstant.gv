@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant" [fontcolor="red"];
+"com.shutterfly.colorsure.commercial.tools.CLTPrinterClass" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.CLTPrinterClass"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+"com.shutterfly.colorsure.commercial.tools.PHXPrinterClass" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.PHXPrinterClass"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+"com.shutterfly.colorsure.commercial.tools.UserSelection" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.UserSelection"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$1" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$1"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$2" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$2"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$3" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$3"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$4" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$4"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$5" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaper$5"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperTest" [ fontcolor="green" ];
+"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperTest"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+"com.shutterfly.colorsure.tools.ColorSureCmdLineTool" [ fontcolor="green" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineTool"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest" [ fontcolor="green" ];
+"com.shutterfly.colorsure.tools.ColorSureCmdLineToolTest"->"com.shutterfly.colorsure.commercial.tools.GenerateNewPaperConstant";
+}

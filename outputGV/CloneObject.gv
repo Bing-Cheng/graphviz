@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.CloneObject" [fontcolor="red"];
+"com.pace2020.epace.sdk.CloneObjectPortType" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.CloneObject"->"com.pace2020.epace.sdk.CloneObjectPortType";
+"com.pace2020.epace.sdk.CloneObjectLocator" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.CloneObjectLocator"->"com.pace2020.epace.sdk.CloneObject";
+}

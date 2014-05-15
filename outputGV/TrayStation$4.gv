@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.TrayStation$4" [fontcolor="red"];
+"com.shutterfly.commercial.apps.TrayLabelDialog" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayStation$4"->"com.shutterfly.commercial.apps.TrayLabelDialog";
+"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayStation$4"->"com.shutterfly.commercial.impl.hibernate.dao.CommercialDaoFactory";
+"com.shutterfly.commercial.impl.hibernate.dao.impl.CmTrayDao" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayStation$4"->"com.shutterfly.commercial.impl.hibernate.dao.impl.CmTrayDao";
+"com.shutterfly.labels.LabelPrinter" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.TrayStation$4"->"com.shutterfly.labels.LabelPrinter";
+"com.shutterfly.commercial.apps.TrayStation$4" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.TrayStation$4"->"com.shutterfly.commercial.apps.TrayStation$4";
+"com.shutterfly.commercial.apps.TrayStation" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.TrayStation"->"com.shutterfly.commercial.apps.TrayStation$4" [dir=both];
+}

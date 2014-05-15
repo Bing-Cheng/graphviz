@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.clientreleasemanager.ui.StationManager$7" [fontcolor="red"];
+"com.shutterfly.clientreleasemanager.support.StationManagerController$3" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.support.StationManagerController$3"->"com.shutterfly.clientreleasemanager.ui.StationManager$7";
+"com.shutterfly.clientreleasemanager.support.StationManagerController" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.support.StationManagerController"->"com.shutterfly.clientreleasemanager.ui.StationManager$7";
+"com.shutterfly.clientreleasemanager.ui.StationManager$7" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.ui.StationManager$7"->"com.shutterfly.clientreleasemanager.ui.StationManager$7";
+"com.shutterfly.clientreleasemanager.ui.StationManager$8" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.ui.StationManager$8"->"com.shutterfly.clientreleasemanager.ui.StationManager$7";
+"com.shutterfly.clientreleasemanager.ui.StationManager$9" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.ui.StationManager$9"->"com.shutterfly.clientreleasemanager.ui.StationManager$7";
+"com.shutterfly.clientreleasemanager.ui.StationManager" [ fontcolor="turquoise" ];
+"com.shutterfly.clientreleasemanager.ui.StationManager"->"com.shutterfly.clientreleasemanager.ui.StationManager$7" [dir=both];
+}

@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.clientreleasemanager.versionserver.support.LabVersionData$1" [fontcolor="red"];
+"com.shutterfly.clientreleasemanager.versionserver.support.LabVersionData$1" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.LabVersionData$1"->"com.shutterfly.clientreleasemanager.versionserver.support.LabVersionData$1";
+"com.shutterfly.clientreleasemanager.versionserver.support.LabVersionData" [ fontcolor="turquoise" ];
+"com.shutterfly.clientreleasemanager.versionserver.support.LabVersionData"->"com.shutterfly.clientreleasemanager.versionserver.support.LabVersionData$1" [dir=both];
+}

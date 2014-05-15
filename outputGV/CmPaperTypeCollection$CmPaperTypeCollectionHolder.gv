@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.cache.CmPaperTypeCollection$CmPaperTypeCollectionHolder" [fontcolor="red"];
+"com.shutterfly.commercial.data.cache.CmPaperTypeCollection" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPaperTypeCollection$CmPaperTypeCollectionHolder"->"com.shutterfly.commercial.data.cache.CmPaperTypeCollection";
+"com.shutterfly.commercial.data.cache.CmPaperTypeCollection$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.cache.CmPaperTypeCollection$CmPaperTypeCollectionHolder"->"com.shutterfly.commercial.data.cache.CmPaperTypeCollection$1";
+}

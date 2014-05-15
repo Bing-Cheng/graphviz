@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.cards.EnvelopePrintController" [fontcolor="red"];
+"com.shutterfly.cards.EnvelopePrintListener" [ fontcolor="blue" ];
+"com.shutterfly.cards.EnvelopePrintController"->"com.shutterfly.cards.EnvelopePrintListener";
+"com.shutterfly.order.SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.cards.EnvelopePrintController"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.cards.EnvelopePrintEvent" [ fontcolor="blue" ];
+"com.shutterfly.cards.EnvelopePrintController"->"com.shutterfly.cards.EnvelopePrintEvent";
+"com.shutterfly.cards.CardEnvelopePrinter" [ fontcolor="green" ];
+"com.shutterfly.cards.CardEnvelopePrinter"->"com.shutterfly.cards.EnvelopePrintController";
+"com.shutterfly.cards.CardsFrame" [ fontcolor="green" ];
+"com.shutterfly.cards.CardsFrame"->"com.shutterfly.cards.EnvelopePrintController";
+"com.shutterfly.cards.DesktopEnvelopePrinter" [ fontcolor="green" ];
+"com.shutterfly.cards.DesktopEnvelopePrinter"->"com.shutterfly.cards.EnvelopePrintController";
+"com.shutterfly.cards.SingleEnvelopePrinter" [ fontcolor="green" ];
+"com.shutterfly.cards.SingleEnvelopePrinter"->"com.shutterfly.cards.EnvelopePrintController";
+"com.shutterfly.cards.SingleEnvelopePrinter$SymAction" [ fontcolor="green" ];
+"com.shutterfly.cards.SingleEnvelopePrinter$SymAction"->"com.shutterfly.cards.EnvelopePrintController";
+}

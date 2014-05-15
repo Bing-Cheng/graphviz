@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.LabelServicesStation$GetCardShippedSbNos" [fontcolor="red"];
+"com.shutterfly.db.transaction.SingleQueryTransaction" [ fontcolor="blue" ];
+"com.shutterfly.apps.LabelServicesStation$GetCardShippedSbNos"->"com.shutterfly.db.transaction.SingleQueryTransaction";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.LabelServicesStation$GetCardShippedSbNos"->"com.shutterfly.util.Debug";
+"com.shutterfly.apps.LabelServicesStation$GetCardShippedSbNos" [ fontcolor="green" ];
+"com.shutterfly.apps.LabelServicesStation$GetCardShippedSbNos"->"com.shutterfly.apps.LabelServicesStation$GetCardShippedSbNos";
+"com.shutterfly.apps.LabelServicesStation$GetCountCardsShipped" [ fontcolor="green" ];
+"com.shutterfly.apps.LabelServicesStation$GetCountCardsShipped"->"com.shutterfly.apps.LabelServicesStation$GetCardShippedSbNos";
+"com.shutterfly.apps.LabelServicesStation$GetCountLabelsOnly" [ fontcolor="green" ];
+"com.shutterfly.apps.LabelServicesStation$GetCountLabelsOnly"->"com.shutterfly.apps.LabelServicesStation$GetCardShippedSbNos";
+"com.shutterfly.apps.LabelServicesStation$GetLabelsOnlySbNos" [ fontcolor="green" ];
+"com.shutterfly.apps.LabelServicesStation$GetLabelsOnlySbNos"->"com.shutterfly.apps.LabelServicesStation$GetCardShippedSbNos";
+"com.shutterfly.apps.LabelServicesStation$GetPartnerEnum" [ fontcolor="green" ];
+"com.shutterfly.apps.LabelServicesStation$GetPartnerEnum"->"com.shutterfly.apps.LabelServicesStation$GetCardShippedSbNos";
+"com.shutterfly.apps.LabelServicesStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.LabelServicesStation"->"com.shutterfly.apps.LabelServicesStation$GetCardShippedSbNos" [dir=both];
+}

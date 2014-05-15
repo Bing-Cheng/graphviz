@@ -1,0 +1,24 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.labourtracking.report.ReportChartFactory$1EmployeeLogCategoryItemLabelGenerator"; 
+"com.shutterfly.labourtracking.report.ReportChartFactory$1EmployeeLogCategoryItemLabelGenerator"->"com.shutterfly.labourtracking.report.ReportChartFactory";
+"com.shutterfly.labourtracking.report.ReportChartFactory"; 
+"com.shutterfly.labourtracking.report.ReportChartFactory"->"com.shutterfly.servlets.reporting.util.ReportConfig";
+"com.shutterfly.labourtracking.report.ReportChartFactory"->"com.shutterfly.db.LabDB";
+"com.shutterfly.labourtracking.report.ReportChartFactory"->"com.shutterfly.db.JDBCConnection";
+"com.shutterfly.labourtracking.report.ReportChartFactory"->"com.shutterfly.labourtracking.report.ReportChartFactory$1EmployeeLogCategoryItemLabelGenerator";
+"com.shutterfly.labourtracking.report.ReportChartFactory"->"com.shutterfly.servlets.reporting.util.ReportConfigParameter";
+"com.shutterfly.labourtracking.report.ReportChartFactory"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.labourtracking.report.ReportChartFactory"->"com.shutterfly.util.Debug";
+"com.shutterfly.labourtracking.report.Shift"; 
+"com.shutterfly.labourtracking.report.Shift"->"com.shutterfly.util.GenerateXML";
+"com.shutterfly.labourtracking.report.ShiftManager"; 
+"com.shutterfly.labourtracking.report.ShiftManager"->"com.shutterfly.labourtracking.report.Shift";
+"com.shutterfly.labourtracking.report.ShiftManager"->"com.shutterfly.servlets.reporting.util.SingletonJasperReportCache";
+"com.shutterfly.labourtracking.report.ShiftManager"->"com.shutterfly.servlets.reporting.util.ReportConfigXMLParser";
+"com.shutterfly.labourtracking.report.ShiftManager"->"com.shutterfly.util.FileUtil";
+"com.shutterfly.labourtracking.report.ShiftManager"->"com.shutterfly.util.Debug";
+splines="ortho";
+}

@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.barcode.BarcodeConfig" [fontcolor="red"];
+"com.shutterfly.barcode.ImageTypeEnum" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeConfig"->"com.shutterfly.barcode.ImageTypeEnum";
+}

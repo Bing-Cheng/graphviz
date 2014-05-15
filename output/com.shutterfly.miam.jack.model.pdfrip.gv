@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.miam.jack.model.pdfrip.PDF2Image"; 
+"com.shutterfly.miam.jack.model.pdfrip.PDF2Image"->"com.shutterfly.util.Debug";
+"com.shutterfly.miam.jack.model.pdfrip.QoppaPDF2Image"; 
+"com.shutterfly.miam.jack.model.pdfrip.QoppaPDF2Image"->"com.shutterfly.miam.jack.model.pdfrip.PDF2Image";
+"com.shutterfly.miam.jack.model.pdfrip.QoppaPDF2Image"->"com.shutterfly.util.Debug";
+splines="ortho";
+}

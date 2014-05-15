@@ -1,0 +1,27 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BatchBuilder$CycleData" [fontcolor="red"];
+"com.shutterfly.order.Batch" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CycleData"->"com.shutterfly.order.Batch";
+"com.shutterfly.order.SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CycleData"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.category.Category" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CycleData"->"com.shutterfly.category.Category";
+"com.shutterfly.order.WorkType" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CycleData"->"com.shutterfly.order.WorkType";
+"com.shutterfly.apps.BatchBuilder" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CycleData"->"com.shutterfly.apps.BatchBuilder";
+"com.shutterfly.order.BatchUtils" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CycleData"->"com.shutterfly.order.BatchUtils";
+"com.shutterfly.order.batching.BatchStateEnum" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CycleData"->"com.shutterfly.order.batching.BatchStateEnum";
+"com.shutterfly.order.batching.BatchState" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CycleData"->"com.shutterfly.order.batching.BatchState";
+"com.shutterfly.order.BatchType" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CycleData"->"com.shutterfly.order.BatchType";
+"com.shutterfly.properties.LocalMachineHostname" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CycleData"->"com.shutterfly.properties.LocalMachineHostname";
+}

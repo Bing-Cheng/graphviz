@@ -1,0 +1,8 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.commercial.apps.scf.SCFSplitter"; 
+"com.shutterfly.commercial.apps.scf.SCFSplitter"->"com.shutterfly.util.Debug";
+splines="ortho";
+}

@@ -1,0 +1,35 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.efi.model.XmlCreator" [fontcolor="red"];
+"org.w3c.dom.Document" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.model.XmlCreator"->"org.w3c.dom.Document";
+"org.w3c.dom.Node" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.model.XmlCreator"->"org.w3c.dom.Node";
+"org.w3c.dom.Element" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.model.XmlCreator"->"org.w3c.dom.Element";
+"org.w3c.dom.Text" [ fontcolor="blue" ];
+"com.shutterfly.commercial.efi.model.XmlCreator"->"org.w3c.dom.Text";
+"com.shutterfly.commercial.efi.model.EFIJobComponent" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.model.EFIJobComponent"->"com.shutterfly.commercial.efi.model.XmlCreator";
+"com.shutterfly.commercial.efi.model.EFIJobCost" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.model.EFIJobCost"->"com.shutterfly.commercial.efi.model.XmlCreator";
+"com.shutterfly.commercial.efi.model.EFIJobMaterial" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.model.EFIJobMaterial"->"com.shutterfly.commercial.efi.model.XmlCreator";
+"com.shutterfly.commercial.efi.model.EFIJobNote" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.model.EFIJobNote"->"com.shutterfly.commercial.efi.model.XmlCreator";
+"com.shutterfly.commercial.efi.model.EFIJobPart" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.model.EFIJobPart"->"com.shutterfly.commercial.efi.model.XmlCreator";
+"com.shutterfly.commercial.efi.model.EFIJobShipment" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.model.EFIJobShipment"->"com.shutterfly.commercial.efi.model.XmlCreator";
+"com.shutterfly.commercial.efi.model.EFIOrder" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.model.EFIOrder"->"com.shutterfly.commercial.efi.model.XmlCreator";
+"com.shutterfly.commercial.efi.EFIOrderBuilder" [ fontcolor="green" ];
+"com.shutterfly.commercial.efi.EFIOrderBuilder"->"com.shutterfly.commercial.efi.model.XmlCreator";
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp$OrderLoader"->"com.shutterfly.commercial.efi.model.XmlCreator";
+"com.shutterfly.commercial.apps.BrandMuscleApp" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.BrandMuscleApp"->"com.shutterfly.commercial.efi.model.XmlCreator";
+}

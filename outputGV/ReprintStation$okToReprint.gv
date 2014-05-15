@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ReprintStation$okToReprint" [fontcolor="red"];
+"com.shutterfly.order.BatchType" [ fontcolor="blue" ];
+"com.shutterfly.apps.ReprintStation$okToReprint"->"com.shutterfly.order.BatchType";
+"com.shutterfly.order.SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.apps.ReprintStation$okToReprint"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.ReprintStation$okToReprint"->"com.shutterfly.util.Debug";
+"com.shutterfly.order.WorkType" [ fontcolor="blue" ];
+"com.shutterfly.apps.ReprintStation$okToReprint"->"com.shutterfly.order.WorkType";
+"com.shutterfly.order.PrintLineSession" [ fontcolor="blue" ];
+"com.shutterfly.apps.ReprintStation$okToReprint"->"com.shutterfly.order.PrintLineSession";
+"com.shutterfly.order.SubBatchStateMachine" [ fontcolor="blue" ];
+"com.shutterfly.apps.ReprintStation$okToReprint"->"com.shutterfly.order.SubBatchStateMachine";
+"com.shutterfly.properties.SflyProperties" [ fontcolor="blue" ];
+"com.shutterfly.apps.ReprintStation$okToReprint"->"com.shutterfly.properties.SflyProperties";
+"com.shutterfly.apps.ReprintStation$okToReprint" [ fontcolor="green" ];
+"com.shutterfly.apps.ReprintStation$okToReprint"->"com.shutterfly.apps.ReprintStation$okToReprint";
+"com.shutterfly.iqmeasurements.ReprintCauseDialog" [ fontcolor="green" ];
+"com.shutterfly.iqmeasurements.ReprintCauseDialog"->"com.shutterfly.apps.ReprintStation$okToReprint";
+"com.shutterfly.iqmeasurements.ReprintCauseDialog$1" [ fontcolor="green" ];
+"com.shutterfly.iqmeasurements.ReprintCauseDialog$1"->"com.shutterfly.apps.ReprintStation$okToReprint";
+"com.shutterfly.iqmeasurements.ReprintCauseDialog$CurrentStateBlinker" [ fontcolor="green" ];
+"com.shutterfly.iqmeasurements.ReprintCauseDialog$CurrentStateBlinker"->"com.shutterfly.apps.ReprintStation$okToReprint";
+"com.shutterfly.apps.ReprintStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.ReprintStation"->"com.shutterfly.apps.ReprintStation$okToReprint" [dir=both];
+}

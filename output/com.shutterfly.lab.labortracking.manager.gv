@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManager"; 
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManager"->"com.shutterfly.lab.labortracking.presentation.category.LaborTrackingCategoryInfo";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManager"->"com.shutterfly.lab.labortracking.presentation.resource.LaborTrackingResourceInfo";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManager"->"com.shutterfly.lab.labortracking.presentation.resourceaction.ResourceSummaryDisplayList";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManager"->"com.shutterfly.lab.labortracking.presentation.action.LaborTrackingActionInfo";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManager"->"com.shutterfly.lab.labortracking.presentation.issue.LaborTrackingIssueInfo";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManager"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"; 
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"->"com.shutterfly.lab.labortracking.manager.LaborTrackingManager";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"->"com.shutterfly.db.LabDB";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"->"com.shutterfly.lab.labortracking.presentation.category.LaborTrackingCategoryInfo";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"->"com.shutterfly.lab.labortracking.presentation.resource.LaborTrackingResourceInfo";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"->"com.shutterfly.lab.labortracking.presentation.action.LaborTrackingActionInfo";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"->"com.shutterfly.lab.labortracking.presentation.issue.LaborTrackingIssueInfo";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"->"com.shutterfly.lab.labortracking.presentation.resourceaction.ResourceSummaryDisplayList";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"->"com.shutterfly.util.Debug";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.lab.labortracking.manager.LaborTrackingManagerImpl"->"com.shutterfly.db.LabDBFactory";
+splines="ortho";
+}

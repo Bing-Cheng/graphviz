@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.cards.BoxCardConf$ExtraEnvelope" [fontcolor="red"];
+"com.shutterfly.cards.BoxCardConf$ExtraEnvelope" [ fontcolor="green" ];
+"com.shutterfly.cards.BoxCardConf$ExtraEnvelope"->"com.shutterfly.cards.BoxCardConf$ExtraEnvelope";
+"com.shutterfly.cards.BoxCardConf" [ fontcolor="turquoise" ];
+"com.shutterfly.cards.BoxCardConf"->"com.shutterfly.cards.BoxCardConf$ExtraEnvelope" [dir=both];
+}

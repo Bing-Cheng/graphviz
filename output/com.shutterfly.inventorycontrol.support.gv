@@ -1,0 +1,8 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.inventorycontrol.support.ICPackingSlip"; 
+"com.shutterfly.inventorycontrol.support.ICPackingSlip"->"com.shutterfly.connectship.utils.CSManifestPrinter";
+splines="ortho";
+}

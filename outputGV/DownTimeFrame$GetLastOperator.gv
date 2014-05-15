@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.DownTimeFrame$GetLastOperator" [fontcolor="red"];
+"com.shutterfly.db.transaction.SingleQueryTransaction" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$GetLastOperator"->"com.shutterfly.db.transaction.SingleQueryTransaction";
+"com.shutterfly.apps.DownTimeFrame" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$GetLastOperator"->"com.shutterfly.apps.DownTimeFrame";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.DownTimeFrame$GetLastOperator"->"com.shutterfly.util.Debug";
+}

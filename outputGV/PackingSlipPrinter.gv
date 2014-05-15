@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.inventory.PackingSlipPrinter" [fontcolor="red"];
+"com.shutterfly.servlets.inventory.core.InventorySkuDataItem" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.servlets.inventory.core.InventorySkuDataItem";
+"com.shutterfly.properties.SflyProperties" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.properties.SflyProperties";
+"com.shutterfly.order.SubBatch" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.order.SubBatch";
+"com.shutterfly.apps.inventory.Slot" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.apps.inventory.Slot";
+"com.shutterfly.order.GiftNoteCardItem" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.order.GiftNoteCardItem";
+"com.shutterfly.apps.inventory.PackingListLineItem" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.apps.inventory.PackingListLineItem";
+"com.shutterfly.order.Item" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.order.Item";
+"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.apps.inventory.PackingSlipPrinter$PackingSlipPage";
+"com.shutterfly.apps.inventory.PackingSlipPrinter$1" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.apps.inventory.PackingSlipPrinter$1";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.util.Debug";
+"com.shutterfly.order.ItemList" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.order.ItemList";
+"com.shutterfly.servlets.inventory.core.InventorySkuData" [ fontcolor="blue" ];
+"com.shutterfly.apps.inventory.PackingSlipPrinter"->"com.shutterfly.servlets.inventory.core.InventorySkuData";
+}

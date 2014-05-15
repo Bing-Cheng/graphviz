@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.CmShipMethodPreprocessor" [fontcolor="red"];
+"com.shutterfly.commercial.orderimporter.support.CommercialJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmShipMethodPreprocessor"->"com.shutterfly.commercial.orderimporter.support.CommercialJob";
+"com.shutterfly.commercial.model.CmPartner" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmShipMethodPreprocessor"->"com.shutterfly.commercial.model.CmPartner";
+"com.shutterfly.commercial.model.CmShipInfo" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmShipMethodPreprocessor"->"com.shutterfly.commercial.model.CmShipInfo";
+"com.shutterfly.commercial.orderimporter.castor.ShipMethod" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmShipMethodPreprocessor"->"com.shutterfly.commercial.orderimporter.castor.ShipMethod";
+"com.shutterfly.commercial.orderimporter.castor.types.ShipMethodShipMethodOptionType" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmShipMethodPreprocessor"->"com.shutterfly.commercial.orderimporter.castor.types.ShipMethodShipMethodOptionType";
+"com.shutterfly.commercial.data.cache.CmShipInfoCollection" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.CmShipMethodPreprocessor"->"com.shutterfly.commercial.data.cache.CmShipInfoCollection";
+}

@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.DMCards$MyPrintJobListener" [fontcolor="red"];
+"com.shutterfly.apps.DMCards$MyPrintJobListener" [ fontcolor="green" ];
+"com.shutterfly.apps.DMCards$MyPrintJobListener"->"com.shutterfly.apps.DMCards$MyPrintJobListener";
+"com.shutterfly.apps.DMCards" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.DMCards"->"com.shutterfly.apps.DMCards$MyPrintJobListener" [dir=both];
+}

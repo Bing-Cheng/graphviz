@@ -1,0 +1,31 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor" [fontcolor="red"];
+"org.exolab.castor.xml.util.XMLClassDescriptorImpl" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"org.exolab.castor.xml.util.XMLClassDescriptorImpl";
+"org.exolab.castor.xml.XMLFieldDescriptor" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"org.exolab.castor.xml.XMLFieldDescriptor";
+"org.exolab.castor.xml.util.XMLFieldDescriptorImpl" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"org.exolab.castor.xml.util.XMLFieldDescriptorImpl";
+"org.exolab.castor.mapping.FieldHandler" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"org.exolab.castor.mapping.FieldHandler";
+"org.exolab.castor.xml.FieldValidator" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"org.exolab.castor.xml.FieldValidator";
+"org.exolab.castor.mapping.AccessMode" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"org.exolab.castor.mapping.AccessMode";
+"org.exolab.castor.mapping.FieldDescriptor" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"org.exolab.castor.mapping.FieldDescriptor";
+"org.exolab.castor.xml.TypeValidator" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"org.exolab.castor.xml.TypeValidator";
+"com.shutterfly.commercial.data.orderstatus.castor.Job" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"com.shutterfly.commercial.data.orderstatus.castor.Job";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor$1" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor$1";
+"com.shutterfly.commercial.data.orderstatus.castor.Jobs" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"com.shutterfly.commercial.data.orderstatus.castor.Jobs";
+"org.exolab.castor.xml.NodeType" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.JobsDescriptor"->"org.exolab.castor.xml.NodeType";
+}

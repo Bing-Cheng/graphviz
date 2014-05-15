@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.LTPersonManager$5" [fontcolor="red"];
+"com.shutterfly.apps.LTPersonManager$5$1" [ fontcolor="blue" ];
+"com.shutterfly.apps.LTPersonManager$5"->"com.shutterfly.apps.LTPersonManager$5$1";
+"com.shutterfly.apps.LTPersonManager$5" [ fontcolor="green" ];
+"com.shutterfly.apps.LTPersonManager$5"->"com.shutterfly.apps.LTPersonManager$5";
+"com.shutterfly.apps.LTPersonManager" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.LTPersonManager"->"com.shutterfly.apps.LTPersonManager$5" [dir=both];
+"com.shutterfly.apps.LTPersonManager$ConfiguratorAction" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.LTPersonManager$ConfiguratorAction"->"com.shutterfly.apps.LTPersonManager$5" [dir=both];
+}

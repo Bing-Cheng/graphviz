@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.HSBatchIntegrationStation$1" [fontcolor="red"];
+"com.shutterfly.order.batching.BatchStateEnum" [ fontcolor="blue" ];
+"com.shutterfly.apps.HSBatchIntegrationStation$1"->"com.shutterfly.order.batching.BatchStateEnum";
+"com.shutterfly.order.BatchType" [ fontcolor="blue" ];
+"com.shutterfly.apps.HSBatchIntegrationStation$1"->"com.shutterfly.order.BatchType";
+"com.shutterfly.apps.HSBatchIntegrationStation$1" [ fontcolor="green" ];
+"com.shutterfly.apps.HSBatchIntegrationStation$1"->"com.shutterfly.apps.HSBatchIntegrationStation$1";
+"com.shutterfly.apps.HSBatchIntegrationStation$StationMode" [ fontcolor="green" ];
+"com.shutterfly.apps.HSBatchIntegrationStation$StationMode"->"com.shutterfly.apps.HSBatchIntegrationStation$1";
+"com.shutterfly.apps.HSBatchIntegrationStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.HSBatchIntegrationStation"->"com.shutterfly.apps.HSBatchIntegrationStation$1" [dir=both];
+}

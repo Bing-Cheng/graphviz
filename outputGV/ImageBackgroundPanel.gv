@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.ImageBackgroundPanel" [fontcolor="red"];
+"com.shutterfly.apps.DownTimeFrame" [ fontcolor="blue" ];
+"com.shutterfly.apps.ImageBackgroundPanel"->"com.shutterfly.apps.DownTimeFrame";
+"com.shutterfly.apps.SwingResourceManager" [ fontcolor="blue" ];
+"com.shutterfly.apps.ImageBackgroundPanel"->"com.shutterfly.apps.SwingResourceManager";
+}

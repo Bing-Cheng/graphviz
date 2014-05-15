@@ -1,0 +1,15 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.HotFolderMonitor$1" [fontcolor="red"];
+"com.shutterfly.commercial.data.PrintJobNameModel" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.HotFolderMonitor$1"->"com.shutterfly.commercial.data.PrintJobNameModel";
+"com.shutterfly.commercial.data.HotFolderMonitor$1" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.HotFolderMonitor$1"->"com.shutterfly.commercial.data.HotFolderMonitor$1";
+"com.shutterfly.commercial.data.HotFolderMonitor$TraySetCache" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.HotFolderMonitor$TraySetCache"->"com.shutterfly.commercial.data.HotFolderMonitor$1";
+"com.shutterfly.commercial.data.HotFolderMonitor" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.data.HotFolderMonitor"->"com.shutterfly.commercial.data.HotFolderMonitor$1" [dir=both];
+}

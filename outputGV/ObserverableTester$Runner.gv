@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.test.ObserverableTester$Runner" [fontcolor="red"];
+"com.shutterfly.apps.test.ObserverableTester" [ fontcolor="blue" ];
+"com.shutterfly.apps.test.ObserverableTester$Runner"->"com.shutterfly.apps.test.ObserverableTester";
+}

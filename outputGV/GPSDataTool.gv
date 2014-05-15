@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.GPSData.tool.GPSDataTool" [fontcolor="red"];
+"org.w3c.dom.Element" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.GPSData.tool.GPSDataTool"->"org.w3c.dom.Element";
+"org.w3c.dom.NodeList" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.GPSData.tool.GPSDataTool"->"org.w3c.dom.NodeList";
+"org.w3c.dom.Node" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.GPSData.tool.GPSDataTool"->"org.w3c.dom.Node";
+"org.w3c.dom.Document" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.GPSData.tool.GPSDataTool"->"org.w3c.dom.Document";
+"com.shutterfly.util.FileUtil" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.GPSData.tool.GPSDataTool"->"com.shutterfly.util.FileUtil";
+}

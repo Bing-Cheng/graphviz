@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.indigo.presslog.dataobject.EventDO"; 
+"com.shutterfly.indigo.presslog.dataobject.EventDO"->"com.shutterfly.indigo.presslog.Event";
+"com.shutterfly.indigo.presslog.dataobject.ImpressionCountDO"; 
+"com.shutterfly.indigo.presslog.dataobject.ImpressionCountDO"->"com.shutterfly.indigo.presslog.Event";
+"com.shutterfly.indigo.presslog.dataobject.IndigoLoginDO"; 
+"com.shutterfly.indigo.presslog.dataobject.IssueDO"; 
+"com.shutterfly.indigo.presslog.dataobject.OperatorDO"; 
+"com.shutterfly.indigo.presslog.dataobject.OperatorLogDO$EventDetail"; 
+"com.shutterfly.indigo.presslog.dataobject.OperatorLogDO$EventDetail"->"com.shutterfly.indigo.presslog.dataobject.EventDO";
+"com.shutterfly.indigo.presslog.dataobject.OperatorLogDO$EventDetail"->"com.shutterfly.indigo.presslog.dataobject.IssueDO";
+"com.shutterfly.indigo.presslog.dataobject.OperatorLogDO$EventDetail"->"com.shutterfly.indigo.presslog.dataobject.ImpressionCountDO";
+"com.shutterfly.indigo.presslog.dataobject.OperatorLogDO$EventDetail"->"com.shutterfly.indigo.presslog.dataobject.OperatorLogDO";
+"com.shutterfly.indigo.presslog.dataobject.OperatorLogDO"; 
+"com.shutterfly.indigo.presslog.dataobject.OperatorLogDO"->"com.shutterfly.indigo.presslog.dataobject.OperatorLogDO$EventDetail";
+"com.shutterfly.indigo.presslog.dataobject.PrinterDO"; 
+splines="ortho";
+}

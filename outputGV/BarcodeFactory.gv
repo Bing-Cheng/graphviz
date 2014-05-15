@@ -1,0 +1,33 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.barcode.BarcodeFactory" [fontcolor="red"];
+"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"com.shutterfly.barcode.BarcodeFactory$BarcodeEngine";
+"org.krysalis.barcode4j.impl.datamatrix.DataMatrixBean" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"org.krysalis.barcode4j.impl.datamatrix.DataMatrixBean";
+"com.shutterfly.barcode.ImageTypeEnum" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"com.shutterfly.barcode.ImageTypeEnum";
+"org.krysalis.barcode4j.output.bitmap.BitmapCanvasProvider" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"org.krysalis.barcode4j.output.bitmap.BitmapCanvasProvider";
+"org.krysalis.barcode4j.BarcodeDimension" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"org.krysalis.barcode4j.BarcodeDimension";
+"com.shutterfly.barcode.BarcodeConfig" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"com.shutterfly.barcode.BarcodeConfig";
+"com.shutterfly.barcode.BarcodeType" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"com.shutterfly.barcode.BarcodeType";
+"com.shutterfly.barcode.BarcodeFactory$1" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"com.shutterfly.barcode.BarcodeFactory$1";
+"com.shutterfly.barcode.BarcodeFactory$BarcodeFactoryHolder" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"com.shutterfly.barcode.BarcodeFactory$BarcodeFactoryHolder";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"com.shutterfly.util.Debug";
+"org.krysalis.barcode4j.impl.datamatrix.SymbolShapeHint" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"org.krysalis.barcode4j.impl.datamatrix.SymbolShapeHint";
+"org.krysalis.barcode4j.output.CanvasProvider" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"org.krysalis.barcode4j.output.CanvasProvider";
+"org.krysalis.barcode4j.BarcodeGenerator" [ fontcolor="blue" ];
+"com.shutterfly.barcode.BarcodeFactory"->"org.krysalis.barcode4j.BarcodeGenerator";
+}

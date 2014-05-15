@@ -1,0 +1,16 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.db.dao.SFLYDaoFactory"; 
+"com.shutterfly.db.dao.SFLYDaoFactory"->"com.shutterfly.db.hibernate.dao.DAOFactory";
+"com.shutterfly.db.dao.SFLYDaoFactory"->"com.shutterfly.db.dao.impl.PropertyDao";
+"com.shutterfly.db.dao.SFLYDaoFactory"->"com.shutterfly.db.dao.impl.PropertyCategoryDao";
+"com.shutterfly.db.dao.SFLYDaoFactory"->"com.shutterfly.db.dao.impl.LTStationTypeDao";
+"com.shutterfly.db.dao.SFLYDaoFactory"->"com.shutterfly.db.dao.impl.LTTachometerDao";
+"com.shutterfly.db.dao.SFLYDaoFactory"->"com.shutterfly.db.dao.impl.LTResourceDao";
+"com.shutterfly.db.dao.SFLYDaoFactory"->"com.shutterfly.db.dao.impl.LTCategoryDao";
+"com.shutterfly.db.dao.SFLYDaoFactory"->"com.shutterfly.db.hibernate.HibernateUtil";
+"com.shutterfly.db.dao.SFLYDaoFactory"->"com.shutterfly.db.hibernate.dao.AbstractDao";
+splines="ortho";
+}

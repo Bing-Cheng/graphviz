@@ -1,0 +1,25 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.pace2020.epace.sdk.InvokeActionPortType" [fontcolor="red"];
+"com.pace2020.epace.object.Quote" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.InvokeActionPortType"->"com.pace2020.epace.object.Quote";
+"com.pace2020.epace.object.QuoteConvertToJob" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.InvokeActionPortType"->"com.pace2020.epace.object.QuoteConvertToJob";
+"com.pace2020.epace.object.Estimate" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.InvokeActionPortType"->"com.pace2020.epace.object.Estimate";
+"com.pace2020.epace.object.EstimateConvertToJob" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.InvokeActionPortType"->"com.pace2020.epace.object.EstimateConvertToJob";
+"com.pace2020.epace.object.Job" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.InvokeActionPortType"->"com.pace2020.epace.object.Job";
+"com.pace2020.epace.object.PurchaseOrderLine" [ fontcolor="blue" ];
+"com.pace2020.epace.sdk.InvokeActionPortType"->"com.pace2020.epace.object.PurchaseOrderLine";
+"com.pace2020.epace.sdk.InvokeAction" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.InvokeAction"->"com.pace2020.epace.sdk.InvokeActionPortType";
+"com.pace2020.epace.sdk.InvokeActionHttpBindingStub" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.InvokeActionHttpBindingStub"->"com.pace2020.epace.sdk.InvokeActionPortType";
+"com.pace2020.epace.sdk.InvokeActionLocator" [ fontcolor="green" ];
+"com.pace2020.epace.sdk.InvokeActionLocator"->"com.pace2020.epace.sdk.InvokeActionPortType";
+}

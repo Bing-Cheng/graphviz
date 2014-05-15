@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.assetmanager.DAMClientTester$ReceiveThread" [fontcolor="red"];
+"com.shutterfly.assetmanager.DAMClientTester$ReceiveThread" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.DAMClientTester$ReceiveThread"->"com.shutterfly.assetmanager.DAMClientTester$ReceiveThread";
+"com.shutterfly.assetmanager.DAMClientTester$SendThread" [ fontcolor="green" ];
+"com.shutterfly.assetmanager.DAMClientTester$SendThread"->"com.shutterfly.assetmanager.DAMClientTester$ReceiveThread";
+"com.shutterfly.assetmanager.DAMClientTester" [ fontcolor="turquoise" ];
+"com.shutterfly.assetmanager.DAMClientTester"->"com.shutterfly.assetmanager.DAMClientTester$ReceiveThread" [dir=both];
+}

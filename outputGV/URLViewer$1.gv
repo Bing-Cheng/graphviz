@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.clientreleasemanager.ui.URLViewer$1" [fontcolor="red"];
+"com.shutterfly.clientreleasemanager.ui.URLViewer$1" [ fontcolor="green" ];
+"com.shutterfly.clientreleasemanager.ui.URLViewer$1"->"com.shutterfly.clientreleasemanager.ui.URLViewer$1";
+"com.shutterfly.clientreleasemanager.ui.URLViewer" [ fontcolor="turquoise" ];
+"com.shutterfly.clientreleasemanager.ui.URLViewer"->"com.shutterfly.clientreleasemanager.ui.URLViewer$1" [dir=both];
+}

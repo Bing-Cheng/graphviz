@@ -1,0 +1,30 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.rip.IndigoRIP$RIPThread"; 
+"com.shutterfly.rip.IndigoRIP$RIPThread"->"com.shutterfly.rip.IndigoRIP";
+"com.shutterfly.rip.IndigoRIP$RIPThread"->"com.shutterfly.rip.RIPEvent";
+"com.shutterfly.rip.IndigoRIP$RIPThread"->"com.shutterfly.printers.PrinterJob";
+"com.shutterfly.rip.IndigoRIP$RIPThread"->"com.shutterfly.util.Debug";
+"com.shutterfly.rip.IndigoRIP$RIPThread"->"com.shutterfly.util.BlockingQueue";
+"com.shutterfly.rip.IndigoRIP$RIPThread"->"com.shutterfly.util.ExceptionUtil";
+"com.shutterfly.rip.IndigoRIP"; 
+"com.shutterfly.rip.IndigoRIP"->"com.shutterfly.rip.RasterImageProcessor";
+"com.shutterfly.rip.IndigoRIP"->"com.shutterfly.rip.IndigoRIP$RIPThread";
+"com.shutterfly.rip.IndigoRIP"->"com.shutterfly.util.BlockingQueue";
+"com.shutterfly.rip.IndigoRIP"->"com.shutterfly.printers.PrinterJob";
+"com.shutterfly.rip.IndigoRIP"->"com.shutterfly.rip.RIPListener";
+"com.shutterfly.rip.IndigoRIP"->"com.shutterfly.rip.RIPEvent";
+"com.shutterfly.rip.IndigoRIP"->"com.shutterfly.util.Debug";
+"com.shutterfly.rip.RIPEvent"; 
+"com.shutterfly.rip.RIPEvent"->"com.shutterfly.printers.PrinterJob";
+"com.shutterfly.rip.RIPException"; 
+"com.shutterfly.rip.RIPException"->"com.shutterfly.exception.ShutterflyException";
+"com.shutterfly.rip.RIPListener"; 
+"com.shutterfly.rip.RIPListener"->"com.shutterfly.rip.RIPEvent";
+"com.shutterfly.rip.RasterImageProcessor"; 
+"com.shutterfly.rip.RasterImageProcessor"->"com.shutterfly.printers.PrinterJob";
+"com.shutterfly.rip.RasterImageProcessor"->"com.shutterfly.rip.RIPListener";
+splines="ortho";
+}

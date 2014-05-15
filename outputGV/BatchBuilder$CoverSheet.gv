@@ -1,0 +1,29 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BatchBuilder$CoverSheet" [fontcolor="red"];
+"com.shutterfly.labels.Label" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CoverSheet"->"com.shutterfly.labels.Label";
+"com.shutterfly.apps.BatchBuilder$CycleData" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CoverSheet"->"com.shutterfly.apps.BatchBuilder$CycleData";
+"com.shutterfly.apps.BatchBuilder" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CoverSheet"->"com.shutterfly.apps.BatchBuilder";
+"com.shutterfly.labourtracking.support.LTStationInfo" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CoverSheet"->"com.shutterfly.labourtracking.support.LTStationInfo";
+"com.shutterfly.labourtracking.support.LTPersonResource" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CoverSheet"->"com.shutterfly.labourtracking.support.LTPersonResource";
+"com.shutterfly.labels.LabelUtils" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CoverSheet"->"com.shutterfly.labels.LabelUtils";
+"com.shutterfly.category.Category" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CoverSheet"->"com.shutterfly.category.Category";
+"com.shutterfly.order.Batch" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CoverSheet"->"com.shutterfly.order.Batch";
+"com.shutterfly.order.WorkType" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CoverSheet"->"com.shutterfly.order.WorkType";
+"com.shutterfly.order.PrintSize" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CoverSheet"->"com.shutterfly.order.PrintSize";
+"com.shutterfly.properties.LocalMachineHostname" [ fontcolor="blue" ];
+"com.shutterfly.apps.BatchBuilder$CoverSheet"->"com.shutterfly.properties.LocalMachineHostname";
+}

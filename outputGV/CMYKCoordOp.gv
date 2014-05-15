@@ -1,0 +1,9 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.colormath.CMYKCoordOp" [fontcolor="red"];
+"com.shutterfly.colorsure.colormath.CMYKCoord" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.colormath.CMYKCoordOp"->"com.shutterfly.colorsure.colormath.CMYKCoord";
+}

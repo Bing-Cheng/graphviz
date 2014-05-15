@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.colorsure.client.ColorPatchesTest" [fontcolor="red"];
+"com.shutterfly.colorsure.client.ColorPatches" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorPatchesTest"->"com.shutterfly.colorsure.client.ColorPatches";
+"com.shutterfly.colorsure.colormath.RGBCoord" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorPatchesTest"->"com.shutterfly.colorsure.colormath.RGBCoord";
+"org.junit.Before" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorPatchesTest"->"org.junit.Before";
+"org.junit.Test" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorPatchesTest"->"org.junit.Test";
+"com.shutterfly.colorsure.client.ColorSure" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorPatchesTest"->"com.shutterfly.colorsure.client.ColorSure";
+"org.junit.Assert" [ fontcolor="blue" ];
+"com.shutterfly.colorsure.client.ColorPatchesTest"->"org.junit.Assert";
+}

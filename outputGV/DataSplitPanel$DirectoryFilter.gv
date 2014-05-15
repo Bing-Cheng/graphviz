@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.DataSplitPanel$DirectoryFilter" [fontcolor="red"];
+"com.shutterfly.commercial.apps.CommercialData" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.CommercialData"->"com.shutterfly.commercial.apps.DataSplitPanel$DirectoryFilter";
+"com.shutterfly.commercial.apps.DataSplitPanel$DirectoryFilter" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.DataSplitPanel$DirectoryFilter"->"com.shutterfly.commercial.apps.DataSplitPanel$DirectoryFilter";
+"com.shutterfly.commercial.apps.DataSplitPanel" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.DataSplitPanel"->"com.shutterfly.commercial.apps.DataSplitPanel$DirectoryFilter" [dir=both];
+}

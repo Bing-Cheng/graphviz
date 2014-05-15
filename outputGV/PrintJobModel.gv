@@ -1,0 +1,13 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.PrintJobModel" [fontcolor="red"];
+"com.shutterfly.db.hibernate.commercial.CM_PrintJob" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.PrintJobModel"->"com.shutterfly.db.hibernate.commercial.CM_PrintJob";
+"com.shutterfly.commercial.data.DataModel" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.PrintJobModel"->"com.shutterfly.commercial.data.DataModel";
+"com.shutterfly.commercial.data.HotFolderMonitor" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.HotFolderMonitor"->"com.shutterfly.commercial.data.PrintJobModel";
+}

@@ -1,0 +1,8 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.connectship.core.exceptions.CSMultipleCandidateAddressException"; 
+"com.shutterfly.connectship.core.exceptions.CSNoCandidateAddressException"; 
+"com.shutterfly.connectship.core.exceptions.CSShipmentRequestException"; 
+}

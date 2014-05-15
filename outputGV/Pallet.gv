@@ -1,0 +1,11 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.Pallet" [fontcolor="red"];
+"com.shutterfly.db.hibernate.commercial.CM_Pallet" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.Pallet"->"com.shutterfly.db.hibernate.commercial.CM_Pallet";
+"com.shutterfly.db.hibernate.commercial.CM_Pallet$PalletStates" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.Pallet"->"com.shutterfly.db.hibernate.commercial.CM_Pallet$PalletStates";
+}

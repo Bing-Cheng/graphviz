@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.miam.jack.control.ItemController"; 
+"com.shutterfly.miam.jack.control.ItemController"->"com.shutterfly.miam.jack.model.ItemStateMachineCollection";
+"com.shutterfly.miam.jack.control.ItemController"->"com.shutterfly.db.hibernate.miam.PP_itemHistory";
+"com.shutterfly.miam.jack.control.ItemController"->"com.shutterfly.db.hibernate.miam.PP_item";
+"com.shutterfly.miam.jack.control.ItemController"->"com.shutterfly.miam.jack.model.ItemStateModel";
+"com.shutterfly.miam.jack.control.ItemController"->"com.shutterfly.miam.jack.model.ItemModel";
+"com.shutterfly.miam.jack.control.ItemController"->"com.shutterfly.db.hibernate.miam.PP_itemState";
+"com.shutterfly.miam.jack.control.ItemController"->"com.shutterfly.db.hibernate.HibernateUtil";
+"com.shutterfly.miam.jack.control.ItemController"->"com.shutterfly.util.Debug";
+"com.shutterfly.miam.jack.control.ItemController"->"com.shutterfly.miam.jack.ItemStation";
+"com.shutterfly.miam.jack.control.ItemController"->"com.shutterfly.miam.base.control.DBController";
+"com.shutterfly.miam.jack.control.JackController"; 
+"com.shutterfly.miam.jack.control.JackController"->"com.shutterfly.miam.jack.model.ItemFetchThread";
+splines="ortho";
+}

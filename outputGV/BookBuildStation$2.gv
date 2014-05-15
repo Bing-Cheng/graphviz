@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BookBuildStation$2" [fontcolor="red"];
+"com.shutterfly.db.model.LTStationType" [ fontcolor="blue" ];
+"com.shutterfly.apps.BookBuildStation$2"->"com.shutterfly.db.model.LTStationType";
+"com.shutterfly.apps.BookBuildStation$2" [ fontcolor="green" ];
+"com.shutterfly.apps.BookBuildStation$2"->"com.shutterfly.apps.BookBuildStation$2";
+"com.shutterfly.apps.BookBuildStation$3" [ fontcolor="green" ];
+"com.shutterfly.apps.BookBuildStation$3"->"com.shutterfly.apps.BookBuildStation$2";
+"com.shutterfly.apps.BookBuildStation$ShutdownThread" [ fontcolor="green" ];
+"com.shutterfly.apps.BookBuildStation$ShutdownThread"->"com.shutterfly.apps.BookBuildStation$2";
+"com.shutterfly.apps.BookBuildStation$StationMode" [ fontcolor="green" ];
+"com.shutterfly.apps.BookBuildStation$StationMode"->"com.shutterfly.apps.BookBuildStation$2";
+"com.shutterfly.apps.BookBuildStation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.BookBuildStation"->"com.shutterfly.apps.BookBuildStation$2" [dir=both];
+}

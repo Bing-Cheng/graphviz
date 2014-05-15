@@ -1,0 +1,20 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.scale.LabelDataListener"; 
+"com.shutterfly.scale.LabelDataSource$1"; 
+"com.shutterfly.scale.LabelDataSource$1"->"com.shutterfly.scale.LabelDataListener";
+"com.shutterfly.scale.LabelDataSource$1"->"com.shutterfly.scale.LabelDataSource";
+"com.shutterfly.scale.LabelDataSource$1"->"com.shutterfly.util.Debug";
+"com.shutterfly.scale.LabelDataSource"; 
+"com.shutterfly.scale.LabelDataSource"->"com.shutterfly.scale.LabelDataListener";
+"com.shutterfly.scale.LabelDataSource"->"com.shutterfly.scale.LabelDataSource$1";
+"com.shutterfly.scale.LabelDataSource"->"com.shutterfly.util.Debug";
+"com.shutterfly.scale.Scale"; 
+"com.shutterfly.scale.Scale"->"com.shutterfly.scale.ScaleException";
+"com.shutterfly.scale.Scale"->"com.shutterfly.util.Debug";
+"com.shutterfly.scale.ScaleException"; 
+"com.shutterfly.scale.ScaleException"->"com.shutterfly.exception.ShutterflyException";
+splines="ortho";
+}

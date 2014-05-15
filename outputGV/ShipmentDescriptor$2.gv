@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$2" [fontcolor="red"];
+"org.exolab.castor.xml.XMLFieldHandler" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$2"->"org.exolab.castor.xml.XMLFieldHandler";
+"com.shutterfly.commercial.data.orderstatus.castor.Shipment" [ fontcolor="blue" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$2"->"com.shutterfly.commercial.data.orderstatus.castor.Shipment";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$2"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$2";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$3"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$2";
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor"->"com.shutterfly.commercial.data.orderstatus.castor.descriptors.ShipmentDescriptor$2" [dir=both];
+}

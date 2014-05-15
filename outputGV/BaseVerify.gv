@@ -1,0 +1,21 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.BaseVerify" [fontcolor="red"];
+"com.shutterfly.apps.ScanStationUi" [ fontcolor="blue" ];
+"com.shutterfly.apps.BaseVerify"->"com.shutterfly.apps.ScanStationUi";
+"com.shutterfly.apps.ObserverDialog" [ fontcolor="blue" ];
+"com.shutterfly.apps.BaseVerify"->"com.shutterfly.apps.ObserverDialog";
+"com.shutterfly.apps.ScanStationUiSimple" [ fontcolor="blue" ];
+"com.shutterfly.apps.BaseVerify"->"com.shutterfly.apps.ScanStationUiSimple";
+"com.shutterfly.apps.BaseVerify$SleeperThread" [ fontcolor="blue" ];
+"com.shutterfly.apps.BaseVerify"->"com.shutterfly.apps.BaseVerify$SleeperThread";
+"com.shutterfly.apps.BaseVerify$ThreadSafeBlinkLabel" [ fontcolor="blue" ];
+"com.shutterfly.apps.BaseVerify"->"com.shutterfly.apps.BaseVerify$ThreadSafeBlinkLabel";
+"com.shutterfly.util.Debug" [ fontcolor="blue" ];
+"com.shutterfly.apps.BaseVerify"->"com.shutterfly.util.Debug";
+"com.shutterfly.apps.SwingResourceManager" [ fontcolor="blue" ];
+"com.shutterfly.apps.BaseVerify"->"com.shutterfly.apps.SwingResourceManager";
+}

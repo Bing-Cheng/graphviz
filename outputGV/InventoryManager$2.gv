@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.InventoryManager$2" [fontcolor="red"];
+"com.shutterfly.commercial.apps.InventoryManager$2" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.InventoryManager$2"->"com.shutterfly.commercial.apps.InventoryManager$2";
+"com.shutterfly.commercial.apps.InventoryManager$3" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.InventoryManager$3"->"com.shutterfly.commercial.apps.InventoryManager$2";
+"com.shutterfly.commercial.apps.InventoryManager$4" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.InventoryManager$4"->"com.shutterfly.commercial.apps.InventoryManager$2";
+"com.shutterfly.commercial.apps.InventoryManager$5" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.InventoryManager$5"->"com.shutterfly.commercial.apps.InventoryManager$2";
+"com.shutterfly.commercial.apps.InventoryManager$6" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.InventoryManager$6"->"com.shutterfly.commercial.apps.InventoryManager$2";
+"com.shutterfly.commercial.apps.InventoryManager" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.InventoryManager"->"com.shutterfly.commercial.apps.InventoryManager$2" [dir=both];
+}

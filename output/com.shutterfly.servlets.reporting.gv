@@ -1,0 +1,20 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.reporting.EquipmentOutageExtraction"; 
+"com.shutterfly.servlets.reporting.EquipmentOutageExtraction"->"com.shutterfly.servlets.ScheduledReportingTask";
+"com.shutterfly.servlets.reporting.EquipmentOutageExtraction"->"com.shutterfly.db.model.EquipmentInterval";
+"com.shutterfly.servlets.reporting.EquipmentOutageExtraction"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.servlets.reporting.EquipmentOutageExtraction"->"com.shutterfly.db.LabDB";
+"com.shutterfly.servlets.reporting.EquipmentOutageExtraction"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.reporting.EquipmentOutageExtraction"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.servlets.reporting.EquipmentOutageExtraction"->"com.shutterfly.db.LabDBFactory";
+"com.shutterfly.servlets.reporting.MetricController"; 
+"com.shutterfly.servlets.reporting.MetricController"->"com.shutterfly.db.LabDB";
+"com.shutterfly.servlets.reporting.MetricController"->"com.shutterfly.labourtracking.metrics.MetricManager";
+"com.shutterfly.servlets.reporting.MetricController"->"com.shutterfly.util.Debug";
+"com.shutterfly.servlets.reporting.MetricController"->"com.shutterfly.properties.LabDBHostname";
+"com.shutterfly.servlets.reporting.MetricController"->"com.shutterfly.db.LabDBFactory";
+splines="ortho";
+}

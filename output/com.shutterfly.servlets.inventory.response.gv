@@ -1,0 +1,17 @@
+digraph dependencyGraph {
+ concentrate=true;
+ rankdir="LR"; 
+ranksep="2.0";
+"com.shutterfly.servlets.inventory.response.ICXMLError"; 
+"com.shutterfly.servlets.inventory.response.InventoryControlResponse"; 
+"com.shutterfly.servlets.inventory.response.InventorySkuItem"; 
+"com.shutterfly.servlets.inventory.response.InventorySkuItem"->"com.shutterfly.servlets.inventory.response.InventoryControlResponse";
+"com.shutterfly.servlets.inventory.response.InventorySkuItem"->"com.shutterfly.servlets.inventory.core.InventorySkuData";
+"com.shutterfly.servlets.inventory.response.InventorySkuItem"->"com.shutterfly.servlets.inventory.core.InventorySkuDataItem";
+"com.shutterfly.servlets.inventory.response.SkuInventoryResponse"; 
+"com.shutterfly.servlets.inventory.response.SkuInventoryResponse"->"com.shutterfly.servlets.inventory.response.InventoryControlResponse";
+"com.shutterfly.servlets.inventory.response.SkuInventoryResponse"->"com.shutterfly.servlets.inventory.request.SkuInventoryRequest";
+"com.shutterfly.servlets.inventory.response.SkuInventoryResponse"->"com.shutterfly.servlets.inventory.response.InventorySkuItem";
+"com.shutterfly.servlets.inventory.response.SkuInventoryResponse"->"com.shutterfly.servlets.inventory.core.InventorySkuData";
+splines="ortho";
+}

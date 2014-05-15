@@ -1,0 +1,19 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.commercial.apps.model.LCManager$FolderCleanUp" [fontcolor="red"];
+"com.shutterfly.util.FileUtil" [ fontcolor="blue" ];
+"com.shutterfly.commercial.apps.model.LCManager$FolderCleanUp"->"com.shutterfly.util.FileUtil";
+"com.shutterfly.commercial.apps.model.LCManager$FolderCleanUp" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.LCManager$FolderCleanUp"->"com.shutterfly.commercial.apps.model.LCManager$FolderCleanUp";
+"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.LCManager$PPMLFileFilter"->"com.shutterfly.commercial.apps.model.LCManager$FolderCleanUp";
+"com.shutterfly.commercial.apps.model.LCManager$PrintByMethod" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintByMethod"->"com.shutterfly.commercial.apps.model.LCManager$FolderCleanUp";
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer" [ fontcolor="green" ];
+"com.shutterfly.commercial.apps.model.LCManager$PrintJobConsumer"->"com.shutterfly.commercial.apps.model.LCManager$FolderCleanUp";
+"com.shutterfly.commercial.apps.model.LCManager" [ fontcolor="turquoise" ];
+"com.shutterfly.commercial.apps.model.LCManager"->"com.shutterfly.commercial.apps.model.LCManager$FolderCleanUp" [dir=both];
+}

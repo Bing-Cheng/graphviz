@@ -1,0 +1,23 @@
+digraph dependencyGraph {
+ concentrate=true;
+ ranksep="2.0";
+ rankdir="LR"; 
+ splines="ortho";
+"com.shutterfly.apps.PrintConfirmation$1" [fontcolor="red"];
+"com.shutterfly.db.LabDBException" [ fontcolor="blue" ];
+"com.shutterfly.apps.PrintConfirmation$1"->"com.shutterfly.db.LabDBException";
+"com.shutterfly.db.LabDBSql" [ fontcolor="blue" ];
+"com.shutterfly.apps.PrintConfirmation$1"->"com.shutterfly.db.LabDBSql";
+"com.shutterfly.db.LabDB" [ fontcolor="blue" ];
+"com.shutterfly.apps.PrintConfirmation$1"->"com.shutterfly.db.LabDB";
+"com.shutterfly.db.transaction.SingleQueryTransaction" [ fontcolor="blue" ];
+"com.shutterfly.apps.PrintConfirmation$1"->"com.shutterfly.db.transaction.SingleQueryTransaction";
+"com.shutterfly.apps.PrintConfirmation$1" [ fontcolor="green" ];
+"com.shutterfly.apps.PrintConfirmation$1"->"com.shutterfly.apps.PrintConfirmation$1";
+"com.shutterfly.apps.PrintConfirmation$2" [ fontcolor="green" ];
+"com.shutterfly.apps.PrintConfirmation$2"->"com.shutterfly.apps.PrintConfirmation$1";
+"com.shutterfly.apps.PrintConfirmation" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.PrintConfirmation"->"com.shutterfly.apps.PrintConfirmation$1" [dir=both];
+"com.shutterfly.apps.PrintConfirmation$GetCoverCounts" [ fontcolor="turquoise" ];
+"com.shutterfly.apps.PrintConfirmation$GetCoverCounts"->"com.shutterfly.apps.PrintConfirmation$1" [dir=both];
+}
